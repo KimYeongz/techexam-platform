@@ -1,0 +1,534 @@
+{
+    "topicId": "iot",
+    "topicName": "Internet of Things (IoT)",
+    "topicNameTH": "อินเทอร์เน็ตของสรรพสิ่ง",
+    "summary": {
+        "definition": "เครือข่ายของวัตถุ/อุปกรณ์ (Things) ที่ฝังเซนเซอร์และเชื่อมต่ออินเทอร์เน็ตเพื่อแลกเปลี่ยนข้อมูล",
+        "components": [
+            "Device/Sensor (รับค่า)",
+            "Connectivity (ช่องทางสื่อสาร เช่น Wi-Fi, NB-IoT)",
+            "Data Processing (ประมวลผลที่ Edge หรือ Cloud)",
+            "User Interface (แอปฯ สั่งงาน)"
+        ],
+        "examples": [
+            "Smart Home",
+            "Smart Farming (วัดความชื้นดิน)",
+            "Wearables"
+        ],
+        "examHotspots": [
+            "MQTT คือ Protocol ยอดนิยมของ IoT (เบา, กินไฟน้อย)",
+            "ความแตกต่างระหว่าง IoT (ทั่วไป) vs IIoT (อุตสาหกรรม/โรงงาน)"
+        ],
+        "warnings": [
+            "IoT มักมีจุดอ่อนเรื่อง Security (รหัสผ่าน Default, อัปเดตยาก)"
+        ]
+    },
+    "totalQuestions": 20,
+    "distribution": {
+        "easy": 6,
+        "medium": 10,
+        "hard": 4
+    },
+    "questions": [
+        {
+            "id": 21,
+            "questionText": "IoT ย่อมาจากอะไร?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Input of Technology"
+                },
+                {
+                    "label": "B",
+                    "text": "Internet of Things"
+                },
+                {
+                    "label": "C",
+                    "text": "International of Time"
+                },
+                {
+                    "label": "D",
+                    "text": "Internal of Testing"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "อินเทอร์เน็ตของสรรพสิ่ง"
+        },
+        {
+            "id": 22,
+            "questionText": "Protocol ใดที่ออกแบบมาสำหรับการสื่อสาร IoT ที่มีขนาดเล็กและกินไฟต่ำ?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "HTTP"
+                },
+                {
+                    "label": "B",
+                    "text": "FTP"
+                },
+                {
+                    "label": "C",
+                    "text": "MQTT"
+                },
+                {
+                    "label": "D",
+                    "text": "SMTP"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "Message Queuing Telemetry Transport เบาและเหมาะกับเครือข่ายที่ไม่เสถียร"
+        },
+        {
+            "id": 23,
+            "questionText": "อุปกรณ์ใดทำหน้าที่เปรียบเสมือน \"สมอง\" ในการประมวลผลเบื้องต้นของโปรเจกต์ IoT ขนาดเล็ก?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "หลอดไฟ LED"
+                },
+                {
+                    "label": "B",
+                    "text": "สาย LAN"
+                },
+                {
+                    "label": "C",
+                    "text": "Microcontroller (เช่น Arduino, ESP32)"
+                },
+                {
+                    "label": "D",
+                    "text": "ตัวต้านทาน"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "ใช้เขียนโปรแกรมควบคุม Sensor และการเชื่อมต่อ"
+        },
+        {
+            "id": 24,
+            "questionText": "IIoT (Industrial IoT) ต่างจาก IoT ทั่วไปอย่างไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "IIoT เน้นความบันเทิง"
+                },
+                {
+                    "label": "B",
+                    "text": "IIoT เน้นความแม่นยำ ทนทาน และความปลอดภัยสูงในโรงงานอุตสาหกรรม"
+                },
+                {
+                    "label": "C",
+                    "text": "IIoT ใช้เฉพาะ WiFi เท่านั้น"
+                },
+                {
+                    "label": "D",
+                    "text": "IIoT ราคาถูกกว่า IoT ทั่วไป"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เน้น Critical Mission, Zero Downtime ในโรงงาน"
+        },
+        {
+            "id": 25,
+            "questionText": "เทคโนโลยีเครือข่ายใดเหมาะสำหรับ Smart Farming ที่พื้นที่กว้างไกลและไม่มีไฟฟ้าเข้าถึง (ต้องการส่งข้อมูลน้อยๆ แต่ไกลมาก)?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Wi-Fi"
+                },
+                {
+                    "label": "B",
+                    "text": "Bluetooth"
+                },
+                {
+                    "label": "C",
+                    "text": "LoRaWAN / NB-IoT"
+                },
+                {
+                    "label": "D",
+                    "text": "LAN"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "Low Power Wide Area Network ออกแบบมาเพื่อส่งไกลและกินไฟน้อย"
+        },
+        {
+            "id": 26,
+            "questionText": "\"Smart City\" ใช้ประโยชน์จาก IoT ในด้านใด?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "การจัดการจราจรอัจฉริยะ"
+                },
+                {
+                    "label": "B",
+                    "text": "การตรวจสอบมลพิษทางอากาศ"
+                },
+                {
+                    "label": "C",
+                    "text": "การบริหารจัดการขยะ"
+                },
+                {
+                    "label": "D",
+                    "text": "ถูกทุกข้อ"
+                }
+            ],
+            "correctAnswer": "D",
+            "explanation": "IoT เป็นโครงสร้างพื้นฐานของทุกระบบในเมืองอัจฉริยะ"
+        },
+        {
+            "id": 27,
+            "questionText": "เซนเซอร์ (Sensor) ในระบบ IoT ทำหน้าที่อะไร?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ประมวลผลข้อมูล"
+                },
+                {
+                    "label": "B",
+                    "text": "เปลี่ยนสภาพทางกายภาพ (เช่น แสง, อุณหภูมิ) เป็นสัญญาณไฟฟ้า/ข้อมูล"
+                },
+                {
+                    "label": "C",
+                    "text": "แสดงผลกราฟิก"
+                },
+                {
+                    "label": "D",
+                    "text": "จ่ายไฟให้อุปกรณ์"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Input device รับค่าจากสิ่งแวดล้อม"
+        },
+        {
+            "id": 28,
+            "questionText": "Edge Computing มีบทบาทอย่างไรในระบบ IoT?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ส่งข้อมูลทุกอย่างไปประมวลผลที่ Cloud เท่านั้น"
+                },
+                {
+                    "label": "B",
+                    "text": "ประมวลผลข้อมูลที่ตัวอุปกรณ์หรือใกล้แหล่งกำเนิดข้อมูล เพื่อลด Latency"
+                },
+                {
+                    "label": "C",
+                    "text": "ใช้สำหรับเก็บข้อมูลถาวรเท่านั้น"
+                },
+                {
+                    "label": "D",
+                    "text": "เป็นชื่อยี่ห้ออุปกรณ์ IoT"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ช่วยลดภาระ Bandwidth และตอบสนองได้เร็วกว่าส่งไป Cloud"
+        },
+        {
+            "id": 29,
+            "questionText": "ความเสี่ยงด้านความปลอดภัย (Security Risk) ที่พบบ่อยที่สุดในอุปกรณ์ IoT คือ?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "อุปกรณ์ระเบิด"
+                },
+                {
+                    "label": "B",
+                    "text": "การใช้รหัสผ่าน Default (เช่น admin/admin) และไม่อัปเดต Firmware"
+                },
+                {
+                    "label": "C",
+                    "text": "ราคาแพงเกินไป"
+                },
+                {
+                    "label": "D",
+                    "text": "อินเทอร์เน็ตล่ม"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เป็นช่องโหว่หลักที่ทำให้เกิด Botnet เช่น Mirai"
+        },
+        {
+            "id": 30,
+            "questionText": "Actuator (แอคชูเอเตอร์) ในระบบ IoT คืออะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "อุปกรณ์รับข้อมูล"
+                },
+                {
+                    "label": "B",
+                    "text": "อุปกรณ์แสดงผลหรือกลไกที่กระทำการทางกายภาพ (เช่น มอเตอร์หมุน, วาล์วเปิด)"
+                },
+                {
+                    "label": "C",
+                    "text": "แหล่งจ่ายไฟ"
+                },
+                {
+                    "label": "D",
+                    "text": "เสาอากาศ"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Output device ที่เปลี่ยนคำสั่งไฟฟ้าเป็นการเคลื่อนไหว"
+        },
+        {
+            "id": 31,
+            "questionText": "Wearable Device เช่น Smart Watch จัดเป็น IoT หรือไม่?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เป็น เพราะมีเซนเซอร์และเชื่อมต่ออินเทอร์เน็ต/มือถือได้"
+                },
+                {
+                    "label": "B",
+                    "text": "ไม่เป็น เพราะใส่ข้อมือ"
+                },
+                {
+                    "label": "C",
+                    "text": "ไม่เป็น เพราะใช้แบตเตอรี่"
+                },
+                {
+                    "label": "D",
+                    "text": "เป็นเฉพาะตอนดูเวลา"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "เข้าข่ายนิยาม IoT"
+        },
+        {
+            "id": 32,
+            "questionText": "ข้อใดคือสถาปัตยกรรม 3 Layers พื้นฐานของ IoT?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Network, Cloud, AI"
+                },
+                {
+                    "label": "B",
+                    "text": "Perception, Network, Application"
+                },
+                {
+                    "label": "C",
+                    "text": "Sensor, Wire, Monitor"
+                },
+                {
+                    "label": "D",
+                    "text": "Input, Process, Output"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Perception รับค่า -> Network ส่งค่า -> Application ใช้งาน"
+        },
+        {
+            "id": 33,
+            "questionText": "การนำ IoT มาใช้ในการบำรุงรักษาเครื่องจักรแบบ \"Predictive Maintenance\" คืออะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ซ่อมเมื่อเครื่องจักรพังแล้ว"
+                },
+                {
+                    "label": "B",
+                    "text": "ซ่อมตามตารางเวลาเป๊ะๆ ทุกเดือน"
+                },
+                {
+                    "label": "C",
+                    "text": "ใช้ข้อมูลจากเซนเซอร์วิเคราะห์เพื่อซ่อมก่อนที่จะพัง"
+                },
+                {
+                    "label": "D",
+                    "text": "ซื้อเครื่องจักรใหม่ทันที"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "ใช้ Data วิเคราะห์แนวโน้มความเสียหายเพื่อลด Downtime"
+        },
+        {
+            "id": 34,
+            "questionText": "Zigbee คืออะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ชื่อหุ่นยนต์"
+                },
+                {
+                    "label": "B",
+                    "text": "มาตรฐานการสื่อสารไร้สายระยะใกล้ กินไฟต่ำ (นิยมใน Smart Home)"
+                },
+                {
+                    "label": "C",
+                    "text": "แอปพลิเคชันฟังเพลง"
+                },
+                {
+                    "label": "D",
+                    "text": "เซนเซอร์วัดแสง"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เป็น Protocol แบบ Mesh Network ยอดนิยม"
+        },
+        {
+            "id": 35,
+            "questionText": "Raspberry Pi ต่างจาก Arduino อย่างไร (ในภาพรวม)?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Raspberry Pi เป็นคอมพิวเตอร์จิ๋ว (มี OS), Arduino เป็น Microcontroller"
+                },
+                {
+                    "label": "B",
+                    "text": "Arduino แรงกว่า"
+                },
+                {
+                    "label": "C",
+                    "text": "เหมือนกันทุกประการ"
+                },
+                {
+                    "label": "D",
+                    "text": "Raspberry Pi ใช้สำหรับทำอาหาร"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "Raspberry Pi รัน Linux ได้ ทำงานซับซ้อนกว่า"
+        },
+        {
+            "id": 36,
+            "questionText": "ข้อใดอธิบาย \"Digital Twin\" ในบริบทของ IoT ได้ถูกต้อง?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "การสำรองข้อมูล IoT ไว้สองชุด"
+                },
+                {
+                    "label": "B",
+                    "text": "แบบจำลองเสมือน (Virtual Model) ของวัตถุทางกายภาพที่อัปเดตข้อมูลแบบ Real-time"
+                },
+                {
+                    "label": "C",
+                    "text": "การมีเซนเซอร์สองตัวซ้อนกัน"
+                },
+                {
+                    "label": "D",
+                    "text": "หน้าจอแสดงผลแบบคู่"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ใช้จำลองสถานการณ์เพื่อการวิเคราะห์และตรวจสอบ"
+        },
+        {
+            "id": 37,
+            "questionText": "IPv6 มีความสำคัญต่อ IoT อย่างไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ทำให้เน็ตเร็วขึ้น"
+                },
+                {
+                    "label": "B",
+                    "text": "มีจำนวน IP Address มหาศาล รองรับอุปกรณ์ IoT จำนวนมากในอนาคต"
+                },
+                {
+                    "label": "C",
+                    "text": "ทำให้ประหยัดไฟ"
+                },
+                {
+                    "label": "D",
+                    "text": "ไม่มีความสำคัญ"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "IPv4 ไม่เพียงพอต่อจำนวนอุปกรณ์ IoT ที่เพิ่มขึ้น"
+        },
+        {
+            "id": 38,
+            "questionText": "Smart Meter (มิเตอร์อัจฉริยะ) จัดเป็นตัวอย่างการใช้งาน IoT ด้านใด?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Energy Management (การจัดการพลังงาน)"
+                },
+                {
+                    "label": "B",
+                    "text": "Healthcare"
+                },
+                {
+                    "label": "C",
+                    "text": "Transportation"
+                },
+                {
+                    "label": "D",
+                    "text": "Retail"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "ใช้อ่านค่าไฟ/น้ำ แบบ Real-time"
+        },
+        {
+            "id": 39,
+            "questionText": "Shodan คืออะไรในวงการ IoT?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ยี่ห้อเซนเซอร์"
+                },
+                {
+                    "label": "B",
+                    "text": "Search Engine สำหรับค้นหาอุปกรณ์ที่เชื่อมต่ออินเทอร์เน็ต (รวมถึง IoT ที่ไม่ปลอดภัย)"
+                },
+                {
+                    "label": "C",
+                    "text": "ภาษาโปรแกรม"
+                },
+                {
+                    "label": "D",
+                    "text": "มาตรฐานความปลอดภัย"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "แฮกเกอร์มักใช้หาช่องโหว่ของอุปกรณ์ IoT"
+        },
+        {
+            "id": 40,
+            "questionText": "ข้อใดเป็นอุปกรณ์ IoT?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ก้อนหิน"
+                },
+                {
+                    "label": "B",
+                    "text": "สมุดจด"
+                },
+                {
+                    "label": "C",
+                    "text": "หลอดไฟที่สั่งเปิด-ปิดผ่านแอปมือถือได้"
+                },
+                {
+                    "label": "D",
+                    "text": "แว่นตากันแดดธรรมดา"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "หลอดไฟอัจฉริยะมีการเชื่อมต่อและควบคุมผ่านเครือข่ายได้"
+        }
+    ]
+}

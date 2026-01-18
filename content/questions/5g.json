@@ -1,0 +1,522 @@
+{
+    "topicId": "5g",
+    "topicName": "5G Technology",
+    "topicNameTH": "เทคโนโลยี 5G",
+    "summary": {
+        "definition": "เทคโนโลยีเครือข่ายมือถือยุคที่ 5 (Generation 5) ที่เน้นความเร็วสูง ความหน่วงต่ำ และรองรับอุปกรณ์จำนวนมาก",
+        "components": [
+            "eMBB (Enhanced Mobile Broadband): เร็วแรง (1-10 Gbps) ดูหนัง 8K",
+            "URLLC (Ultra-Reliable Low Latency): ความหน่วงต่ำ < 1ms (ผ่าตัดทางไกล, รถไร้คนขับ)",
+            "mMTC (Massive Machine Type Comm): รองรับ IoT มหาศาล (1 ล้านเครื่อง/ตร.กม.)"
+        ],
+        "future": "6G: เร็วกว่า 5G ถึง 100 เท่า, ใช้ AI ขับเคลื่อนเครือข่าย, Hologram 3D"
+    },
+    "totalQuestions": 20,
+    "distribution": {
+        "easy": 6,
+        "medium": 10,
+        "hard": 4
+    },
+    "questions": [
+        {
+            "id": 101,
+            "questionText": "5G มีความเร็วสูงสุดโดยประมาณเท่าไร (ทางทฤษฎี)?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "100 Mbps"
+                },
+                {
+                    "label": "B",
+                    "text": "1-10 Gbps"
+                },
+                {
+                    "label": "C",
+                    "text": "10 Kbps"
+                },
+                {
+                    "label": "D",
+                    "text": "500 Gbps"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เร็วกว่า 4G ประมาณ 10-100 เท่า"
+        },
+        {
+            "id": 102,
+            "questionText": "ความหน่วง (Latency) ของ 5G ต่ำสุดอยู่ที่ประมาณเท่าใด?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "50 ms"
+                },
+                {
+                    "label": "B",
+                    "text": "10 ms"
+                },
+                {
+                    "label": "C",
+                    "text": "1 ms"
+                },
+                {
+                    "label": "D",
+                    "text": "100 ms"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "เหมาะสำหรับงาน Real-time critical"
+        },
+        {
+            "id": 103,
+            "questionText": "คุณสมบัติ URLLC (Ultra-Reliable Low Latency Communications) ของ 5G เหมาะกับงานด้านใด?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "การดู Youtube 4K"
+                },
+                {
+                    "label": "B",
+                    "text": "การผ่าตัดทางไกล (Remote Surgery) และรถยนต์ไร้คนขับ"
+                },
+                {
+                    "label": "C",
+                    "text": "การอ่านอีเมล"
+                },
+                {
+                    "label": "D",
+                    "text": "Smart Meter"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ต้องการความแม่นยำและห้ามดีเลย์เด็ดขาด"
+        },
+        {
+            "id": 104,
+            "questionText": "mMTC (Massive Machine Type Communications) ออกแบบมาเพื่อรองรับอะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "รองรับคนโทรพร้อมกันเยอะๆ"
+                },
+                {
+                    "label": "B",
+                    "text": "รองรับอุปกรณ์ IoT จำนวนมหาศาลในพื้นที่จำกัด (เช่น Smart City Sensor)"
+                },
+                {
+                    "label": "C",
+                    "text": "รองรับการดาวน์โหลดไฟล์ใหญ่"
+                },
+                {
+                    "label": "D",
+                    "text": "รองรับเกม VR"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "รองรับได้ถึง 1 ล้านอุปกรณ์ต่อตารางกิโลเมตร"
+        },
+        {
+            "id": 105,
+            "questionText": "G ใน 5G ย่อมาจากอะไร?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Gigabit"
+                },
+                {
+                    "label": "B",
+                    "text": "Generation (ยุค)"
+                },
+                {
+                    "label": "C",
+                    "text": "Global"
+                },
+                {
+                    "label": "D",
+                    "text": "Google"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Generation หมายถึงยุคที่ 5"
+        },
+        {
+            "id": 106,
+            "questionText": "Network Slicing ใน 5G คืออะไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "การตัดสายเคเบิล"
+                },
+                {
+                    "label": "B",
+                    "text": "การแบ่งทรัพยากรเครือข่ายออกเป็นส่วนๆ (Virtual Networks) เพื่อให้บริการที่ต้องการคุณภาพต่างกันได้บนโครงข่ายเดียวกัน"
+                },
+                {
+                    "label": "C",
+                    "text": "การลดความเร็วเน็ต"
+                },
+                {
+                    "label": "D",
+                    "text": "การแชร์ Wi-Fi"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เช่น Slice หนึ่งสำหรับ IoT, อีก Slice สำหรับ VDO Streaming"
+        },
+        {
+            "id": 107,
+            "questionText": "เทคโนโลยี 1G (ยุคแรก) รองรับการสื่อสารแบบใด?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Voice Only (เสียงอย่างเดียว แบบ Analog)"
+                },
+                {
+                    "label": "B",
+                    "text": "SMS"
+                },
+                {
+                    "label": "C",
+                    "text": "Internet"
+                },
+                {
+                    "label": "D",
+                    "text": "Video Call"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "1G รองรับเสียงแบบ Analog เท่านั้น"
+        },
+        {
+            "id": 108,
+            "questionText": "ยุคใดที่เป็นจุดเริ่มต้นของ Mobile Internet (Data) อย่างแท้จริง?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "1G"
+                },
+                {
+                    "label": "B",
+                    "text": "2G"
+                },
+                {
+                    "label": "C",
+                    "text": "3G"
+                },
+                {
+                    "label": "D",
+                    "text": "5G"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "เริ่มมีความเร็วระดับ Mbps ใช้งาน Web/Email ได้จริงจัง"
+        },
+        {
+            "id": 109,
+            "questionText": "การคาดการณ์ 6G (ยุคที่ 6) จะมีจุดเด่นอะไรที่เหนือกว่า 5G?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ความเร็ว 1 Tbps และการสื่อสารแบบ Hologram 3D"
+                },
+                {
+                    "label": "B",
+                    "text": "ช้าลงแต่เสถียร"
+                },
+                {
+                    "label": "C",
+                    "text": "ใช้สายแลน"
+                },
+                {
+                    "label": "D",
+                    "text": "ไม่มีการเปลี่ยนแปลง"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "ผสานโลกจริงกับโลกเสมือน Metaverse แบบไร้รอยต่อ"
+        },
+        {
+            "id": 110,
+            "questionText": "4G LTE มีความเร็วเฉลี่ยประมาณเท่าใด?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "14.4 Kbps"
+                },
+                {
+                    "label": "B",
+                    "text": "100-300 Mbps"
+                },
+                {
+                    "label": "C",
+                    "text": "10 Gbps"
+                },
+                {
+                    "label": "D",
+                    "text": "1 Tbps"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "4G LTE มีความเร็วประมาณ 100-300 Mbps"
+        },
+        {
+            "id": 111,
+            "questionText": "5G ช่วยส่งเสริมเทคโนโลยี AR/VR อย่างไร?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ทำให้แว่นราคาถูกลง"
+                },
+                {
+                    "label": "B",
+                    "text": "ส่งข้อมูลภาพความละเอียดสูงได้ลื่นไหล ไม่เวียนหัว (Low Latency)"
+                },
+                {
+                    "label": "C",
+                    "text": "ทำให้แบตเตอรี่ทนขึ้น"
+                },
+                {
+                    "label": "D",
+                    "text": "ไม่ช่วยอะไร"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Low Latency ทำให้ภาพลื่นไหลไม่เวียนหัว"
+        },
+        {
+            "id": 112,
+            "questionText": "คลื่น Millimeter Wave (mmWave) ใน 5G มีลักษณะอย่างไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ความถี่ต่ำ ส่งได้ไกล"
+                },
+                {
+                    "label": "B",
+                    "text": "ความถี่สูงมาก ส่งข้อมูลได้เยอะแต่ระยะส่งสั้นและทะลุสิ่งกีดขวางยาก"
+                },
+                {
+                    "label": "C",
+                    "text": "ใช้ใต้น้ำได้ดี"
+                },
+                {
+                    "label": "D",
+                    "text": "ความถี่เดียวกับวิทยุ FM"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ต้องตั้งเสาถี่ๆ"
+        },
+        {
+            "id": 113,
+            "questionText": "การนำ AI มาใช้ในเครือข่าย 6G (AI-Native) มีประโยชน์อย่างไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "สร้างภาพวาด"
+                },
+                {
+                    "label": "B",
+                    "text": "ปรับแต่งเครือข่ายอัตโนมัติ (Self-Optimizing) และคาดการณ์ปัญหา (Predictive)"
+                },
+                {
+                    "label": "C",
+                    "text": "แทนที่ Call Center"
+                },
+                {
+                    "label": "D",
+                    "text": "เล่นเกมแทนคน"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "บริหารจัดการทรัพยากรเครือข่ายแบบ Real-time"
+        },
+        {
+            "id": 114,
+            "questionText": "ข้อใด ไม่ใช่ ประโยชน์หลักของ 5G?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ดาวน์โหลดหนังเร็วขึ้น"
+                },
+                {
+                    "label": "B",
+                    "text": "ควบคุมเครื่องจักรระยะไกล"
+                },
+                {
+                    "label": "C",
+                    "text": "ทำให้โทรศัพท์ทนทานตกไม่แตก"
+                },
+                {
+                    "label": "D",
+                    "text": "รถยนต์ไร้คนขับ"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "เป็นเรื่อง Hardware ไม่เกี่ยวกับ Network"
+        },
+        {
+            "id": 115,
+            "questionText": "Small Cells ใน 5G คืออะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "แบตเตอรี่ก้อนเล็ก"
+                },
+                {
+                    "label": "B",
+                    "text": "สถานีฐานขนาดเล็ก ที่ติดตั้งถี่ๆ เพื่อขยายสัญญาณความถี่สูง (mmWave)"
+                },
+                {
+                    "label": "C",
+                    "text": "มือถือเครื่องเล็ก"
+                },
+                {
+                    "label": "D",
+                    "text": "โปรโมชั่นราคาถูก"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "สถานีฐานขนาดเล็กติดตั้งถี่ๆ"
+        },
+        {
+            "id": 116,
+            "questionText": "เทคโนโลยี Beamforming ใน 5G ช่วยเรื่องอะไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เปลี่ยนสีเสาสัญญาณ"
+                },
+                {
+                    "label": "B",
+                    "text": "บีบสัญญาณส่งตรงไปยังอุปกรณ์ผู้รับ แทนที่จะกระจายรอบทิศทาง เพื่อเพิ่มความแรงและลดการรบกวน"
+                },
+                {
+                    "label": "C",
+                    "text": "สร้างเลเซอร์"
+                },
+                {
+                    "label": "D",
+                    "text": "ลดความร้อน"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "บีบสัญญาณส่งตรงไปยังอุปกรณ์ผู้รับ"
+        },
+        {
+            "id": 117,
+            "questionText": "ยุค 2G (GSM) มีจุดเด่นคือ?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เริ่มส่ง SMS และเป็นระบบ Digital"
+                },
+                {
+                    "label": "B",
+                    "text": "ดู YouTube ได้"
+                },
+                {
+                    "label": "C",
+                    "text": "ใช้ 5G"
+                },
+                {
+                    "label": "D",
+                    "text": "วิดีโอคอลชัดแจ๋ว"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "เปลี่ยนจาก Analog เป็น Digital Voice และมี Data นิดหน่อย"
+        },
+        {
+            "id": 118,
+            "questionText": "อุตสาหกรรมใดจะได้ประโยชน์จาก 5G มากที่สุด?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "โรงงานอุตสาหกรรม (Automation)"
+                },
+                {
+                    "label": "B",
+                    "text": "การแพทย์ (Telemedicine)"
+                },
+                {
+                    "label": "C",
+                    "text": "บันเทิง (Streaming/Gaming)"
+                },
+                {
+                    "label": "D",
+                    "text": "ถูกทุกข้อ"
+                }
+            ],
+            "correctAnswer": "D",
+            "explanation": "5G ประโยชน์กว้างขวางทุกอุตสาหกรรม"
+        },
+        {
+            "id": 119,
+            "questionText": "Internet of Everything (IoE) ในยุค 6G หมายถึงอะไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เชื่อมต่อเฉพาะคอมพิวเตอร์"
+                },
+                {
+                    "label": "B",
+                    "text": "การเชื่อมโยง คน ข้อมูล กระบวนการ และสิ่งของ เข้าด้วยกันทั้งหมด"
+                },
+                {
+                    "label": "C",
+                    "text": "อินเทอร์เน็ตฟรีทุกที่"
+                },
+                {
+                    "label": "D",
+                    "text": "มีแต่หุ่นยนต์ใช้งาน"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ขั้นกว่าของ IoT"
+        },
+        {
+            "id": 120,
+            "questionText": "ปัญหาความหน่วง (Latency) ในยุค 1G อยู่ที่ประมาณเท่าใด?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "1 ms"
+                },
+                {
+                    "label": "B",
+                    "text": "800 ms (เกือบ 1 วินาที)"
+                },
+                {
+                    "label": "C",
+                    "text": "10 ms"
+                },
+                {
+                    "label": "D",
+                    "text": "0 ms"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ช้ามากเมื่อเทียบกับปัจจุบัน"
+        }
+    ]
+}

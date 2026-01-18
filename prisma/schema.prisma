@@ -1,0 +1,149 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// ผู้ใช้ระบบ
+model User {
+  id           Int       @id @default(autoincrement())
+  email        String    @unique
+  passwordHash String    @map("password_hash")
+  displayName  String    @map("display_name")
+  createdAt    DateTime  @default(now()) @map("created_at")
+  lastLogin    DateTime? @map("last_login")
+  
+  attempts     Attempt[]
+  
+  @@map("users")
+}
+
+// หัวข้อเนื้อหา
+model Topic {
+  id             Int       @id @default(autoincrement())
+  slug           String    @unique
+  nameTh         String    @map("name_th")
+  nameEn         String    @map("name_en")
+  summaryContent String    @db.LongText @map("summary_content")
+  readingTimeMin Int       @default(5) @map("reading_time_min")
+  sortOrder      Int       @map("sort_order")
+  createdAt      DateTime  @default(now()) @map("created_at")
+  
+  questions      Question[]
+  attempts       Attempt[]
+  
+  @@map("topics")
+}
+
+// คำถาม
+model Question {
+  id                Int      @id @default(autoincrement())
+  topicId           Int      @map("topic_id")
+  questionText      String   @db.Text @map("question_text")
+  correctChoiceId   Int?     @map("correct_choice_id")
+  explanation       String   @db.Text
+  wrongExplanations Json     @map("wrong_explanations")
+  difficulty        Difficulty
+  sortOrder         Int      @map("sort_order")
+  createdAt         DateTime @default(now()) @map("created_at")
+  
+  topic             Topic    @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  choices           Choice[]
+  tags              QuestionTag[]
+  answers           Answer[]
+  
+  @@map("questions")
+}
+
+// ตัวเลือก
+model Choice {
+  id         Int      @id @default(autoincrement())
+  questionId Int      @map("question_id")
+  label      String   @db.Char(1)
+  choiceText String   @db.Text @map("choice_text")
+  sortOrder  Int      @map("sort_order")
+  
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  answers    Answer[]
+  
+  @@map("choices")
+}
+
+// แท็ก
+model Tag {
+  id          Int           @id @default(autoincrement())
+  name        String        @unique
+  displayName String        @map("display_name")
+  
+  questions   QuestionTag[]
+  
+  @@map("tags")
+}
+
+// ความสัมพันธ์ Question-Tag
+model QuestionTag {
+  questionId Int @map("question_id")
+  tagId      Int @map("tag_id")
+  
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  tag        Tag      @relation(fields: [tagId], references: [id], onDelete: Cascade)
+  
+  @@id([questionId, tagId])
+  @@map("question_tags")
+}
+
+// ความพยายามทำข้อสอบ
+model Attempt {
+  id             Int        @id @default(autoincrement())
+  userId         Int        @map("user_id")
+  topicId        Int        @map("topic_id")
+  mode           QuizMode   @default(normal)
+  score          Int?
+  totalQuestions Int        @map("total_questions")
+  timeSeconds    Int?       @map("time_seconds")
+  startedAt      DateTime   @default(now()) @map("started_at")
+  completedAt    DateTime?  @map("completed_at")
+  
+  user           User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  topic          Topic      @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  answers        Answer[]
+  
+  @@map("attempts")
+}
+
+// คำตอบ
+model Answer {
+  id               Int      @id @default(autoincrement())
+  attemptId        Int      @map("attempt_id")
+  questionId       Int      @map("question_id")
+  selectedChoiceId Int?     @map("selected_choice_id")
+  isCorrect        Boolean? @map("is_correct")
+  timeSeconds      Int?     @map("time_seconds")
+  
+  attempt          Attempt  @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  question         Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  selectedChoice   Choice?  @relation(fields: [selectedChoiceId], references: [id])
+  
+  @@map("answers")
+}
+
+// Enums
+enum Difficulty {
+  easy
+  medium
+  hard
+}
+
+enum QuizMode {
+  normal
+  retry_wrong
+  random
+  by_difficulty
+  practice_weakness
+}

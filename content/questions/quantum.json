@@ -1,0 +1,529 @@
+{
+    "topicId": "quantum",
+    "topicName": "Quantum Computing",
+    "topicNameTH": "การคำนวณเชิงควอนตัม",
+    "summary": {
+        "definition": "คอมพิวเตอร์รูปแบบใหม่ที่ใช้หลักการกลศาสตร์ควอนตัม ประมวลผลได้เร็วกว่าคอมพิวเตอร์ยุคปัจจุบันมหาศาล",
+        "components": [
+            "Qubit (Quantum Bit): หน่วยข้อมูลที่สามารถเป็น 0 และ 1 ได้พร้อมกัน (Superposition)",
+            "Superposition: สถานะทับซ้อน",
+            "Entanglement: การพัวพันเชิงควอนตัม (เปลี่ยนสถานะตัวหนึ่ง อีกตัวเปลี่ยนตามทันที)"
+        ],
+        "examples": [
+            "การจำลองโครงสร้างโมเลกุลยาใหม่",
+            "การเจาะรหัสผ่าน (Cryptography)",
+            "การแก้ปัญหา Optimization ซับซ้อน"
+        ],
+        "warnings": [
+            "ยังอยู่ในช่วงพัฒนา (Early stage) และต้องทำงานในอุณหภูมิเย็นจัด"
+        ]
+    },
+    "totalQuestions": 20,
+    "distribution": {
+        "easy": 6,
+        "medium": 10,
+        "hard": 4
+    },
+    "questions": [
+        {
+            "id": 61,
+            "questionText": "หน่วยข้อมูลพื้นฐานของ Quantum Computer เรียกว่าอะไร?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Bit"
+                },
+                {
+                    "label": "B",
+                    "text": "Byte"
+                },
+                {
+                    "label": "C",
+                    "text": "Qubit"
+                },
+                {
+                    "label": "D",
+                    "text": "Pixel"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "Quantum Bit"
+        },
+        {
+            "id": 62,
+            "questionText": "คอมพิวเตอร์ปกติ (Classical Computer) ประมวลผลข้อมูลในสถานะใด?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "0 หรือ 1 อย่างใดอย่างหนึ่ง"
+                },
+                {
+                    "label": "B",
+                    "text": "0 และ 1 พร้อมกัน"
+                },
+                {
+                    "label": "C",
+                    "text": "ระหว่าง 0 ถึง 9"
+                },
+                {
+                    "label": "D",
+                    "text": "A ถึง Z"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "Binary system"
+        },
+        {
+            "id": 63,
+            "questionText": "ปรากฏการณ์ \"Superposition\" ในทางควอนตัมหมายถึงอะไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "คอมพิวเตอร์วางซ้อนกัน"
+                },
+                {
+                    "label": "B",
+                    "text": "ความสามารถของ Qubit ในการเป็นสถานะ 0 และ 1 ได้ พร้อมๆ กัน"
+                },
+                {
+                    "label": "C",
+                    "text": "การประมวลผลที่ช้าลง"
+                },
+                {
+                    "label": "D",
+                    "text": "การเชื่อมต่ออินเทอร์เน็ตความเร็วสูง"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ทำให้ประมวลผลหลายทางเลือกได้พร้อมกันแบบ Parallel มหาศาล"
+        },
+        {
+            "id": 64,
+            "questionText": "ปรากฏการณ์ \"Entanglement\" (การพัวพัน) คืออะไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "สายไฟพันกัน"
+                },
+                {
+                    "label": "B",
+                    "text": "ความสัมพันธ์ของ Qubit ที่เมื่อวัดค่าตัวหนึ่ง จะรู้ค่าของอีกตัวหนึ่งทันทีแม้จะอยู่ห่างกัน"
+                },
+                {
+                    "label": "C",
+                    "text": "การที่ Qubit ร้อนจนละลาย"
+                },
+                {
+                    "label": "D",
+                    "text": "การติดไวรัสคอมพิวเตอร์"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Spooky action at a distance - Einstein"
+        },
+        {
+            "id": 65,
+            "questionText": "Quantum Computer เก่งกว่าคอมพิวเตอร์ปกติในเรื่องใด?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "พิมพ์เอกสาร Word"
+                },
+                {
+                    "label": "B",
+                    "text": "ดูหนัง 8K"
+                },
+                {
+                    "label": "C",
+                    "text": "แก้ปัญหาที่มีความซับซ้อนสูงมาก เช่น การจำลองโมเลกุล หรือถอดรหัส"
+                },
+                {
+                    "label": "D",
+                    "text": "เล่นเกมกราฟิกสวยๆ"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "งาน Optimization และ Simulation"
+        },
+        {
+            "id": 66,
+            "questionText": "ผลกระทบที่น่ากลัวที่สุดของ Quantum Computing ต่อวงการ Cybersecurity คือ?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ทำให้เน็ตหลุดบ่อย"
+                },
+                {
+                    "label": "B",
+                    "text": "สามารถถอดรหัส (Encryption) มาตรฐานปัจจุบัน (เช่น RSA) ได้ในเวลาอันสั้น"
+                },
+                {
+                    "label": "C",
+                    "text": "ทำให้คอมพิวเตอร์ระเบิด"
+                },
+                {
+                    "label": "D",
+                    "text": "ไม่มีผลกระทบ"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Shor's Algorithm สามารถแยกตัวประกอบจำนวนเฉพาะได้เร็วมาก"
+        },
+        {
+            "id": 67,
+            "questionText": "บริษัทใดที่เป็นผู้นำในการพัฒนา Quantum Computer (เลือกข้อที่ถูกที่สุด)?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ร้านสะดวกซื้อ"
+                },
+                {
+                    "label": "B",
+                    "text": "IBM, Google, Microsoft"
+                },
+                {
+                    "label": "C",
+                    "text": "บริษัทน้ำมัน"
+                },
+                {
+                    "label": "D",
+                    "text": "บริษัทเฟอร์นิเจอร์"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Tech Giants ลงทุนมหาศาลในด้านนี้"
+        },
+        {
+            "id": 68,
+            "questionText": "Quantum Supremacy คืออะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ชื่อภาพยนตร์"
+                },
+                {
+                    "label": "B",
+                    "text": "จุดที่ Quantum Computer สามารถแก้ปัญหาที่ Supercomputer ที่ดีที่สุดในโลกแก้ไม่ได้ (หรือใช้เวลานานเกินไป)"
+                },
+                {
+                    "label": "C",
+                    "text": "การที่คอมพิวเตอร์ครองโลก"
+                },
+                {
+                    "label": "D",
+                    "text": "ราคาหุ้นควอนตัมขึ้น"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Google เคยประกาศว่า Sycamore processor ทำได้แล้ว"
+        },
+        {
+            "id": 69,
+            "questionText": "สภาพแวดล้อมที่ Quantum Computer ส่วนใหญ่ในปัจจุบันต้องการคือ?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "อุณหภูมิห้องปกติ"
+                },
+                {
+                    "label": "B",
+                    "text": "อุณหภูมิเย็นจัดใกล้ศูนย์สัมบูรณ์ (Near Absolute Zero)"
+                },
+                {
+                    "label": "C",
+                    "text": "อุณหภูมิร้อนจัด"
+                },
+                {
+                    "label": "D",
+                    "text": "ใต้น้ำ"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เพื่อลด Noise และรักษาเสถียรภาพของ Qubit"
+        },
+        {
+            "id": 70,
+            "questionText": "ประโยชน์ของ Quantum Computing ในวงการยา (Pharmaceutical) คือ?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ผลิตยาเม็ดใหญ่ขึ้น"
+                },
+                {
+                    "label": "B",
+                    "text": "จำลองโครงสร้างโมเลกุลเพื่อค้นหายาใหม่ๆ ได้รวดเร็วและแม่นยำ"
+                },
+                {
+                    "label": "C",
+                    "text": "ขายยาออนไลน์"
+                },
+                {
+                    "label": "D",
+                    "text": "บันทึกประวัติคนไข้"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Simulation ระดับโมเลกุลทำได้ยากในคอมปกติ"
+        },
+        {
+            "id": 71,
+            "questionText": "Classical Bit มีได้กี่สถานะในเวลาหนึ่ง?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "1 สถานะ (0 หรือ 1)"
+                },
+                {
+                    "label": "B",
+                    "text": "2 สถานะพร้อมกัน"
+                },
+                {
+                    "label": "C",
+                    "text": "3 สถานะ"
+                },
+                {
+                    "label": "D",
+                    "text": "ไม่จำกัด"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "Classical bit มีค่าเป็น 0 หรือ 1 เท่านั้น ไม่สามารถเป็นทั้งสองได้พร้อมกัน"
+        },
+        {
+            "id": 72,
+            "questionText": "ปัญหา Optimization (การหาคำตอบที่ดีที่สุดจากทางเลือกมหาศาล) เช่น การจัดเส้นทางขนส่ง เหมาะกับคอมพิวเตอร์ชนิดใด?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เครื่องคิดเลข"
+                },
+                {
+                    "label": "B",
+                    "text": "Classical Computer"
+                },
+                {
+                    "label": "C",
+                    "text": "Quantum Computer"
+                },
+                {
+                    "label": "D",
+                    "text": "Analog Computer"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "Quantum ประมวลผลทุกความเป็นไปได้พร้อมกัน"
+        },
+        {
+            "id": 73,
+            "questionText": "ข้อใดคืออุปสรรคสำคัญในการพัฒนา Quantum Computer ปัจจุบัน?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ไม่มีคนใช้งาน"
+                },
+                {
+                    "label": "B",
+                    "text": "ปัญหา Error Rate และความไม่เสถียรของ Qubit (Quantum Noise/Decoherence)"
+                },
+                {
+                    "label": "C",
+                    "text": "ราคาถูกเกินไป"
+                },
+                {
+                    "label": "D",
+                    "text": "ซอฟต์แวร์มีเยอะเกินไป"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Qubit เปราะบางมากต่อการรบกวนจากสิ่งแวดล้อม"
+        },
+        {
+            "id": 74,
+            "questionText": "Post-Quantum Cryptography หมายถึงอะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "การเข้ารหัสแบบเดิม"
+                },
+                {
+                    "label": "B",
+                    "text": "อัลกอริทึมเข้ารหัสแบบใหม่ที่ออกแบบมาเพื่อทนทานต่อการถูกเจาะโดย Quantum Computer"
+                },
+                {
+                    "label": "C",
+                    "text": "การเลิกใช้รหัสผ่าน"
+                },
+                {
+                    "label": "D",
+                    "text": "การเข้ารหัสด้วยกระดาษ"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เตรียมรับมือยุค Quantum"
+        },
+        {
+            "id": 75,
+            "questionText": "Quantum Computing ใช้หลักการทางฟิสิกส์แขนงใด?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "กลศาสตร์นิวตัน"
+                },
+                {
+                    "label": "B",
+                    "text": "กลศาสตร์ควอนตัม"
+                },
+                {
+                    "label": "C",
+                    "text": "อุณหพลศาสตร์"
+                },
+                {
+                    "label": "D",
+                    "text": "ดาราศาสตร์"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ใช้หลักกลศาสตร์ควอนตัม (Quantum Mechanics)"
+        },
+        {
+            "id": 76,
+            "questionText": "Qubit สามารถสร้างจากอะไรได้บ้าง?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Superconducting loops, Trapped ions, Photons"
+                },
+                {
+                    "label": "B",
+                    "text": "ซิลิคอนทรานซิสเตอร์แบบเดิมเท่านั้น"
+                },
+                {
+                    "label": "C",
+                    "text": "หลอดสุญญากาศ"
+                },
+                {
+                    "label": "D",
+                    "text": "น้ำ"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "มีหลายเทคนิคในการสร้าง Qubit"
+        },
+        {
+            "id": 77,
+            "questionText": "Grover's Algorithm ในทางควอนตัม ใช้ทำอะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "แยกตัวประกอบ"
+                },
+                {
+                    "label": "B",
+                    "text": "ค้นหาข้อมูลในฐานข้อมูลที่ไม่มีโครงสร้าง (Unstructured Search) ได้เร็วกว่าคอมปกติ"
+                },
+                {
+                    "label": "C",
+                    "text": "วาดรูป"
+                },
+                {
+                    "label": "D",
+                    "text": "เล่นเพลง"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เพิ่มความเร็วแบบ Quadratic speedup"
+        },
+        {
+            "id": 78,
+            "questionText": "Shor's Algorithm โด่งดังในเรื่องใด?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "การค้นหาข้อมูล"
+                },
+                {
+                    "label": "B",
+                    "text": "การแยกตัวประกอบจำนวนเต็ม (Integer Factorization) ซึ่งใช้เจาะรหัส RSA"
+                },
+                {
+                    "label": "C",
+                    "text": "การจำลองสภาพอากาศ"
+                },
+                {
+                    "label": "D",
+                    "text": "การเล่นหมากรุก"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Exponential speedup ในการแยกตัวประกอบ"
+        },
+        {
+            "id": 79,
+            "questionText": "เราสามารถซื้อ Quantum Computer มาตั้งที่บ้านได้หรือยัง (ณ ปี 2024)?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ได้แล้ว ราคาถูกมาก"
+                },
+                {
+                    "label": "B",
+                    "text": "ยังไม่ได้ ยังเป็นเครื่องขนาดใหญ่ในห้องแล็บและให้บริการผ่าน Cloud เป็นหลัก"
+                },
+                {
+                    "label": "C",
+                    "text": "ได้ แต่ต้องขออนุญาตตำรวจ"
+                },
+                {
+                    "label": "D",
+                    "text": "แถมมากับหนังสือการ์ตูน"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ยังต้องใช้บริการผ่าน Cloud เช่น IBM Quantum Experience"
+        },
+        {
+            "id": 80,
+            "questionText": "การให้บริการ Quantum Computing ผ่าน Cloud เรียกว่าอะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "QaaS (Quantum as a Service)"
+                },
+                {
+                    "label": "B",
+                    "text": "SaaS"
+                },
+                {
+                    "label": "C",
+                    "text": "IaaS"
+                },
+                {
+                    "label": "D",
+                    "text": "PaaS"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "เช่น IBM Quantum Experience"
+        }
+    ]
+}

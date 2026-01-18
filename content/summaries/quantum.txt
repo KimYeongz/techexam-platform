@@ -1,0 +1,203 @@
+Quantum Computing
+Beyond Bits, Into the Qubits
+Let Us Start …
+Part 1: The World of Classical Computing
+What is a “Computer”?
+What is "Computing"? 
+Solving 
+problems with 
+instructions
+Calculations, 
+data processing, 
+logic
+From simple 
+maths to 
+complex AI
+The Building Block: The Bit (0 or 1) 
+• All computers use bits
+• A bit is like a light switch: either ON (1) or 
+OFF (0)
+• It's a simple, definite state
+• Everything digital is built from millions/billions 
+of bits
+Classical Computers: 
+Solving Problems with Bits
+• Process information step-by-step (sequentially)
+• Very fast at what they do (billions of 
+operations/sec)
+• Great for most tasks: Browse, word processing, 
+gaming
+• But hit limits for certain complex problems
+The 'Limits' of Classical Computers
+• Scale: Problems with too many possibilities to check one-by-
+one
+• Simulation: Modeling tiny, complex particles (atoms, 
+molecules)
+• Optimisation: Finding the absolute best solution from infinite 
+choices
+• Time: Some problems would take longer than the age of the 
+universe!
+Part 2: Entering the Quantum World
+Quantum Mechanics - Oppenheimer (2023)
+A New Kind of Computer?
+• What if our computational foundation wasn't 
+just 0 or 1?
+• What if it could be 0, 1, AND both at the same 
+time?
+• Welcome to Quantum Computing!
+The Quantum Bit: The Qubit
+• Quantum computers use qubits
+• A qubit can be 0, 1, or both at the same time!
+• This 'both at the same time' state is called 
+Superposition
+Analogy: The Dimmer Switch
+• Classical Bit: Regular ON/OFF light switch
+• Qubit: A dimmer switch
+• Can be OFF, ON, or ANY brightness level in 
+between!
+• Allows for richer, more complex information 
+states
+More Qubits, More Power
+• Classical: 3 bits can represent 8 numbers (000-111)
+• Quantum: 3 qubits in superposition can represent 
+all 8 numbers simultaneously
+• Power grows exponentially (2N)
+• Small increase in qubits = HUGE increase in 
+potential
+The Second Quantum Phenomenon: Entanglement
+• Qubits can be linked in a special, deep way.
+• Their fates are intertwined, even when separated.
+• Measuring one instantly tells you about the other.
+• It's a key to how qubits "work together."
+Analogy: The Magical Linked Coins
+• Imagine two coins flipped in separate, soundproof 
+rooms.
+• No one can see or communicate between rooms.
+• Yet, if one lands Heads, the other always lands Tails.
+• They are mysteriously linked, always opposite.
+Analogy: The Telepathic Twins
+• Imagine twins born far apart
+• One sneezes, the other instantly covers their nose
+• They're linked, even without communication
+• This is a simplified way to think of entanglement
+Classical vs. Quantum Computing (Summary)
+Classical Computers:
+• Building Block: Bit (0 or 1)
+• Operation: Sequential (one path at 
+a time)
+• Best For: Everyday tasks, 
+structured data, known algorithms
+Quantum Computers:
+• Building Block: Qubit (0, 1, or both)
+• Operation: Parallel (exploring many 
+paths at once)
+• Best For: Complex simulations, 
+optimization, breaking encryption
+Part 3: How Quantum Computers "Compute"
+How Do They Actually 'Compute'?
+Prepare: Set up qubits in 
+superposition/entanglement
+1
+Operate: Apply 'quantum 
+logic' to guide probabilities.
+2
+Measure: Get the most 
+likely answer.
+3
+Analogy: Sculpting Probability
+• Imagine a landscape of possible answers.
+• Quantum operations are like carving valleys into 
+this landscape.
+• The 'correct answer' becomes the deepest valley.
+• When the 'water' (qubit's state) flows, it naturally 
+settles there.
+Analogy: The Maze Explorer
+• Classical: Robot tries paths one-by-one until it 
+finds exit.
+• Quantum: Robot explores all paths 
+simultaneously!
+• Quantum operations guide it to the right path.
+• The 'best' or 'correct' path becomes most likely.
+Classical vs Quantum Computers
+Challenges in Building 
+Quantum Computers
+• Fragile Qubits: Easily disturbed (heat, vibration, 
+light)
+• Decoherence: Losing 'quantum magic' very quickly
+• Error Correction: Very hard to fix tiny quantum 
+errors
+• Isolation: Need extreme cold (near absolute zero) 
+& vacuum
+Part 4: Where Quantum Computers Excel 
+What Are Quantum Computers 
+Good For?
+• Not for everyday tasks (email, Browse)
+• Excels at specific, hard problems:
+• Simulating natural systems (molecules, 
+materials)
+• Optimisation (finding the best solution)
+• Complex search and pattern recognition
+Application 1: Materials Science 
+& Drug Discovery
+• Problem: Simulating molecules is hard for 
+classical computers
+• Quantum Solution: Model complex molecular 
+interactions
+• Impact: Designing new drugs (e.g., for cancer), 
+superconductors, better batteries
+Application 2: Optimisation
+• Problem: Finding the absolute best solution from 
+many choices
+• Quantum Solution: Explore many combinations 
+simultaneously
+• Impact: Efficient logistics (delivery routes), 
+financial modeling, traffic control
+Application 3: Cryptography 
+(Security)
+• Problem: Current encryption methods vulnerable 
+to future Quantum Computers
+• Quantum Solution: Develop 'Quantum-Safe' 
+encryption
+• Impact: Protect our data, communications, and 
+financial systems
+• Also, breaking existing encryption (Shor's 
+Algorithm)
+Application 4: Artificial 
+Intelligence & Machine Learning
+• Problem: AI models need vast amounts of data 
+processing
+• Quantum Solution: Process complex data 
+patterns faster
+• Impact: Smarter AI, better pattern recognition, 
+faster learning
+• Example: Enhanced image recognition, drug 
+discovery AI
+Part 5: Current State & The Future
+Are Quantum Computers Here 
+Today?
+• Yes, but... They are still in early stages
+• 'Noisy Intermediate-Scale Quantum' (NISQ) 
+devices
+• Still small (few qubits), fragile, error-prone
+• Not replacing your laptop anytime soon!
+The Road Ahead: Challenges & 
+Promise
+• Challenges: Building more stable qubits, error 
+correction, scaling up
+• Promise: Solving previously 'unsolvable' problems
+• Timeline: Significant impact likely 10-20+ years 
+away
+• A 'Quantum Winter' vs. 'Quantum Spring' debate
+Your Role in the Quantum Future
+• Even non-technical fields will be impacted
+• Understanding basics helps you adapt
+• Stay curious!
+• Consider relevant fields: Physics, Computer 
+Science, Engineering, even Ethics/Policy
+Key Takeaways
+• Classical = bits (0 or 1)
+• Quantum = qubits (0, 1, or both) + 
+entanglement
+• Not just faster, but fundamentally different
+• Excels at specific, complex problems
+• Early stage, but HUGE potential

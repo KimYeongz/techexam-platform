@@ -1,0 +1,528 @@
+{
+    "topicId": "wireless",
+    "topicName": "Wireless Network",
+    "topicNameTH": "เครือข่ายไร้สาย",
+    "summary": {
+        "definition": "เครือข่ายไร้สายที่เชื่อมต่ออุปกรณ์โดยใช้คลื่นแม่เหล็กไฟฟ้า (ไม่ต้องเดินสาย)",
+        "components": [
+            "Wi-Fi (IEEE 802.11): มาตรฐานหลัก ล่าสุดคือ Wi-Fi 6E และ Wi-Fi 7",
+            "Li-Fi: ใช้แสงในการส่งข้อมูล",
+            "MANETs: เครือข่ายไร้สายแบบ Ad-Hoc (ไม่ต้องมี Router กลาง) ใช้ในการทหาร/กู้ภัย"
+        ],
+        "examHotspots": [
+            "Wi-Fi 7 รองรับ Multi-Gbps และ Low Latency",
+            "ความปลอดภัย WPA3"
+        ],
+        "warnings": [
+            "สัญญาณรบกวน (Interference) และระยะทางมีผลต่อความเร็ว"
+        ]
+    },
+    "totalQuestions": 20,
+    "distribution": {
+        "easy": 6,
+        "medium": 10,
+        "hard": 4
+    },
+    "questions": [
+        {
+            "id": 81,
+            "questionText": "มาตรฐาน IEEE 802.11 รู้จักกันในชื่อทั่วไปว่าอะไร?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Bluetooth"
+                },
+                {
+                    "label": "B",
+                    "text": "Wi-Fi"
+                },
+                {
+                    "label": "C",
+                    "text": "WiMAX"
+                },
+                {
+                    "label": "D",
+                    "text": "LTE"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "IEEE 802.11 คือมาตรฐาน Wi-Fi"
+        },
+        {
+            "id": 82,
+            "questionText": "Wi-Fi 7 (802.11be) มีจุดเด่นอะไรที่เหนือกว่ารุ่นก่อนหน้า?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ความเร็วลดลงแต่ประหยัดไฟ"
+                },
+                {
+                    "label": "B",
+                    "text": "รองรับ Multi-Gigabit speeds และ Ultra-Low Latency (เหมาะกับ AR/VR)"
+                },
+                {
+                    "label": "C",
+                    "text": "ใช้สายแลนช่วยส่ง"
+                },
+                {
+                    "label": "D",
+                    "text": "ระยะส่งสั้นลง"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เน้น High throughput, Low latency"
+        },
+        {
+            "id": 83,
+            "questionText": "เครือข่าย MANETs (Mobile Ad-Hoc Networks) มีลักษณะอย่างไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ต้องมีเสาสัญญาณหลัก (Base Station) เสมอ"
+                },
+                {
+                    "label": "B",
+                    "text": "อุปกรณ์แต่ละตัวเชื่อมต่อกันเองโดยไม่ต้องมีโครงสร้างพื้นฐานส่วนกลาง (Decentralized)"
+                },
+                {
+                    "label": "C",
+                    "text": "ใช้เฉพาะในบ้าน"
+                },
+                {
+                    "label": "D",
+                    "text": "ใช้สาย Fiber Optic"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "นิยมใช้ในการทหารหรือกู้ภัยที่โครงสร้างพื้นฐานล่ม"
+        },
+        {
+            "id": 84,
+            "questionText": "Li-Fi (Light Fidelity) ใช้ตัวกลางใดในการส่งข้อมูล?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "คลื่นวิทยุ"
+                },
+                {
+                    "label": "B",
+                    "text": "แสง (Light)"
+                },
+                {
+                    "label": "C",
+                    "text": "เสียง"
+                },
+                {
+                    "label": "D",
+                    "text": "ความร้อน"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ใช้การกระพริบของหลอด LED เพื่อส่งข้อมูลความเร็วสูง"
+        },
+        {
+            "id": 85,
+            "questionText": "SSID ในระบบ Wireless LAN คืออะไร?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "รหัสผ่าน Wi-Fi"
+                },
+                {
+                    "label": "B",
+                    "text": "ชื่อของเครือข่าย Wi-Fi ที่แสดงให้เห็นเวลาค้นหา"
+                },
+                {
+                    "label": "C",
+                    "text": "ยี่ห้อ Router"
+                },
+                {
+                    "label": "D",
+                    "text": "ความเร็วเน็ต"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Service Set Identifier"
+        },
+        {
+            "id": 86,
+            "questionText": "มาตรฐานความปลอดภัย Wi-Fi ล่าสุด (ณ ปัจจุบัน) คืออะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "WEP"
+                },
+                {
+                    "label": "B",
+                    "text": "WPA"
+                },
+                {
+                    "label": "C",
+                    "text": "WPA2"
+                },
+                {
+                    "label": "D",
+                    "text": "WPA3"
+                }
+            ],
+            "correctAnswer": "D",
+            "explanation": "ปลอดภัยกว่า WPA2 ป้องกันการเดารหัสผ่านได้ดีขึ้น"
+        },
+        {
+            "id": 87,
+            "questionText": "คลื่นความถี่ (Frequency Band) ใด ไม่ใช่ มาตรฐานหลักของ Wi-Fi ทั่วไป?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "2.4 GHz"
+                },
+                {
+                    "label": "B",
+                    "text": "5 GHz"
+                },
+                {
+                    "label": "C",
+                    "text": "6 GHz (Wi-Fi 6E)"
+                },
+                {
+                    "label": "D",
+                    "text": "100 MHz"
+                }
+            ],
+            "correctAnswer": "D",
+            "explanation": "ต่ำเกินไปสำหรับ Wi-Fi มาตรฐาน"
+        },
+        {
+            "id": 88,
+            "questionText": "ข้อดีของคลื่น 2.4 GHz เทียบกับ 5 GHz คือ?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ส่งข้อมูลได้เร็วกว่า"
+                },
+                {
+                    "label": "B",
+                    "text": "ช่องสัญญาณกว้างกว่า"
+                },
+                {
+                    "label": "C",
+                    "text": "ส่งสัญญาณได้ไกลกว่าและทะลุสิ่งกีดขวางได้ดีกว่า"
+                },
+                {
+                    "label": "D",
+                    "text": "สัญญาณรบกวนน้อยกว่า"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "คลื่นความถี่ต่ำทะลุทะลวงได้ดีกว่า แต่ Bandwidth น้อยกว่า"
+        },
+        {
+            "id": 89,
+            "questionText": "SATCOM (Satellite Communication) มีความสำคัญอย่างไรในภารกิจทางทหาร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ใช้ดูหนังออนไลน์"
+                },
+                {
+                    "label": "B",
+                    "text": "ใช้สื่อสารระยะไกลทั่วโลก (Beyond Line of Sight) ในพื้นที่ที่ไม่มีเสาสัญญาณ"
+                },
+                {
+                    "label": "C",
+                    "text": "ราคาถูกมาก"
+                },
+                {
+                    "label": "D",
+                    "text": "ใช้ในระยะใกล้เท่านั้น"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ครอบคลุมพื้นที่กว้างไกลและเชื่อถือได้สูง"
+        },
+        {
+            "id": 90,
+            "questionText": "MIMO (Multiple Input Multiple Output) ช่วยเรื่องอะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ทำให้ Router สวยงาม"
+                },
+                {
+                    "label": "B",
+                    "text": "ใช้เสาอากาศหลายต้นส่งและรับข้อมูลพร้อมกัน เพื่อเพิ่มความเร็วและระยะทาง"
+                },
+                {
+                    "label": "C",
+                    "text": "ลดการใช้ไฟ"
+                },
+                {
+                    "label": "D",
+                    "text": "เปลี่ยน Wi-Fi เป็น Bluetooth"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เทคโนโลยีสำคัญตั้งแต่ Wi-Fi 4 / 802.11n ขึ้นมา"
+        },
+        {
+            "id": 91,
+            "questionText": "เทคโนโลยีใดใช้สำหรับเชื่อมต่อหูฟังไร้สายกับมือถือในระยะใกล้?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "NFC"
+                },
+                {
+                    "label": "B",
+                    "text": "Bluetooth"
+                },
+                {
+                    "label": "C",
+                    "text": "GPS"
+                },
+                {
+                    "label": "D",
+                    "text": "5G"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "PAN - Personal Area Network"
+        },
+        {
+            "id": 92,
+            "questionText": "NFC (Near Field Communication) มักใช้ทำอะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ส่งไฟล์ขนาดใหญ่"
+                },
+                {
+                    "label": "B",
+                    "text": "จ่ายเงินแบบแตะ (Contactless Payment) หรือแตะบัตรรถไฟฟ้า"
+                },
+                {
+                    "label": "C",
+                    "text": "เชื่อมต่ออินเทอร์เน็ตระยะไกล"
+                },
+                {
+                    "label": "D",
+                    "text": "ส่งภาพวิดีโอ"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ทำงานในระยะใกล้มาก < 4 ซม."
+        },
+        {
+            "id": 93,
+            "questionText": "ในการรักษาความปลอดภัย Wireless การทำ MAC Address Filtering คืออะไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "กรองไวรัส"
+                },
+                {
+                    "label": "B",
+                    "text": "อนุญาตให้เฉพาะอุปกรณ์ที่มีรหัสฮาร์ดแวร์ (MAC Address) ที่ระบุไว้ เชื่อมต่อได้"
+                },
+                {
+                    "label": "C",
+                    "text": "กรองคำหยาบ"
+                },
+                {
+                    "label": "D",
+                    "text": "กรองสัญญาณรบกวน"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เป็นวิธี Basic Security แต่ปลอมแปลงได้"
+        },
+        {
+            "id": 94,
+            "questionText": "\"Roaming\" ในเครือข่ายไร้สายหมายถึง?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "การย้ายจุดเชื่อมต่อ (Access Point) โดยที่การเชื่อมต่อไม่หลุด"
+                },
+                {
+                    "label": "B",
+                    "text": "การเสียค่าบริการแพง"
+                },
+                {
+                    "label": "C",
+                    "text": "การปิดเครื่อง"
+                },
+                {
+                    "label": "D",
+                    "text": "การใช้สายแลน"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "เช่น เดินจากชั้น 1 ไปชั้น 2 แล้วเน็ตไม่ตัด"
+        },
+        {
+            "id": 95,
+            "questionText": "WLAN ย่อมาจาก?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Wide Local Area Network"
+                },
+                {
+                    "label": "B",
+                    "text": "Wireless Local Area Network"
+                },
+                {
+                    "label": "C",
+                    "text": "World Local Area Network"
+                },
+                {
+                    "label": "D",
+                    "text": "Web Local Area Network"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Wireless Local Area Network"
+        },
+        {
+            "id": 96,
+            "questionText": "ข้อใดคือข้อจำกัดหลักของ Li-Fi?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ความเร็วต่ำ"
+                },
+                {
+                    "label": "B",
+                    "text": "แสงไม่สามารถทะลุกำแพงทึบได้ (ต้องอยู่ในห้องเดียวกัน/Line of Sight)"
+                },
+                {
+                    "label": "C",
+                    "text": "ราคาถูก"
+                },
+                {
+                    "label": "D",
+                    "text": "อันตรายต่อดวงตา"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ต้องเห็นแสงถึงจะรับข้อมูลได้"
+        },
+        {
+            "id": 97,
+            "questionText": "Wi-Fi 6 (802.11ax) ถูกออกแบบมาเพื่อแก้ปัญหาอะไรเป็นหลัก?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ระยะทาง"
+                },
+                {
+                    "label": "B",
+                    "text": "ประสิทธิภาพในพื้นที่ที่มีอุปกรณ์หนาแน่น (High Density) เช่น สนามกีฬา"
+                },
+                {
+                    "label": "C",
+                    "text": "ความสวยงาม"
+                },
+                {
+                    "label": "D",
+                    "text": "ตัดเสียงรบกวน"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ใช้ OFDMA แบ่งช่องสัญญาณย่อยให้หลายเครื่องส่งพร้อมกันได้ดี"
+        },
+        {
+            "id": 98,
+            "questionText": "Access Point (AP) ทำหน้าที่อะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เก็บข้อมูลเว็บไซต์"
+                },
+                {
+                    "label": "B",
+                    "text": "กระจายสัญญาณ Wi-Fi ให้อุปกรณ์ลูกข่ายเชื่อมต่อเข้าสู่ระบบเครือข่าย"
+                },
+                {
+                    "label": "C",
+                    "text": "ป้องกันไวรัส"
+                },
+                {
+                    "label": "D",
+                    "text": "ผลิตไฟฟ้า"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "กระจายสัญญาณ Wi-Fi"
+        },
+        {
+            "id": 99,
+            "questionText": "Frequency Hopping (การกระโดดความถี่) มีประโยชน์อย่างไรในการทหาร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ทำให้เน็ตเร็ว"
+                },
+                {
+                    "label": "B",
+                    "text": "ป้องกันการดักฟังและการรบกวนสัญญาณ (Jamming)"
+                },
+                {
+                    "label": "C",
+                    "text": "ประหยัดแบตเตอรี่"
+                },
+                {
+                    "label": "D",
+                    "text": "ทำให้เสียงชัดขึ้น"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เปลี่ยนช่องความถี่ไปเรื่อยๆ ตาม Pattern ที่ตกลงกัน"
+        },
+        {
+            "id": 100,
+            "questionText": "อุปกรณ์ใด ไม่ จำเป็นต้องมีในการตั้งค่า Wi-Fi ที่บ้าน?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Router / Access Point"
+                },
+                {
+                    "label": "B",
+                    "text": "Internet Service Provider (ISP)"
+                },
+                {
+                    "label": "C",
+                    "text": "จานดาวเทียมขนาดใหญ่"
+                },
+                {
+                    "label": "D",
+                    "text": "อุปกรณ์รับสัญญาณ (มือถือ/คอม)"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "เน็ตบ้านส่วนใหญ่ใช้ Fiber Optic ไม่ต้องมีจานดาวเทียมยักษ์"
+        }
+    ]
+}

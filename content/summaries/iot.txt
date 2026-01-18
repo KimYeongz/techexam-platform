@@ -1,0 +1,177 @@
+Introduction to Internet of Things
+2
+Internet of Things
+“Objects (Things: sensors, cars, 
+watches, …) have network 
+connectivities 
+”
+Machine to Machine (M2M) Technology
+3
+Internet of Things
+“Making things smarter and connected 
+”
+Things + Smarter +  
+Connected
+Things
+Things +  
+Smarter
+4
+Internet of Things
+5
+Internet of Things
+6
+1969
+“Prototype of Internet”
+ARPANET
+7
+1982
+“CMU connect vending 
+machine to internet”
+Smart Vending Machine
+8
+1990
+“John Romkey make the first 
+toast via internet”
+Smart Toaster
+9
+1999: IOT terms
+10
+2000
+Smart Fridge (by LG)
+11
+2008
+IOT Conference
+12
+2016
+Mirai: The 1st large scale IOT attack
+13
+2020
+IOT++
+“AIOT = AI + IOT”
+“IOT + Blockchain”
+“Edge Computing”
+14
+Internet Era
+15
+The Growth of IOT
+16
+IOT Applications
+17
+IOT Landscape
+18
+Smart Home
+Monitoring
+19
+Internet of Things
+Controller
+20
+Internet of Things
+Controller
+21
+Internet of Things
+Controller
+22
+Smart Garden
+23
+Smart Garden
+24
+Internet of Things
+25
+Internet of Things
+26
+Internet of Things
+27
+Smart Appliance
+28
+Smart Appliance
+29
+Smart Appliance
+30
+Smart Appliance
+31
+Smart Appliance
+32
+Smart Gadget
+33
+Smart Gadget
+34
+Smart Gadget
+Tracking
+35
+Smart Gadget
+Sleep
+36
+Smart Gadget
+Toys
+37
+Smart Gadget
+Pets
+38
+Smart Gadget
+Sports
+39
+Smart Gadget
+Sports Fan
+40
+Wearable
+41
+Wearable
+42
+Wearable
+43
+Wearable
+44
+Wearable
+45
+Wearable
+46
+Wearable
+47
+Smart Farming
+48
+Smart / Self Driving Tractors
+49
+Drones
+50
+Precision Agriculture with Drone
+51
+Smart Collar
+52
+Sensors
+53
+Harvesting Robots
+54
+Industry 4.0
+55
+Machine Status Monitoring
+56
+AGV (Automated Guide Vehicle) Control
+57
+AGV (Automated Guide Vehicle) Control
+58
+Building Automation
+59
+Renewable Energy Monitoring
+60
+Pipeline Monitoring
+61
+Smart City
+Smart Mobility
+Smart Living
+Smart Governance
+Smart People
+Smart Economy
+Smart Environment
+Smart Energy
+62
+Smart Mobility
+63
+Smart Mobility
+64
+Smart Environment
+65
+Smart Environment
+66
+Smart Living
+67
+Smart Energy / Smart Grid

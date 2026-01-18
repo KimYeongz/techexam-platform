@@ -1,0 +1,557 @@
+{
+    "topicId": "bigdata",
+    "topicName": "Big Data",
+    "topicNameTH": "ข้อมูลขนาดใหญ่",
+    "summary": {
+        "definition": "ข้อมูลที่มีปริมาณมหาศาล (Volume), เปลี่ยนแปลงรวดเร็ว (Velocity), และหลากหลายรูปแบบ (Variety) เกินกว่าฐานข้อมูลทั่วไปจะรองรับได้",
+        "components": [
+            "HDFS: ระบบไฟล์สำหรับเก็บข้อมูลแบบกระจาย (Distributed Storage)",
+            "MapReduce: โมเดลการประมวลผลข้อมูล (Split -> Map -> Shuffle -> Reduce)",
+            "YARN: ตัวจัดการทรัพยากรในคลัสเตอร์"
+        ],
+        "examples": [
+            "การวิเคราะห์พฤติกรรมลูกค้า (Netflix recommendations)",
+            "การพยากรณ์อากาศ"
+        ],
+        "examHotspots": [
+            "กระบวนการ MapReduce (Input แบ่งเป็นส่วนๆ -> Map สร้าง Key-Value -> Reduce รวมผลลัพธ์)",
+            "ความแตกต่างระหว่าง Structured (SQL) vs Unstructured Data (NoSQL)"
+        ],
+        "warnings": [
+            "อย่าสับสนระหว่าง Data Warehouse (เก็บข้อมูลที่มีโครงสร้างแล้วเพื่อวิเคราะห์) กับ Data Lake (เก็บข้อมูลดิบทุกรูปแบบ)"
+        ]
+    },
+    "totalQuestions": 20,
+    "distribution": {
+        "easy": 6,
+        "medium": 10,
+        "hard": 4
+    },
+    "questions": [
+        {
+            "id": 1,
+            "questionText": "3V's ที่เป็นคุณลักษณะพื้นฐานของ Big Data คือข้อใด?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Volume, Vector, Value"
+                },
+                {
+                    "label": "B",
+                    "text": "Volume, Velocity, Variety"
+                },
+                {
+                    "label": "C",
+                    "text": "Velocity, Variety, Virtualization"
+                },
+                {
+                    "label": "D",
+                    "text": "Volume, Value, Visibility"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ปริมาณ, ความเร็ว, ความหลากหลาย คือนิยามหลักของ Gartner",
+            "wrongReasons": {
+                "A": "Vector และ Virtualization ไม่ใช่คุณลักษณะหลักของนิยามดั้งเดิม",
+                "C": "Vector และ Virtualization ไม่ใช่คุณลักษณะหลักของนิยามดั้งเดิม",
+                "D": "Vector และ Virtualization ไม่ใช่คุณลักษณะหลักของนิยามดั้งเดิม"
+            }
+        },
+        {
+            "id": 2,
+            "questionText": "ในกระบวนการ MapReduce หน้าที่ของขั้นตอน \"Map\" คืออะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "รวบรวมผลลัพธ์สุดท้าย"
+                },
+                {
+                    "label": "B",
+                    "text": "จัดเรียงข้อมูลตามลำดับตัวอักษร"
+                },
+                {
+                    "label": "C",
+                    "text": "แปลงข้อมูล Input เป็นคู่ Key-Value"
+                },
+                {
+                    "label": "D",
+                    "text": "ลบข้อมูลที่ซ้ำซ้อนออก"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "Map รับข้อมูลดิบและสร้าง intermediate key-value pairs",
+            "wrongReasons": {
+                "A": "A คือหน้าที่ของ Reduce",
+                "B": "B คือขั้นตอน Shuffle/Sort",
+                "D": "D ไม่ใช่หน้าที่หลักของ Map"
+            }
+        },
+        {
+            "id": 3,
+            "questionText": "หากต้องการประมวลผลข้อมูลแบบ Real-time Streaming (ไม่ใช่ Batch Processing แบบดั้งเดิม) ควรใช้เครื่องมือใด?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Apache Hadoop MapReduce"
+                },
+                {
+                    "label": "B",
+                    "text": "Apache Spark Streaming"
+                },
+                {
+                    "label": "C",
+                    "text": "HDFS"
+                },
+                {
+                    "label": "D",
+                    "text": "MongoDB"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Spark เด่นเรื่อง In-memory และ Streaming",
+            "wrongReasons": {
+                "A": "Hadoop MapReduce ออกแบบมาสำหรับ Batch processing ที่ใช้เวลานาน",
+                "C": "HDFS เป็นระบบจัดเก็บไฟล์ ไม่ใช่ processing",
+                "D": "MongoDB เป็น database ไม่ใช่ streaming tool"
+            }
+        },
+        {
+            "id": 4,
+            "questionText": "ข้อใด ไม่ใช่ ลักษณะของ Unstructured Data?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ไฟล์วิดีโอ"
+                },
+                {
+                    "label": "B",
+                    "text": "ตารางในฐานข้อมูล Relational Database"
+                },
+                {
+                    "label": "C",
+                    "text": "โพสต์บน Social Media"
+                },
+                {
+                    "label": "D",
+                    "text": "ไฟล์เสียงบันทึกการสนทนา"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ตารางใน RDBMS เป็น Structured Data ที่มีโครงสร้างชัดเจน",
+            "wrongReasons": {
+                "A": "ไฟล์วิดีโอไม่มีโครงสร้างตายตัว จัดเป็น Unstructured",
+                "C": "โพสต์ Social Media ไม่มีโครงสร้างตายตัว จัดเป็น Unstructured",
+                "D": "ไฟล์เสียงไม่มีโครงสร้างตายตัว จัดเป็น Unstructured"
+            }
+        },
+        {
+            "id": 5,
+            "questionText": "HDFS ย่อมาจากอะไร?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "High Data File System"
+                },
+                {
+                    "label": "B",
+                    "text": "Hadoop Distributed File System"
+                },
+                {
+                    "label": "C",
+                    "text": "Hybrid Data File Structure"
+                },
+                {
+                    "label": "D",
+                    "text": "Hyper Database File System"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เป็นระบบไฟล์หลักของ Hadoop Ecosystem"
+        },
+        {
+            "id": 6,
+            "questionText": "การทำงานแบบ \"Parallel Processing\" ใน Big Data ช่วยแก้ปัญหาเรื่องใดมากที่สุด?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ประหยัดพื้นที่จัดเก็บ"
+                },
+                {
+                    "label": "B",
+                    "text": "ลดความซับซ้อนของโค้ด"
+                },
+                {
+                    "label": "C",
+                    "text": "ลดระยะเวลาในการประมวลผลข้อมูลขนาดใหญ่"
+                },
+                {
+                    "label": "D",
+                    "text": "ทำให้ข้อมูลมีความปลอดภัยมากขึ้น"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "การแบ่งงานทำพร้อมกันหลายเครื่องช่วยลดเวลาประมวลผล"
+        },
+        {
+            "id": 7,
+            "questionText": "ในโจทย์การนับคำ (Word Count) ด้วย MapReduce หาก Input คือ \"Dog Cat Dog\" ผลลัพธ์จากขั้นตอน Map จะเป็นอย่างไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "(Dog, 2), (Cat, 1)"
+                },
+                {
+                    "label": "B",
+                    "text": "(Dog, 1), (Cat, 1), (Dog, 1)"
+                },
+                {
+                    "label": "C",
+                    "text": "{Dog: 2, Cat: 1}"
+                },
+                {
+                    "label": "D",
+                    "text": "[Dog, Cat, Dog]"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Map จะปล่อยค่า (Key, 1) สำหรับทุกคำที่เจอ ยังไม่ได้รวมผล",
+            "wrongReasons": {
+                "A": "A และ C คือผลลัพธ์หลังผ่าน Reduce แล้ว",
+                "C": "A และ C คือผลลัพธ์หลังผ่าน Reduce แล้ว",
+                "D": "D เป็นแค่ list ไม่ใช่ key-value pairs"
+            }
+        },
+        {
+            "id": 8,
+            "questionText": "NoSQL Database เหมาะกับงานประเภทใดมากที่สุด?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ระบบบัญชีธนาคารที่ต้องการความถูกต้องสูงสุด (ACID)"
+                },
+                {
+                    "label": "B",
+                    "text": "การเก็บข้อมูลที่มีความสัมพันธ์ซับซ้อน (Relations)"
+                },
+                {
+                    "label": "C",
+                    "text": "การเก็บข้อมูล Log หรือ Social Media ที่โครงสร้างไม่แน่นอน"
+                },
+                {
+                    "label": "D",
+                    "text": "การเก็บข้อมูลรายชื่อนักเรียนที่มีฟิลด์คงที่"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "NoSQL ยืดหยุ่นเรื่อง Schema เหมาะกับข้อมูล Variety สูง"
+        },
+        {
+            "id": 9,
+            "questionText": "ใครคือผู้สร้าง Hadoop?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Doug Cutting"
+                },
+                {
+                    "label": "B",
+                    "text": "Mark Zuckerberg"
+                },
+                {
+                    "label": "C",
+                    "text": "Elon Musk"
+                },
+                {
+                    "label": "D",
+                    "text": "Bill Gates"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "สร้างขึ้นโดยได้รับแรงบันดาลใจจาก paper ของ Google"
+        },
+        {
+            "id": 10,
+            "questionText": "YARN ใน Hadoop ทำหน้าที่อะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เก็บข้อมูล"
+                },
+                {
+                    "label": "B",
+                    "text": "ประมวลผลภาพ"
+                },
+                {
+                    "label": "C",
+                    "text": "จัดการทรัพยากร (Resource Management)"
+                },
+                {
+                    "label": "D",
+                    "text": "สร้างหน้าเว็บแสดงผล"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "Yet Another Resource Negotiator จัดสรร CPU/RAM ให้ Application"
+        },
+        {
+            "id": 11,
+            "questionText": "ข้อใดคือความท้าทายหลักด้าน \"Veracity\" ใน Big Data?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ข้อมูลเข้ามาเร็วเกินไป"
+                },
+                {
+                    "label": "B",
+                    "text": "ข้อมูลมีความไม่แน่นอน หรือความถูกต้องต่ำ"
+                },
+                {
+                    "label": "C",
+                    "text": "ข้อมูลมีขนาดใหญ่เกินฮาร์ดดิสก์"
+                },
+                {
+                    "label": "D",
+                    "text": "ข้อมูลมีรูปแบบหลากหลายเกินไป"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Veracity คือความน่าเชื่อถือหรือความถูกต้องของข้อมูล"
+        },
+        {
+            "id": 12,
+            "questionText": "Data Lake แตกต่างจาก Data Warehouse อย่างไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Data Lake เก็บเฉพาะข้อมูลตัวเลข"
+                },
+                {
+                    "label": "B",
+                    "text": "Data Lake เก็บข้อมูลดิบ (Raw) ส่วน Warehouse เก็บข้อมูลที่ผ่านการประมวลผลแล้ว"
+                },
+                {
+                    "label": "C",
+                    "text": "Data Warehouse ราคาถูกกว่า"
+                },
+                {
+                    "label": "D",
+                    "text": "Data Lake ใช้สำหรับข้อมูลขนาดเล็กเท่านั้น"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Data Lake เก็บทุกอย่างแบบดิบๆ เพื่อรอการวิเคราะห์ภายหลัง"
+        },
+        {
+            "id": 13,
+            "questionText": "หน่วยวัดข้อมูลใดมีขนาดใหญ่ที่สุดในตัวเลือกนี้?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Terabyte (TB)"
+                },
+                {
+                    "label": "B",
+                    "text": "Petabyte (PB)"
+                },
+                {
+                    "label": "C",
+                    "text": "Gigabyte (GB)"
+                },
+                {
+                    "label": "D",
+                    "text": "Megabyte (MB)"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "1 PB = 1024 TB"
+        },
+        {
+            "id": 14,
+            "questionText": "การใช้ Pthread หรือ OpenMP มีจุดประสงค์เพื่ออะไรในการเขียนโปรแกรม?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เพื่อเชื่อมต่อฐานข้อมูล"
+                },
+                {
+                    "label": "B",
+                    "text": "เพื่อสร้างหน้า UI"
+                },
+                {
+                    "label": "C",
+                    "text": "เพื่อทำ Parallel Programming บน Shared Memory"
+                },
+                {
+                    "label": "D",
+                    "text": "เพื่อแฮกข้อมูล"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "ใช้สำหรับการประมวลผลแบบขนานเพื่อเพิ่มความเร็ว"
+        },
+        {
+            "id": 15,
+            "questionText": "ETL ย่อมาจากกระบวนการใด?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Extract, Transform, Load"
+                },
+                {
+                    "label": "B",
+                    "text": "Enter, Test, Log"
+                },
+                {
+                    "label": "C",
+                    "text": "Edit, Type, Lock"
+                },
+                {
+                    "label": "D",
+                    "text": "Export, Transfer, Link"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "กระบวนการดึง แปลง และนำเข้าข้อมูลสู่ Data Warehouse"
+        },
+        {
+            "id": 16,
+            "questionText": "หากต้องการวิเคราะห์กราฟความสัมพันธ์เพื่อนของเพื่อน (Friend-of-friend) ควรใช้เครื่องมือหรือ Algorithm ประเภทใด?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Linear Regression"
+                },
+                {
+                    "label": "B",
+                    "text": "Graph Processing (เช่น Giraph หรือ GraphX)"
+                },
+                {
+                    "label": "C",
+                    "text": "Word Count"
+                },
+                {
+                    "label": "D",
+                    "text": "K-Means Clustering"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Graph processing เหมาะกับการวิเคราะห์ความสัมพันธ์แบบเครือข่าย"
+        },
+        {
+            "id": 17,
+            "questionText": "บริษัท E-commerce ใช้ Big Data เพื่อสิ่งใดมากที่สุด?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ลดความเร็วอินเทอร์เน็ต"
+                },
+                {
+                    "label": "B",
+                    "text": "แนะนำสินค้าที่ลูกค้าอาจจะชอบ (Recommendation System)"
+                },
+                {
+                    "label": "C",
+                    "text": "เพิ่มจำนวนพนักงาน"
+                },
+                {
+                    "label": "D",
+                    "text": "พิมพ์ใบเสร็จรับเงิน"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Personalization เป็น Use case หลัก"
+        },
+        {
+            "id": 18,
+            "questionText": "Apache Kafka มักถูกใช้ทำหน้าที่อะไรใน Big Data Pipeline?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เก็บไฟล์ระยะยาว"
+                },
+                {
+                    "label": "B",
+                    "text": "สร้างกราฟแสดงผล"
+                },
+                {
+                    "label": "C",
+                    "text": "เป็น Message Broker รองรับ Data Streaming ปริมาณมหาศาล"
+                },
+                {
+                    "label": "D",
+                    "text": "เขียนโปรแกรมสั่งงานหุ่นยนต์"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "Kafka จัดการ Real-time data feeds ได้ดีเยี่ยม"
+        },
+        {
+            "id": 19,
+            "questionText": "ข้อใดเป็นตัวอย่างของ Descriptive Analytics?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "การพยากรณ์ยอดขายปีหน้า"
+                },
+                {
+                    "label": "B",
+                    "text": "การสรุปยอดขายรายเดือนที่ผ่านมา (What happened?)"
+                },
+                {
+                    "label": "C",
+                    "text": "การแนะนำว่าควรจัดโปรโมชั่นอะไร"
+                },
+                {
+                    "label": "D",
+                    "text": "การจำลองสถานการณ์สงคราม"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Descriptive อธิบายสิ่งที่เกิดขึ้นแล้วในอดีต"
+        },
+        {
+            "id": 20,
+            "questionText": "ข้อใด ไม่ใช่ ประโยชน์ของการใช้ Cloud Computing สำหรับ Big Data?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ความยืดหยุ่นในการขยายทรัพยากร (Scalability)"
+                },
+                {
+                    "label": "B",
+                    "text": "จ่ายเงินตามจริงที่ใช้งาน (Pay-as-you-go)"
+                },
+                {
+                    "label": "C",
+                    "text": "ไม่ต้องลงทุนซื้อ Server เอง (No CapEx)"
+                },
+                {
+                    "label": "D",
+                    "text": "ข้อมูลมีความปลอดภัยสูงสุด 100% โดยไม่ต้องตั้งค่าใดๆ"
+                }
+            ],
+            "correctAnswer": "D",
+            "explanation": "Security บน Cloud เป็นหน้าที่ร่วมกัน หรือ Shared Responsibility ผู้ใช้ต้องตั้งค่าให้ถูกต้องด้วย"
+        }
+    ]
+}

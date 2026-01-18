@@ -1,0 +1,530 @@
+{
+    "topicId": "blockchain",
+    "topicName": "Blockchain and Cryptocurrencies",
+    "topicNameTH": "บล็อกเชนและคริปโตเคอเรนซี",
+    "summary": {
+        "definition": "เทคโนโลยีการจัดเก็บข้อมูลแบบกระจายศูนย์ (Distributed Ledger) ที่ข้อมูลถูกบันทึกเป็นบล็อกต่อกันเป็นโซ่ แก้ไขยากและโปร่งใส",
+        "components": [
+            "Decentralization (ไร้ตัวกลาง)",
+            "Immutability (แก้ไขไม่ได้)",
+            "Consensus Mechanism (กลไกฉันทามติ เช่น PoW, PoS)"
+        ],
+        "examples": [
+            "Bitcoin",
+            "Ethereum",
+            "Smart Contract"
+        ],
+        "examHotspots": [
+            "ความต่างระหว่าง Proof of Work (ขุด) vs Proof of Stake (ฝาก)",
+            "Public vs Private Blockchain"
+        ]
+    },
+    "totalQuestions": 20,
+    "distribution": {
+        "easy": 6,
+        "medium": 10,
+        "hard": 4
+    },
+    "questions": [
+        {
+            "id": 41,
+            "questionText": "คุณสมบัติเด่นที่สุดของ Blockchain คืออะไร?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ข้อมูลรวมศูนย์อยู่ที่ Server เดียว"
+                },
+                {
+                    "label": "B",
+                    "text": "การกระจายศูนย์ (Decentralized) และแก้ไขข้อมูลย้อนหลังได้ยาก"
+                },
+                {
+                    "label": "C",
+                    "text": "การปกปิดข้อมูลไม่ให้ใครเห็นเลย"
+                },
+                {
+                    "label": "D",
+                    "text": "ต้องผ่านธนาคารเท่านั้น"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ความโปร่งใสและตัดตัวกลาง"
+        },
+        {
+            "id": 42,
+            "questionText": "\"Satoshi Nakamoto\" คือใคร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ประธานาธิบดีญี่ปุ่น"
+                },
+                {
+                    "label": "B",
+                    "text": "นามแฝงของผู้สร้าง Bitcoin"
+                },
+                {
+                    "label": "C",
+                    "text": "ชื่อเหรียญคริปโต"
+                },
+                {
+                    "label": "D",
+                    "text": "ชื่อธนาคารกลาง"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ผู้เขียน Whitepaper ของ Bitcoin"
+        },
+        {
+            "id": 43,
+            "questionText": "Consensus Mechanism แบบ \"Proof of Work\" (PoW) มีข้อเสียหลักคืออะไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ไม่ปลอดภัย"
+                },
+                {
+                    "label": "B",
+                    "text": "ใช้พลังงานไฟฟ้ามหาศาลในการประมวลผล (ขุด)"
+                },
+                {
+                    "label": "C",
+                    "text": "ตรวจสอบธุรกรรมไม่ได้"
+                },
+                {
+                    "label": "D",
+                    "text": "ทำงานเร็วเกินไป"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ต้องใช้คอมพิวเตอร์แก้สมการคณิตศาสตร์ แข่งกันใช้ไฟ"
+        },
+        {
+            "id": 44,
+            "questionText": "Ethereum ต่างจาก Bitcoin อย่างไร (จุดเด่นหลัก)?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Ethereum ราคาถูกกว่า"
+                },
+                {
+                    "label": "B",
+                    "text": "Ethereum รองรับ Smart Contract (Programmable Blockchain)"
+                },
+                {
+                    "label": "C",
+                    "text": "Ethereum มีสีฟ้า"
+                },
+                {
+                    "label": "D",
+                    "text": "Bitcoin เร็วกว่า"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Ethereum เน้นสร้าง Application/DApp บน Chain"
+        },
+        {
+            "id": 45,
+            "questionText": "สิ่งใด ไม่ใช่ Cryptocurrency?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Bitcoin"
+                },
+                {
+                    "label": "B",
+                    "text": "Ethereum"
+                },
+                {
+                    "label": "C",
+                    "text": "PromptPay"
+                },
+                {
+                    "label": "D",
+                    "text": "Dogecoin"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "PromptPay เป็นระบบชำระเงิน Fiat Currency ของไทย"
+        },
+        {
+            "id": 46,
+            "questionText": "Smart Contract คืออะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "สัญญาที่เขียนลงกระดาษอัจฉริยะ"
+                },
+                {
+                    "label": "B",
+                    "text": "โปรแกรมคอมพิวเตอร์ที่ทำงานอัตโนมัติตามเงื่อนไขที่ตกลงกันไว้บน Blockchain"
+                },
+                {
+                    "label": "C",
+                    "text": "สัญญาว่าจ้างโปรแกรมเมอร์"
+                },
+                {
+                    "label": "D",
+                    "text": "AI ทนายความ"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Code is Law ทำงานเมื่อเงื่อนไขครบถ้วน"
+        },
+        {
+            "id": 47,
+            "questionText": "\"Distributed Ledger Technology\" (DLT) หมายถึงอะไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เทคโนโลยีบัญชีแยกประเภทแบบกระจายศูนย์"
+                },
+                {
+                    "label": "B",
+                    "text": "เทคโนโลยีฐานข้อมูลแบบรวมศูนย์"
+                },
+                {
+                    "label": "C",
+                    "text": "เทคโนโลยีการโอนเงินด่วน"
+                },
+                {
+                    "label": "D",
+                    "text": "เทคโนโลยีปัญญาประดิษฐ์"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "Blockchain เป็นประเภทหนึ่งของ DLT"
+        },
+        {
+            "id": 48,
+            "questionText": "การทำ \"Mining\" (ขุด) ใน Bitcoin คือกระบวนการอะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "การหาเหรียญใต้ดิน"
+                },
+                {
+                    "label": "B",
+                    "text": "การยืนยันธุรกรรมและเพิ่ม Block ใหม่ลงใน Chain โดยการแก้โจทย์คณิตศาสตร์"
+                },
+                {
+                    "label": "C",
+                    "text": "การแฮกขโมยเงิน"
+                },
+                {
+                    "label": "D",
+                    "text": "การสร้างบัญชีใหม่"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ผู้ขุดได้รางวัลเป็นเหรียญจากการยืนยันธุรกรรม"
+        },
+        {
+            "id": 49,
+            "questionText": "51% Attack คืออะไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ราคาเหรียญตก 51%"
+                },
+                {
+                    "label": "B",
+                    "text": "การที่คนกลุ่มเดียวครองกำลังการขุดเกิน 51% ทำให้สามารถควบคุม/แก้ไขธุรกรรมได้"
+                },
+                {
+                    "label": "C",
+                    "text": "การเก็บภาษี 51%"
+                },
+                {
+                    "label": "D",
+                    "text": "โปรโมชั่นลดราคา"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "จุดอ่อนของ PoW หากมีใครคุม Hashrate ได้เกินครึ่ง"
+        },
+        {
+            "id": 50,
+            "questionText": "NFT (Non-Fungible Token) คืออะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เหรียญที่ใช้แทนเงินสดได้ทั่วไป"
+                },
+                {
+                    "label": "B",
+                    "text": "สินทรัพย์ดิจิทัลที่มีลักษณะเฉพาะตัว ไม่สามารถทำซ้ำหรือทดแทนกันได้ (เช่น ศิลปะดิจิทัล)"
+                },
+                {
+                    "label": "C",
+                    "text": "เหรียญที่ไม่มีมูลค่า"
+                },
+                {
+                    "label": "D",
+                    "text": "กองทุนรวม"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ต่างจาก Bitcoin ที่ 1 BTC = 1 BTC เสมอ"
+        },
+        {
+            "id": 51,
+            "questionText": "Blockchain จัดเป็นฐานข้อมูลประเภทใด?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Relational Database"
+                },
+                {
+                    "label": "B",
+                    "text": "Append-only Database (เพิ่มต่อท้ายได้อย่างเดียว แก้ไขของเดิมไม่ได้)"
+                },
+                {
+                    "label": "C",
+                    "text": "Excel Spreadsheet"
+                },
+                {
+                    "label": "D",
+                    "text": "Temporary Database"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ข้อมูลใหม่จะถูกเพิ่มเป็น Block ต่อไปเรื่อยๆ"
+        },
+        {
+            "id": 52,
+            "questionText": "DeFi ย่อมาจากอะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Defense Finance"
+                },
+                {
+                    "label": "B",
+                    "text": "Decentralized Finance (ระบบการเงินไร้ตัวกลาง)"
+                },
+                {
+                    "label": "C",
+                    "text": "Digital Finance"
+                },
+                {
+                    "label": "D",
+                    "text": "Direct Finance"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "บริการทางการเงินบน Blockchain โดยไม่ผ่านธนาคาร"
+        },
+        {
+            "id": 53,
+            "questionText": "Private Blockchain ต่างจาก Public Blockchain อย่างไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Private ทุกคนเข้าถึงได้"
+                },
+                {
+                    "label": "B",
+                    "text": "Public ต้องขออนุญาตก่อนใช้"
+                },
+                {
+                    "label": "C",
+                    "text": "Private จำกัดสิทธิ์การเข้าถึงและการตรวจสอบธุรกรรมเฉพาะกลุ่ม (Permissioned)"
+                },
+                {
+                    "label": "D",
+                    "text": "ไม่ต่างกัน"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "เหมาะสำหรับองค์กรที่ต้องการความลับแต่ใช้เทคโนโลยี Blockchain"
+        },
+        {
+            "id": 54,
+            "questionText": "Wallet ในโลกคริปโต เก็บอะไรไว้จริงๆ?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เก็บตัวเหรียญจริงๆ"
+                },
+                {
+                    "label": "B",
+                    "text": "เก็บ Private Key (กุญแจส่วนตัว) สำหรับเข้าถึงและเซ็นชื่อทำธุรกรรม"
+                },
+                {
+                    "label": "C",
+                    "text": "เก็บสลิปโอนเงิน"
+                },
+                {
+                    "label": "D",
+                    "text": "เก็บรูปภาพเจ้าของ"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เหรียญอยู่บน Blockchain, Wallet เก็บกุญแจไขไปหาเหรียญ"
+        },
+        {
+            "id": 55,
+            "questionText": "ข้อใดเป็นประโยชน์ของ Blockchain ในระบบ Supply Chain?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ทำให้สินค้าถูกลง"
+                },
+                {
+                    "label": "B",
+                    "text": "สามารถตรวจสอบย้อนกลับ (Traceability) แหล่งที่มาของสินค้าได้อย่างโปร่งใส"
+                },
+                {
+                    "label": "C",
+                    "text": "ทำให้ผลิตสินค้าได้เร็วขึ้น"
+                },
+                {
+                    "label": "D",
+                    "text": "ไม่ต้องใช้รถขนส่ง"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "รู้ว่าสินค้ามาจากไหน ผ่านมือใครมาบ้าง"
+        },
+        {
+            "id": 56,
+            "questionText": "\"Halving\" ของ Bitcoin คือเหตุการณ์อะไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ราคาลดลงครึ่งหนึ่ง"
+                },
+                {
+                    "label": "B",
+                    "text": "รางวัลจากการขุด (Block Reward) ลดลงครึ่งหนึ่งทุกๆ ประมาณ 4 ปี"
+                },
+                {
+                    "label": "C",
+                    "text": "จำนวนผู้ใช้งานลดลงครึ่งหนึ่ง"
+                },
+                {
+                    "label": "D",
+                    "text": "การแบ่งแยกเหรียญ"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "กลไกควบคุมเงินเฟ้อของ Bitcoin"
+        },
+        {
+            "id": 57,
+            "questionText": "Stablecoin คืออะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เหรียญที่มีมูลค่าคงที่ มักอ้างอิงกับสินทรัพย์อื่น เช่น ดอลลาร์สหรัฐ (USDT, USDC)"
+                },
+                {
+                    "label": "B",
+                    "text": "เหรียญที่ราคาขึ้นลงรุนแรง"
+                },
+                {
+                    "label": "C",
+                    "text": "เหรียญที่ใช้ในคอกม้า"
+                },
+                {
+                    "label": "D",
+                    "text": "เหรียญทองคำ"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "ลดความผันผวน เพื่อใช้เป็นสื่อกลางแลกเปลี่ยน"
+        },
+        {
+            "id": 58,
+            "questionText": "ข้อควรระวังที่สุดในการถือครอง Cryptocurrency เอง (Self-custody) คืออะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ราคาขึ้น"
+                },
+                {
+                    "label": "B",
+                    "text": "ถ้าทำ Private Key หรือ Seed Phrase หาย เงินจะหายไปตลอดกาล กู้คืนไม่ได้"
+                },
+                {
+                    "label": "C",
+                    "text": "ธนาคารยึด"
+                },
+                {
+                    "label": "D",
+                    "text": "ต้องจ่ายค่าธรรมเนียมรายปี"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Not your keys, not your coins"
+        },
+        {
+            "id": 59,
+            "questionText": "Proof of Stake (PoS) ทำงานอย่างไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ใช้การ์ดจอประมวลผล"
+                },
+                {
+                    "label": "B",
+                    "text": "ใช้การวางสินทรัพย์ค้ำประกัน (Stake) เพื่อรับสิทธิ์ตรวจสอบธุรกรรมและรับรางวัล"
+                },
+                {
+                    "label": "C",
+                    "text": "ใช้การสุ่มหวย"
+                },
+                {
+                    "label": "D",
+                    "text": "ใช้การโหวตด้วยบัตรประชาชน"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ใช้พลังงานน้อยกว่า PoW มาก Ethereum เปลี่ยนมาใช้ระบบนี้"
+        },
+        {
+            "id": 60,
+            "questionText": "Blockchain เริ่มเป็นที่รู้จักจากสกุลเงินใด?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Ethereum"
+                },
+                {
+                    "label": "B",
+                    "text": "Bitcoin"
+                },
+                {
+                    "label": "C",
+                    "text": "Ripple"
+                },
+                {
+                    "label": "D",
+                    "text": "Libra"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Bitcoin เป็น Application แรกของ Blockchain"
+        }
+    ]
+}

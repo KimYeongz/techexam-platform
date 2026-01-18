@@ -1,0 +1,683 @@
+Cellular Networks
+• Speaker: Songyut Phoemphon
+• Contact: songyut@sut.ac.th
+• Cellular networks form the foundation of modern 
+mobile telecommunications.
+• Cellular networks continue powering global 
+communication 
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+2
+Introduction to Cellular Networks
+They are a wireless network architecture designed to provide coverage over 
+vast geographical areas while maximizing the efficient use of limited radio 
+frequency spectrum.
+• Cells and Base Stations
+geographical service areas - hexagonal 
+Located near the center of each cell
+• Frequency Reuse
+• Handoff / Handover
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+3
+What is a Cellular Network?
+Wireless communication system that divides a geographic area into smaller 
+areas called "cells". 
+Each cell is served by a base station that uses radio waves to transmit voice 
+and data to mobile devices within its coverage area. 
+This system allows devices to move seamlessly between cells while 
+maintaining a continuous connection. 
+• A communication system that divides service areas into “cells”
+• Uses radio frequencies to provide mobile connectivity
+• Enables voice, messaging, and data services
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+4
+Why Cellular Networks Matter
+Enabling mobile voice calls, text messaging, and internet access for billions 
+of people worldwide. 
+• Wide-area mobile coverage: a mobile network technology that provides internet 
+access over a large geographical area using cellular networks like 4G LTE and 5G.
+• Supports billions of devices: Global mobile networks already support billions of 
+personal devices and IoT connections.
+• Backbone of mobile communication : the core network, which is the central hub 
+that handles data transfer and call routing.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+5
+Key Components
+The cellular network structure is generally divided into three main parts, each 
+with specific functions that work in coordination to provide continuous and 
+seamless wireless communication, voice, and data services. 
+• Mobile devices
+• Radio towers / base stations
+• Core network
+• Internet and service servers
+User Equipment (UE / Mobile Station - MS)
+Radio Access Network (RAN)
+Base Station (BS)
+Base Station Controller (Controller)
+Core Network (CN)
+Mobile Switching Center (MSC)
+Home Location Register (HLR)
+Visitor Location Register (VLR)
+Data Network Components
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+6
+Cellular Network Goals
+Student are able to 
+• Mobility
+• Reliability
+High speed and capacity
+Low latency
+• Quality of Service (QoS)
+• Security
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+7
+Evolution Overview
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+8
+1G Overview
+It introduced the concept of dividing service areas into cells and used 
+Frequency Division Multiple Access (FDMA) to transmit calls. Key limitations 
+of 1G were poor voice quality, low capacity, high cost, and no data 
+capabilities. 
+• Introduced in the 1980s
+• Analog voice
+• Poor security
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+9
+1G Technologies
+It had a data rate up to 2.4 Kbps and bandwidth of 30 kHz.
+• AMPS - USA
+• NMT – North EU
+• RTMS/JTACS - JP
+• TACS - UK
+• Frequency Range: 800–900 MHz
+Enabled long-range coverage
+Suited for wide-area mobile communication
+•  
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+10
+Limitations of 1G
+• No encryption
+• Low voice quality
+• Limited capacity
+• No Data Services
+• Large and Heavy Devices
+• High Power Consumption 
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+11
+2G Overview
+A significant upgrade that introduced digital technology to mobile networks, 
+moving from the earlier analog 1G systems. 
+• Better security: providing clearer voice calls through digital encryption, 
+• increasing efficiency by allowing more users on the same spectrum, 
+• Introduced SMS/MMS: enabling new services like SMS (text messaging) and basic 
+mobile data. 
+• Digital voice: leading to clearer voice calls and more efficient use of the radio 
+spectrum.
+cost-effectiveness 
+low power consumption
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+12
+2G Technologies
+2G (Second Generation) is a major leap in wireless communication 
+technology, marking the transition from analog to fully digital networks. 
+First launched commercially in Finland in 1991, the most widely adopted 
+standard for 2G was GSM (Global System for Mobile Communications). 
+• Digital Signals
+• Enhanced Security
+• Data Services - Short Message Service (SMS), Multimedia Messaging Service 
+(MMS)
+• GPRS, EDGE: basic mobile data
+• SIM card
+• Data rate 9.6 to 14.4 kbps
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+13
+2G Capabilities
+Student are able to 
+• Basic data services
+SMS (Short Message Service)
+MMS (Multimedia Messaging Service)
+Circuit-Switched Data (CSD) for low-speed internet
+GPRS (up to ~40–80 kbps)
+EDGE (up to ~384 kbps)
+• Encryption
+Eavesdropping
+SIM cloning
+Unauthorized access
+• Global roaming (GSM)
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+14
+3G Overview
+3G (Third Generation) is a significant milestone in wireless communication 
+technology. It marked the shift from basic voice and text services to the era of 
+smartphones and widespread mobile internet use (Japan in 2001).
+• Mobile internet
+Enabled web browsing, email, app downloads, and online services directly on mobile devices.
+Marked the transition from voice-centric to data-centric mobile communication.
+• Higher data rate
+faster internet access 
+• Multimedia support
+enabled multimedia capabilities on mobile devices
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+15
+3G Technologies
+• UMTS
+The primary 3G standard used by most GSM-based networks.
+Uses WCDMA (Wideband Code Division Multiple Access) as the radio interface.
+Provides higher data rates and supports simultaneous voice + data.
+Typical speeds: up to 384 kbps.
+Enables services such as video calling, mobile internet, and multimedia messaging.
+• HSPA / HSPA+
+An enhancement to UMTS that significantly boosts performance.
+HSPA: up to ~14 Mbps (downlink)
+HSPA+: up to ~42 Mbps
+• CDMA2000
+CDMA2000 1xRTT – up to 144 kbps
+CDMA2000 EV-DO Rev 0 / A / B – 2–14+ Mbps
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+16
+4G Overview
+Basic voice and data services of 3G to a full mobile broadband experience. 
+• All-IP network
+4G is built entirely on IP-based architecture, meaning all services—including voice—are transmitted as 
+data packets.
+Uses technologies like LTE (Long Term Evolution) and WiMAX.
+• High-speed data
+Designed primarily for mobile broadband.
+Typical speeds:
+10–100 Mbps in real-world usage
+Up to 1 Gbps under ideal conditions (LTE-Advanced)
+Supports data-heavy applications like file downloads, 
+cloud services, and interactive apps.
+• HD streaming
+HD and Full HD video streaming
+Smooth video calls
+Real-time gaming
+High-quality multimedia experiences
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+17
+4G Technologies
+Student are able to 
+• LTE
+High-speed data
+VoIP/VoLTE (voice over LTE)
+Smooth multimedia services
+Typical real-world speeds: 10–50 Mbps download.
+• LTE-Advanced: An enhanced version of LTE
+Carrier Aggregation (CA): combines multiple frequency bands to increase bandwidth
+Higher-order MIMO (multiple antennas)
+Improved modulation (64QAM, 256QAM)
+• OFDM-based systems
+High resistance to interference and multipath fading
+Efficient use of spectrum
+Supports high data throughput 
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+18
+5G Overview
+Faster speeds, lower latency, and greater capacity than 4G. 
+Enables a wide range of new applications and services
+• Ultra-high speed - Typical speeds: 1–10+ Gbps in ideal conditions.
+4K/8K video streaming
+Cloud gaming
+Instant large file downloads
+High-performance mobile broadband
+• Low latency - ultra-low latency (1 ms)
+Real-time remote control (robots, drones)
+AR/VR applications
+Autonomous vehicles
+Mission-critical communication systems
+• Massive IoT support: 5G can connect millions of devices
+Internet of Things (IoT) and autonomous vehicles
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+19
+5G Key Technologies
+• Millimeter Wave (mmWave)
+high radio frequencies - 24 GHz to 100 GHz.
+• Massive Multiple-Input Multiple-Output (Massive MIMO)
+using multiple antennas on both the base station
+• Network slicing
+a core networking technology that enables service providers to segment a single physical 5G 
+infrastructure into multiple separate virtual networks
+• Beamforming
+uses the array of antennas in a base station (Massive MIMO) to focus the radio energy directly toward 
+the user's device
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+20
+5G Use Cases
+• Smart cities
+• Autonomous vehicles
+• AR/VR
+• Industrial IoT
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+21
+Evolution Summary Chart
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+22
+Cellular Network Structure
+Cellular network infrastructure is a complex system composed of several 
+distinct parts working together. 
+The structure can be broadly divided into two main segments: 
+Radio Access Network (RAN)
+Core Network
+• Cell sites
+• Base stations
+• Core network 
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+23
+Cells and Coverage
+Cell is the geographical area that a single Base Station can service. The size 
+of the cell varies based on the antenna's power output and population 
+density. We can primarily categorize cells into four types:
+• Macro cells: largest type of cell
+1 kilometer up to 10 kilometers
+• Micro cells
+200 meters up to 2 kilometers
+• Pico cells
+50 meters up to 200 meters
+• Femto cells: smallest type of cell 
+10 to 50 meters 
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+24
+Base Station (BTS/eNB/gNB)
+Responsible for wirelessly connecting user equipment (like 
+smartphones) to the core network and the broader internet.
+Base stations manage several core functions:
+• Radio transmission
+• User authentication
+• Handover support
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+25
+Radio Access Network (RAN)
+• Connects users to the core
+It provides the "last mile" connectivity via radio waves.
+• Handles signals and modulation
+It manages radio communication, signal processing, and resource allocation between users and the 
+mobile network.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+26
+Core Network Functions
+the central brain of the cellular system. It sits behind the Radio 
+Access Network (RAN) and is responsible for managing subscriber 
+authentication, overall network traffic, connections to the public 
+internet, and administrative functions.
+• Switching
+• Routing
+• Billing
+• Quality control
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+27
+Handover Concepts
+Ensures continuous service as a mobile device moves between 
+different geographic coverage areas (cells) or different network 
+technologies. The goal is a seamless transition without dropping the 
+active call or interrupting the data session.
+• Intra-cell handover
+• Inter-cell handover
+• Soft vs. hard handover 
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+28
+Frequency Reuse
+Addresses the challenge of limited spectrum availability. It involves 
+using the same radio frequencies simultaneously in different, non-
+adjacent geographic areas to maximize network capacity.
+• Enhances spectrum efficiency
+• Reduces interference
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+29
+Network Topology
+The overall network structure can be described as a hierarchical structure, 
+which is composed internally of interconnected localized systems, many of 
+which use a star topology.
+• Star topology
+Radio Access Network (RAN)
+• Hierarchical structure
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+30
+Backhaul Networks
+the intermediate links that connect the individual cell towers (base 
+stations in the Radio Access Network, or RAN) to the mobile 
+operator's central core network and the broader internet.
+• Fiber transmission
+uses light pulses traveling through
+thin glass strands to transmit data at extremely 
+high speeds. 
+• Microwave links
+provide a wireless point-to-point connection 
+Between the cell tower and a network hub
+using high-frequency radio waves.
+• Satellite backhaul
+uses communication satellites orbiting Earth to 
+relay data between a remote cell tower and 
+the core network operations center.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+31
+Architecture Summary
+• RAN + Core + Backhaul
+• Coverage and mobility
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+32
+Cellular Frequency Bands
+• Low-band (<1 GHz)
+• Mid-band (1–6 GHz)
+• High-band (mmWave)
+Low-Band
+600–900 MHz
+n71 (600 MHz), n28 (700 
+MHz), n5 (850 MHz)
+Wide coverage, good penetration 
+through buildings, lower speeds (up to 
+100–250 Mbps).
+Mid-Band
+1.7–4.7 GHz
+n1 (2.1 GHz), n3 (1.8 GHz), 
+n41 (2.5 GHz), n78 (3.5 
+GHz)
+Balanced coverage and speed, ideal for 
+urban areas (up to 1 Gbps).
+High-Band (mmWave)
+24–71 GHz
+n258 (26 GHz), n260 (39 
+GHz), n261 (28 GHz)
+Ultra-high speeds (up to 10 Gbps), low 
+latency, but limited range and poor 
+penetration.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+33
+Modulation Techniques
+Encode digital information onto analog carrier waves so that the data 
+can be reliably transmitted over radio frequency spectrums.
+• Quadrature Phase Shift Keying (QPSK)
+• Quadrature Amplitude Modulation (QAM)
+• Orthogonal Frequency Division Multiplexing (OFDM) / Orthogonal Frequency 
+Division Multiple Access (OFDMA)
+the foundational transmission schemes for 4G LTE, 5G NR, Wi-Fi, and other modern broadband systems.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+34
+Duplex Methods
+Techniques used in telecommunications to achieve two-way 
+communication (simultaneous talk and listen) over the same link.
+• FDD (Frequency Division Duplex)
+two-way communication by using two separate, distinct frequency bands for transmission and reception 
+simultaneously.
+• TDD (Time Division Duplex)
+two-way communication by using a single frequency band that is shared between transmission and 
+reception over time.
+Feature 
+FDD (Frequency Division Duplex)
+TDD (Time Division Duplex)
+Frequency Bands
+Two paired, separate bands
+One single, shared band
+Time Usage
+Simultaneous (full-time use of both bands)
+Alternating in time slots
+Symmetry
+Fixed, symmetric allocation
+Flexible, asymmetric allocation (dynamic)
+Efficiency
+Good for balanced traffic
+Highly efficient for data-heavy (asymmetric) traffic
+Synchronization
+Less critical (separated by frequency)
+Highly critical (separated by time)
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+35
+Multiple Access Techniques
+Methods that allow many users to share a finite amount of radio spectrum 
+resources simultaneously and without significant interference.
+• FDMA (Frequency Division Multiple Access): 1G
+•
+The total bandwidth is divided into smaller frequency channels, and each user is assigned a 
+specific frequency channel for the entire duration of the communication.
+• TDMA (Time Division Multiple Access): GSM (2G)
+•
+Each frequency channel is divided into time slots, and each user is allocated specific time 
+slots to transmit and receive data.
+• CDMA (Code Division Multiple Access): 3G
+•
+All users transmit on the same frequency at the same time. However, unique codes are used 
+to encode and decode signals, allowing the receiver to distinguish the signals of different 
+users.
+• OFDMA (Orthogonal Frequency Division Multiple Access): 4G (LTE) and 5G (NR)
+•
+The channel is broken down into numerous orthogonal subcarriers. These subcarriers can 
+be dynamically allocated to individual users based on their bandwidth needs, offering 
+extremely high efficiency and speed.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+36
+Antenna Technologies
+Antenna technologies are crucial for improving the capacity, reliability, 
+and efficiency of modern wireless networks, especially 4G and 5G.
+• MIMO
+a core technology that uses multiple antennas at both the transmitting source (e.g., base station) and the 
+receiving destination (e.g., smartphone) to improve communication performance.
+• Massive MIMO
+an evolution of standard MIMO technology, primarily associated with 5G networks, where the number of 
+antennas is dramatically increased.
+• Beamforming Student are able to 
+Beamforming is a signal processing technique that uses an antenna array (like those used in MIMO and 
+Massive MIMO) to concentrate a wireless signal in a specific direction.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+37
+Spectrum Challenges
+Spectrum management involves several critical challenges that must be 
+addressed to ensure efficient and reliable wireless communication for ever-
+increasing data demands.
+• Congestion
+Network or spectrum congestion occurs when the demand for network resources in a specific geographic 
+area exceeds the available capacity or bandwidth.
+• Interference
+Interference is the corruption or obstruction of a desired signal by unwanted signals or noise, leading to 
+signal degradation and elevated error rates. Interference can be internal (within a network) or external 
+(from other devices or sources).
+• Limited availability
+The radio frequency (RF) spectrum
+is a finite natural resource
+governed by the laws of physics.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+38
+Spectrum Management
+Spectrum management is the process of regulating and allocating the 
+use of radio frequencies to ensure efficient use of this finite resource 
+and prevent harmful interference.
+• Licensed vs. unlicensed
+• Shared spectrum (CBRS)
+• Government allocation
+Governments play a central role in managing 
+the radio spectrum, which is considered 
+a finite public resource. 
+Factor
+Licensed Spectrum
+Unlicensed Spectrum
+Frequency Access
+Exclusive rights through 
+government 
+auction/assignment
+Shared access with 
+technical restrictions
+Initial Cost
+High licensing fees 
+($millions to $billions)
+No licensing fees
+Interference Control
+Protected from 
+interference
+Must tolerate 
+interference from other 
+users
+Coverage Range
+Wide-area coverage 
+possible
+Limited coverage, 
+typically local/regional
+Power Limits
+Higher power levels 
+permitted
+Strict power limitations
+Quality of Service
+Predictable, guaranteed 
+performance
+Variable performance 
+based on congestion
+Use Cases
+Cellular networks, 
+critical communications
+WiFi, Bluetooth, IoT 
+sensors, RFID
+Compliance Complexity
+High – multiple 
+technical standards
+Moderate – equipment 
+certification focus
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+39
+Mobile Voice Evolution
+This transition is characterized by the change from
+circuit switching to packet switching, culminating 
+in modern technologies like VoIP and VoLTE.
+• Circuit switching → Packet switching
+1G, 2G (GSM, CDMA), and 3G networks
+4G and 5G networks for all data transmission, including voice.
+• The shift to packet switching enabled the rise of Voice over IP (VoIP) and its highly 
+optimized cellular variant, Voice over LTE (VoLTE).
+• VoIP: enables voice communication and multimedia sessions over Internet Protocol 
+(IP) networks.
+WhatsApp, Skype, and Zoom
+• VoLTE: delivering VoIP services natively within the 4G LTE network architecture.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+40
+Data Services
+support data services that rely on high bandwidth, low latency, and 
+consistent connectivity.
+• Internet browsing
+accessing and navigating web pages
+viewing online content
+using web applications via a browser
+• Streaming
+real-time delivery of digital media (audio and video) over the internet.
+• Cloud services
+storing, managing, and processing data on remote servers hosted over the internet
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+41
+Messaging Services
+Messaging services have evolved significantly from basic text 
+communication to feature-rich internet-based platforms.
+• SMS: GSM signaling protocol
+SMS is the most widely used and fundamental messaging standard, a core part of all cellular networks 
+since the early 1990s.
+• MMS: WAP/HTTP protocol
+MMS was developed as an extension of SMS to allow users to send multimedia content beyond simple 
+text.
+• IP-based messaging: RCS protocol
+IP-based messaging, often referred to as "over-the-top" (OTT) messaging, uses Internet Protocol (IP) 
+networks (cellular data or Wi-Fi) for communication. This category dominates the modern messaging 
+landscape.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+42
+IoT Applications
+key cellular technologies for the Internet of Things (IoT), designed for 
+low-power wide-area (LPWA) applications and massive connectivity.
+• NB-IoT: Smart
+Best suited for stationary devices that send small, infrequent bursts of data and need deep indoor or 
+underground penetration.
+• LTE-M: Tracking
+Ideal for applications requiring slightly higher bandwidth, lower latency, and mobility, or voice support.
+• 5G mMTC: future architecture for massive IoT, building on the capabilities of NB-
+IoT and LTE-M.
+scalability, efficiency, and reliability
+Enterprise Applications
+• Private 5G
+• Smart factories
+• Mission-critical networks
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+43
+Cellular Security Mechanisms
+• Authentication
+Mechanism: Cellular networks use a challenge-response protocol, primarily the Authentication and Key 
+Agreement (AKA) protocol.
+• Encryption
+Data is encrypted using strong cryptographic algorithms defined by standards bodies like the 3GPP.
+• SIM-based security
+The Subscriber Identity Module (SIM) card is a critical hardware component of cellular security. It acts as 
+a secure, tamper-resistant container for essential security credentials.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+44
+Threats and Risks
+• Jamming
+• Spoofing
+• Malware on devices
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+45
+Reliability Challenges
+Coverage gaps
+High user density
+Weather & environmental factors
+• Rain and Humidity
+• Snow and Hail
+• Temperature
+• Thunderstorms and Lightning
+• Wind
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+46
+Beyond 5G / 6G Vision
+• AI-native networks
+6G is expected to integrate AI directly into the core network architecture
+• Holographic communication
+support real-time 3D holograms.
+• Terahertz frequencies
+6G will explore sub-THz and THz frequencies 
+(100 GHz – 3 THz).
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+47
+Summary
+• Evolution from analog → 5G
+• Increasing speed, efficiency, and device connectivity 
+Thank you.
+• Songyut Phoemphon
+•
+Email: songyut@sut.ac.th

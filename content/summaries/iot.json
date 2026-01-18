@@ -1,0 +1,80 @@
+{
+    "topicId": "iot",
+    "title": "Internet of Things (IoT)",
+    "sections": [
+        {
+            "title": "IoT คืออะไร?",
+            "content": "เครือข่ายของวัตถุ (Things) ที่เชื่อมต่อกันและแลกเปลี่ยนข้อมูลผ่านอินเทอร์เน็ต เพื่อให้ฉลาดขึ้น (Smart)",
+            "keyPoints": [
+                "Definition: Things + Smarter + Connected",
+                "M2M: Machine to Machine Technology (เครื่องจักรคุยกันเอง)",
+                "Goal: ทำให้วัตถุต่างๆ ฉลาดขึ้นและเชื่อมต่อกันได้"
+            ]
+        },
+        {
+            "title": "ประวัติและความเป็นมา (History of IoT)",
+            "content": "ไทม์ไลน์เหตุการณ์สำคัญของ IoT",
+            "keyPoints": [
+                "1969 (ARPANET): ต้นแบบของอินเทอร์เน็ต",
+                "1982 (CMU Vending Machine): ตู้ขายของอัตโนมัติเครื่องแรกที่ต่อเน็ตได้ (ตรวจสถานะของหมด/ความเย็น)",
+                "1990 (Smart Toaster): เครื่องปิ้งขนมปังเครื่องแรกที่สั่งงานผ่านอินเทอร์เน็ตได้ (โดย John Romkey)",
+                "1999 (Kevin Ashton): บัญญัติคำว่า 'Internet of Things' ครั้งแรก",
+                "2000 (LG Smart Fridge): ตู้เย็นอัจฉริยะเครื่องแรก",
+                "2016 (Mirai Botnet): การโจมตี Cyber ครั้งใหญ่ที่เจาะผ่านอุปกรณ์ IoT (กล้องวงจรปิด, Router)",
+                "2020+: AIoT (AI + IoT), Blockchain + IoT, Edge Computing"
+            ]
+        },
+        {
+            "title": "Smart Home",
+            "content": "บ้านอัจฉริยะช่วยอำนวยความสะดวกและประหยัดพลังงาน",
+            "keyPoints": [
+                "Monitoring: กล้องวงจรปิด (CCTV), เซ็นเซอร์ตรวจจับการบุกรุก",
+                "Controller: สั่งเปิด-ปิดไฟ, แอร์, ม่านไฟฟ้าผ่านมือถือ",
+                "Smart Appliances: ตู้เย็นที่แจ้งเตือนของหมด, เครื่องซักผ้าสั่งงานผ่าน Wi-Fi",
+                "Smart Garden: ระบบรดน้ำต้นไม้อัตโนมัติตามความชื้น"
+            ]
+        },
+        {
+            "title": "Wearable Devices",
+            "content": "อุปกรณ์สวมใส่เพื่อสุขภาพและไลฟ์สไตล์",
+            "keyPoints": [
+                "Smart Watch/Band: วัดชีพจร, นับก้าว, ติดตามการนอนหลับ",
+                "Smart Gadgets: รองเท้าวิ่งอัจฉริยะ, เสื้อผ้าตรวจจับท่าทาง",
+                "Tracking: ปลอกคอสัตว์เลี้ยงระบุพิกัด GPS",
+                "Health: วัดระดับออกซิเจนในเลือด (SpO2), คลื่นไฟฟ้าหัวใจ (ECG)"
+            ]
+        },
+        {
+            "title": "Smart Farming (เกษตรอัจฉริยะ)",
+            "content": "การใช้เทคโนโลยีเพื่อเพิ่มผลผลิตและลดต้นทุนทางการเกษตร",
+            "keyPoints": [
+                "Precision Agriculture: การเกษตรแม่นยำ (ใส่ปุ๋ย/น้ำตามความจำเป็นจริง)",
+                "Drones: บินสำรวจพื้นที่, พ่นยา/ปุ๋ย",
+                "Smart Tractors: รถไถไร้คนขับ (Self-driving tractors)",
+                "Sensors: ตรวจวัดความชื้นในดิน, อุณหภูมิ, แสงแดด",
+                "Harvesting Robots: หุ่นยนต์เก็บเกี่ยวผลผลิตอัตโนมัติ"
+            ]
+        },
+        {
+            "title": "Industry 4.0 / IIoT",
+            "content": "การปฏิวัติอุตสาหกรรมด้วย Industrial IoT",
+            "keyPoints": [
+                "Machine Status Monitoring: ตรวจวัดสถานะเครื่องจักรแบบ Real-time",
+                "Predictive Maintenance: ทำนายการเสียของเครื่องจักรล่วงหน้า (ลด Downtime)",
+                "AGV (Automated Guided Vehicle): รถขนส่งสินค้าอัตโนมัติในโรงงาน",
+                "Energy Monitoring: ตรวจสอบการใช้พลังงานเพื่อประหยัดค่าไฟ"
+            ]
+        },
+        {
+            "title": "Smart City (เมืองอัจฉริยะ)",
+            "content": "การบริหารจัดการเมืองด้วยข้อมูลและเทคโนโลยี",
+            "keyPoints": [
+                "Smart Mobility: ระบบจัดการจราจร, ขนส่งสาธารณะ",
+                "Smart Environment: ตรวจวัดคุณภาพอากาศ (PM2.5), ระดับน้ำ",
+                "Smart Energy/Grid: โครงข่ายไฟฟ้าอัจฉริยะ",
+                "Smart Governance: บริการภาครัฐออนไลน์",
+                "Smart Living: ความปลอดภัยในชีวิตและทรัพย์สิน"
+            ]
+        }
+    ]
+}

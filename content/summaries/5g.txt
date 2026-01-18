@@ -1,0 +1,770 @@
+Wireless Technology
+• Speaker: Songyut Phoemphon
+• Contact: songyut@sut.ac.th
+• Enabling data transmission without physical cables
+Exploring the evolution, key principles, applications, network types, and security 
+of wireless communication that enable today’s digital mobility and flexibility.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+2
+Definition of Wireless Technology
+Understanding Wireless Technology: Core Components and Wave Types
+Data transmission without cables using electromagnetic waves enables diverse connectivity 
+from local to global scales
+•
+Wireless technology enables data transmission without physical cables by utilizing 
+electromagnetic waves
+•
+Types of electromagnetic waves used include radio waves, infrared, and microwaves, each 
+suitable for different ranges and applications
+•
+Primary communication modes are radio frequency communication for local device 
+connections and satellite links for global network coverage
+•
+This technology supports applications from short-range device interaction to worldwide data 
+networks without relying on wired infrastructure
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+3
+Evolution of Communication
+Charting the shift from early telegraph systems to digital, cloud-integrated 
+networks driving today’s connectivity
+1837: Telegraph Invention
+•
+Introduced wired communication enabling long-distance 
+transmission of coded messages.
+1876: Wired Telephone
+•
+Enabled real-time voice communication over electrical wires, 
+expanding reach and accessibility.
+1983: Mobile Networks
+•
+Marked the transition to wireless telephony, 
+enhancing mobility and personal connectivity.
+Late 20th Century: Analog to Digital Shift
+•
+Transitioned transmission methods to digital, boosting speed, capacity, and reliability.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+4
+Importance in Modern Life
+Unlocking the Power of Wireless Technology: Enhancing mobility, reducing 
+costs, and enabling IoT-driven smart systems for seamless digital 
+transformation
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+5
+Common Applications
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+6
+Wired vs Wireless Comparison
+Balancing performance with mobility for optimal network design
+Summary
+•Delivers stable and high-speed data transfer
+•Offers strong security through physical connections
+•Limited flexibility due to fixed cabling
+•Ideal for environments prioritizing performance and 
+reliability
+•Enables portability and user mobility
+•Supports scalable network expansion without 
+cables
+•Susceptible to interference and signal degradation
+•Favored for dynamic, flexible, and mobile use cases
+VS
+•
+Wireless is the heart of modern communication
+•
+Essential for IoT, smart systems, and digital transformation
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+7
+Electromagnetic Spectrum
+Explore critical frequency bands shaping wireless communication from LF to 
+microwaves with distinct propagation advantages
+• understand security of a router 
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+8
+Frequency and Wavelength
+Understanding the trade-off between data rates and signal range for 
+optimized wireless performance
+• understand security of a router 
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+9
+Propagation Models
+Explore how LOS and NLOS mechanisms shape signal behavior and impact 
+reliability
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+10
+Antenna Concepts
+Explore how different antenna designs affect signal coverage and 
+network performance
+• understand security of a router 
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+11
+Modulation Techniques
+Key Modulation Techniques for Wireless Communication: From traditional 
+analog to advanced digital methods driving modern networks 
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+12
+Signal Metrics
+Measuring Wireless Link Quality with RSSI and SNR: Understanding 
+signal strength and clarity to ensure reliable wireless connections
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+13
+Signal Metrics
+Mastering Wireless Security: Protect Data and Access
+Key encryption and authentication techniques safeguard wireless networks 
+against evolving cyber threats
+•  
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+14
+Wireless Security Basics
+Optimizing performance and securing reliable data exchange
+• Frequency, propagation mechanisms, and modulation techniques are fundamental 
+to wireless communication performance
+• Security through encryption and authentication ensures reliable and safe data 
+transmission
+• Mastering these fundamentals prepares learners to understand complex wireless 
+networks and emerging technologies
+Summary
+• Frequency, propagation, and modulation 
+determine wireless performance
+• Security ensures reliable communication
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+15
+WPAN (Wireless Personal Area Network)
+Seamless Short-Range Connectivity: Enabling efficient 
+communication for personal and IoT devices within 10 meters
+• Covers short ranges typically less than 10 meters for close-proximity device 
+communication
+• Includes technologies such as Bluetooth and ZigBee, which support low-power 
+wireless connections
+• Ideal for wearables, personal gadgets, and home automation systems requiring 
+convenient connectivity
+• Features low power consumption, enhancing battery life and usability in personal 
+tech applications
+• Supports seamless device interaction in environments like homes, offices, and 
+personal spaces
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+16
+WLAN (Wireless Local Area Network)
+Delivering versatile Wi-Fi access within 100 meters for homes, offices, and 
+campuses
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+17
+WMAN (Wireless Metropolitan Area Network)
+Leverage WiMAX technology to deliver high-capacity broadband across 
+cities and regions
+• WMANs cover extensive geographic areas such as entire cities or metropolitan 
+regions
+• WiMAX (IEEE 802.16) enables reliable wireless broadband across these wide 
+urban environments
+• Supports public hotspots and large-scale urban connectivity needs
+• Higher power transmitters and extensive infrastructure ensure coverage for 
+thousands of users
+• Ideal for providing broadband access in densely populated metropolitan areas
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+18
+WWAN (Wireless Wide Area Network)
+Leverage cellular technologies to enable seamless global connectivity for 
+voice, data, and video services
+•
+Provide wireless coverage over extensive geographic regions using cellular network 
+technologies
+•
+Support key cellular standards including 3G, 4G, and 5G for broad device compatibility
+•
+Enable global mobility and uninterrupted access to voice, data, and video services
+•
+Operate through interconnected base stations and network infrastructure ensuring wide 
+area coverage
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+19
+Satellite Communication
+• Orbiting satellites extend reach beyond terrestrial networks with critical applications 
+worldwide
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+20
+Ad Hoc and Mesh Networks
+• Self-organizing wireless systems enabling rapid deployment and robust 
+communication without central infrastructure
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+21
+Network Type Comparison
+Network Type
+Typical Range
+Data Speed
+Power 
+Consumption
+Infrastructure Cost
+WPAN (Wireless 
+Personal Area 
+Network)
+Very short (<10 m)
+Low (up to a few 
+Mbps)
+Very low
+Very low
+WLAN (Wireless 
+Local Area 
+Network)
+Short to medium 
+(<100 m)
+Medium to high (up 
+to several Gbps 
+with Wi-Fi 6/7)
+Moderate
+Low
+WMAN (Wireless 
+Metropolitan Area 
+Network)
+City-wide (up to 
+several km)
+Medium
+Moderate to high
+Medium
+WWAN (Wireless 
+Wide Area 
+Network)
+Regional to 
+national
+High (up to multi-
+Gbps in 5G)
+High
+High
+Satellite 
+Communication
+Global (thousands 
+of km)
+Variable (low to 
+medium)
+Very high
+Very high
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+22
+IEEE 802.11 (Wi-Fi)
+Wi-Fi Frequency Bands and Standards
+• 2.4 GHz and 5 GHz bands are the main frequency ranges used in Wi-Fi 
+communication
+• Wi-Fi standards include 802.11a / b / g / n / ac / ax (Wi-Fi 6)
+• Wi-Fi 7 (802.11be) is under development for ultra-high-speed wireless connectivity
+•  
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+23
+Bluetooth and BLE
+Short-Range, Low-Power Communication
+•
+BLE (Bluetooth Low Energy) is designed for IoT applications
+•
+Enables efficient data transfer with minimal power consumption
+•
+Commonly used in health trackers, wireless earbuds, and controllers
+Difference Between Bluetooth Low Energy and Classic Bluetooth
+•
+Bluetooth Classic is designed for continuous, both way communication, whereas BLE 
+transfers smaller packets of data over short periods of time;
+•
+Bluetooth Low Energy has much smaller energy consumption compared with Bluetooth 
+classic
+•
+Bluetooth Classic is not so limited, it has a longer range and higher data throughout.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+24
+NFC (Near Field Communication)
+Short-range wireless communication for contactless data exchange
+• understand security of a router 
+• NFC (Near Field Communication) enables two devices to communicate when placed within 
+a few centimeters
+• Operates at 13.56 MHz frequency band
+• Allows secure and quick data exchange without internet or pairing
+• Commonly used for:
+Contactless payments (e.g., Apple Pay, Google Pay)
+Access control (smart cards, key fobs)
+Device pairing (Bluetooth or Wi-Fi setup)
+Smart posters and tags for information sharing
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+25
+ZigBee (IEEE 802.15.4)
+Low-power wireless communication for IoT and sensor networks
+•
+ZigBee is based on the IEEE 802.15.4 standard
+•
+Designed for low data rate, low power, and low cost wireless communication
+•
+Operates in 2.4 GHz, 868 MHz, or 915 MHz frequency bands
+•
+Supports mesh networking — devices can relay data to extend range
+•
+Ideal for smart home, industrial automation, and sensor networks
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+26
+LoRa and LoRaWAN
+Long-range, low-power communication for IoT networks
+LoRa (Long Range):
+• A physical layer technology using chirp spread spectrum (CSS) modulation
+• Enables long-distance wireless communication (up to 15 km in rural areas)
+• Designed for low-power, low-data-rate IoT devices
+LoRaWAN (LoRa Wide Area Network):
+• A network protocol built on top of LoRa
+• Manages communication between end 
+devices, gateways, and network servers
+• Provides security, device management, 
+and network scalability
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+27
+Cellular Standards
+Evolution of mobile network technology from analog to ultra-fast 5G
+•
+1G – Analog Voice
+•
+2G – Digital Voice & SMS
+Added SMS and basic data (up to 64 kbps)
+Digital transmission (GSM, CDMA)
+•
+3G – Mobile Internet
+Data rates up to 2 Mbps
+enabling mobile browsing and video calls
+Packet-switched data (UMTS, HSPA)
+•
+4G – High-Speed Broadband
+LTE, LTE-Advanced
+supports HD streaming & VoIP
+Data rates up to 1 Gbps
+•
+5G – Ultra-High Speed & IoT
+Enhanced Mobile Broadband (eMBB), Ultra-Reliable Low Latency Communication (URLLC), and Massive IoT (mMTC)
+Data rates up to 10 Gbps, latency < 1 ms 
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+28
+Emerging Standards
+Future towards 6G: AI-Driven Networks
+Wi-Fi 7 and Beyond: Towards the Multi-Gbps and Low-Latency Era
+การจัดสรร
+ทรัพยากรเชิง
+คาดการณ์
+AI จะท ำนำยควำมต้องกำรใช้งำนล่วงหน้ำ
+การซ่อมแซมและ
+ปรับตัวอัตโนมัติ
+เครือข่ำยสำมำรถตรวจจับและแก้ไขปัญหำได้เอง 
+(Self-Healing)
+โครงสร้าง AI-
+Native
+ท ำให้กำรประมวลผลและกำรตัดสินใจเกิดขึ้น
+ได้ทันทีที่ Edge
+Multi-Gigabit Speeds:
+ ควำมเร็วสูงระดับหลำยกิกะบิต รองรับกำรสตรีมมิ่ง 8K, 
+Cloud Gaming และกำรดำวน์โหลดขนำดใหญ่ในเสี้ยววินำที
+Ultra-Low Latency:
+ ลดควำมหน่วงแฝงลงอย่ำงมำก ตอบสนองแบบเรียลไทม์ 
+เหมำะส ำหรับประสบกำรณ์ AR/VR ที่สมจริง
+MLO (Multi-Link Operation):
+ เทคโนโลยีกำรรวมคลื่นหลำยย่ำนควำมถี่ (2.4, 5, 6 GHz) พร้อมกัน 
+เพิ่มควำมเสถียรและควำมเร็ว
+320 MHz Channels:
+ ช่องสัญญำณที่กว้ำงขึ้นเป็นสองเท่ำ (จำก 160 MHz) 
+ท ำให้ส่งข้อมูลได้มำกขึ้นอย่ำงมหำศำล
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+29
+Antennas and Access Points
+The Access Point (AP) is the central brain of a Wireless Local Area Network 
+(WLAN), typically known as Wi-Fi. Its primary function is to serve as the 
+bridge connecting wireless devices to a wired network infrastructure. 
+• Key Functions
+Central Hub
+Bridge to the Wired Network
+Network Broadcasting
+Antennas are the physical transducers that allow the Access Point to 
+communicate wirelessly. They are the essential component that converts 
+energy types.
+• Key Functions
+Transmission (The "Mouth"): electrical signal to electromagnetic waves
+Reception (The "Ear"): electromagnetic waves to electrical signal
+Signal Direction: Omnidirectional, Directional 
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+30
+Routers and Modems
+The modem acts as the interpreter that allows your internal network to "talk" 
+to the external internet network of the service provider.
+• Primary Function: Translates signals between digital and analog formats. 
+The router is the traffic controller of your network. Its job is to receive data 
+packets and decide "where to send them."
+• Primary Function: Manages data traffic and IP Addressing within the Local 
+Area Network (LAN).
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+31
+IoT Devices and Gateways
+The foundation of the Internet of Things (IoT) ecosystem relies on the 
+interaction between numerous small devices and a centralized 
+communication manager, the Gateway.
+• IoT Devices are the endpoints of the system. They are small, low-power physical 
+objects embedded with sensors, software, and connectivity, designed to collect and 
+transmit specific data about the physical world.
+• The IoT Gateway is a crucial piece of hardware that acts as a bridge or a central 
+aggregation point between the distributed IoT devices and the cloud or local 
+servers.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+32
+Edge and Fog Computing
+Distributed computing architecture designed to address the challenges of 
+latency, bandwidth, and processing when dealing with massive volumes of 
+data generated by IoT devices.
+Edge Computing
+• the practice of processing data physically
+close to the source of the data generation 
+(the "edge" of the network), instead of sending 
+all data directly to a centralized cloud or server.
+Fog Computing
+• an extension of Edge Computing. 
+• It provides a more dense, layered, and distributed computing infrastructure 
+between the network edge and the cloud.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+33
+Energy Harvesting Systems
+Capture and convert tiny amounts of ambient (environmental) energy into 
+usable electrical power to operate small electronic devices, primarily in the 
+Internet of Things (IoT) domain. 
+• Solar / Photovoltaic
+• Thermal (Thermoelectric)
+• Vibration / Kinetic (Piezoelectric)
+• Radio Frequency (RF)
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+34
+Smart Homes
+A Smart Home is a residence that uses internet-connected devices to enable 
+the remote monitoring and management of appliances, systems, and lighting, 
+often via a smartphone or voice command.
+• comfort
+• security 
+• energy efficiency
+• convenience
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+35
+Smart Cities
+A Smart City is an urban area that uses various types of electronic data 
+collection sensors (IoT devices) to supply information used to manage 
+assets, resources, and services efficiently. 
+• quality of life for residents
+• enhance economic growth
+• ensure environmental 
+sustainability
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+36
+Healthcare
+Smart Healthcare refers to the use of digital technologies, particularly 
+wireless connectivity and the Internet of Medical Things (IoMT).
+• Efficiency
+• Quality
+• accessibility of medical services.
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+37
+Industrial IoT (IIoT)
+Industrial Internet of Things (IIoT) refers to the application of IoT 
+technology—sensors, smart devices, data analytics, and networking—to 
+industrial sectors.
+It is the engine driving the Fourth Industrial Revolution (Industry 4.0).
+• manufacturing
+• energy
+• Logistics
+• heavy industry
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+38
+Agriculture (Smart Farming)
+Application to traditional farming practices. It utilizes wireless connectivity 
+and data analytics to monitor, manage, and optimize crop and livestock 
+production with high precision.
+simultaneously optimizing the use of resources (water, fertilizer, pesticides) 
+and reducing environmental impact
+• quality 
+• quantity
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+39
+Transportation
+Modern transportation systems leverage wireless technology to create 
+smarter, safer, and more efficient traffic flows, forming a crucial component of 
+the Smart City concept.
+• Vehicle-to-Vehicle Communication (V2V) 
+• GPS-based Fleet Management
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+40
+Education and Campus
+Wireless technology has transformed the educational environment into a 
+digital age, focusing on creating flexible, highly interactive, and easily 
+accessible learning experiences for students, scholars, and faculty. 
+• Wi-Fi Networks for Digital Learning
+Pervasive Coverage
+eBooks, LMS
+• Smart Classrooms
+Smart Interactive Whiteboards
+Remote Learning
+• Mobile Access
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+41
+Military and Emergency Systems
+Military and Emergency Systems are areas where wireless technology plays 
+the most critical role, requiring Ultra-Reliable, Secure, and Always-Available 
+communication in all environments.
+• Military Communication
+(Ad-Hoc Networks) and MANETs
+Satellite Communication - SATCOM
+AES 256-bit and Frequency Hopping (Eavesdropping) (Jamming)
+• Emergency and Rescue Systems
+LTE/5G
+Interoperability
+Drone and Sensor Deployment
+•  
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+42
+Signal Interference
+Signal Interference is the phenomenon where unwanted radio waves 
+combine with or disrupt the desired radio waves, leading to degraded signal 
+quality, data loss, or complete communication failure. It is a major challenge 
+in all types of wireless systems.
+• Types : Intra-System Interference and External Interference
+• Effects 
+Degraded Signal Quality
+Reduced Throughput
+Increased Latency
+• Manage 
+Frequency Management
+Spread Spectrum Techniques
+Beamforming
+Use of Massive MIMO
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+43
+Coverage Limitations
+Coverage Limitations refer to the problem where the strength and quality of a 
+wireless signal deteriorate due to distance and obstacles, resulting in 
+reduced network performance or loss of signal.
+• Factors Affecting Signal Strength
+Path Loss
+Obstacles 
+• Effects of Signal Attenuation
+Lower Data Rates
+Increased Power Consumption
+Dead Zones
+• Solutions
+Repeaters / Range Extenders
+Mesh Networks
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+44
+Security and Privacy
+Wireless systems inherently carry high risks because signals travel through 
+the air. Protection must therefore cover both the data level and the network 
+level to ensure the confidentiality and integrity of information. 
+• Encryption
+• Authentication
+• Firewall
+• Spoofing Protection
+• Jamming Protection
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+45
+Energy Efficiency
+Energy Efficiency is a critical factor in wireless communication, especially in 
+the context of battery-powered IoT devices that must operate continuously 
+for extended periods (months or years). System design must therefore focus 
+on reducing power consumption at every stage.
+• Low-Power Protocols: Designed for communicating small amounts of data using the lowest 
+possible energy:
+BLE (Bluetooth Low Energy)
+NB-IoT (Narrowband Internet of Things)
+• Power Saving Modes
+Sleep Mode in Radio Module
+PSM (Power Saving Mode) in 4G/5G
+• Adaptive Transmission
+Adaptive Power Control
+Adaptive Data Rate
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+46
+Spectrum Management
+The Radio Spectrum is a highly valuable and limited natural resource. 
+Spectrum Management is a complex and crucial process to ensure that 
+various wireless technologies can efficiently share frequency bands and 
+minimize signal interference.
+• Shared Spectrum Allocation
+Licensed Spectrum
+Unlicensed Spectrum
+• Dynamic Spectrum Access
+Cognitive Radio (CR)
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+47
+5G and 6G
+5G is more than just an increase in speed; it is a network revolution designed 
+to support the world of the Internet of Things (IoT) and applications requiring 
+real-time responsiveness.
+•
+Extremely Low Latency: Enables near-instantaneous responsiveness.
+•
+High Throughput: Supports applications requiring massive bandwidth.
+•
+Energy Efficiency: Includes modes that help extend the battery life of IoT devices.
+6G : Future network (launch around 2030) that will push past the limits of 5G (1 Tbps, 
+0.1 ms, and THz)
+การสื่อสารโฮโลแกรม 3D
+สื่อสารและประชุมกันในรูปแบบโฮโลแกรม 3 มิติที่
+สมจริง ให้ความรู้สึกเสมือนจริง
+Metaverse ที่สมจริง
+ประสบการณ์ในโลกเสมือนจริง (Metaverse) ที่ไร้
+รอยต่อและดื่มด ่ามากยิ่งขึ้น ด้วยการรองรับ AR/VR 
+ที่ไม่มีการหน่วง
+ที่
+การผสาน AI เข้ากับเครือข่าย
+ระบบสามารถบริหารจัดการข้อมูลได้อย่างชาญฉลาด
+และมีประสิทธิภาพสูงสุด ช่วยในการคาดการณ์ปัญหา
+และปรับทรัพยากร
+Internet of Everything
+การเชื่อมโยง "ทุกสิ่ง" ไม่ว่าจะเป็นอุปกรณ์ 
+สภาพแวดล้อม เมืองอัจฉริยะ หรือแม้แต่การสื่อสาร
+ระหว่างโลกเสมือนกับโลกจริง
+การผ่าตัดทางไกล
+ด้วยความหน่วงที่ต ่ามาก แพทย์จะสามารถควบคุม
+หุ่นยนต์ผ่าตัดจากระยะไกลได้อย่างแม่นย า
+ยานพาหนะอัตโนมัติ
+รถยนต์ไร้คนขับจะสามารถสื่อสารและแลกเปลี่ยน
+ข้อมูลกับโครงสร้างพื้นฐานและยานพาหนะอื่นๆ ได้
+แบบเรียลไทม์
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+48
+Wi-Fi 7 and Li-Fi
+Wi-Fi 7 is the next-generation Wi-Fi standard designed to surpass the speed, 
+capacity, and latency limitations of Wi-Fi 6E. Its goal is to support extremely 
+high-bandwidth applications such as AR/VR/XR, 8K video streaming, and 
+Cloud Gaming.
+Li-Fi is a wireless communication technology that uses Visible Light instead 
+of Radio Frequency (RF) waves to transmit data. It works by using very 
+rapid, imperceptible flickering of LED lights.
+Feature
+Wi-Fi 7
+Li-Fi
+Medium of Transmission
+Radio Frequency (RF) waves
+Visible Light
+Speed
+Very Fast (Max 46 Gbps)
+Fastest (Significantly higher 
+potential than Wi-Fi)
+Penetration
+Excellent penetration through 
+walls
+No penetration through walls 
+(Requires line of sight)
+Primary Use
+General home/office use, 
+mobile connectivity
+Point-to-point use, confined 
+spaces, high-security areas
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+49
+AI in Wireless Networks
+Artificial intelligence (AI) is transforming wireless networks by enabling 
+autonomous and highly efficient network management through:
+• Predictive optimization and resource allocation
+• Self-healing and adaptive networking 
+© 2013 Cisco and/or its affiliates. All rights reserved.
+Cisco Public
+50
+Comparison Table
+Standard
+Advantages
+Disadvantages
+Common Applications
+Wi-Fi (IEEE 802.11)
+- High data rate (up to 
+several Gbps in Wi-Fi 6/7)- 
+Supports many devices- 
+Widely available 
+infrastructure
+- High power consumption- 
+Short range (<100 m)- 
+Susceptible to interference
+- Home/office internet- 
+Computers, smartphones- 
+Indoor IoT devices
+Bluetooth (IEEE 802.15.1 / 
+BLE)
+- Low power consumption 
+(especially BLE)- Low cost 
+and easy to implement- Ideal 
+for short-range connections
+- Limited range (<10–30 m)- 
+Lower data rate than Wi-Fi- 
+May experience latency in 
+some devices
+- Wearable devices- 
+Headphones, mice, 
+keyboards- Portable IoT 
+devices
+5G (3GPP Release 15–17)
+- Extremely high speed (up 
+to several Gbps)- Ultra-low 
+latency (<1 ms)- Supports 
+massive device connectivity
+- Expensive infrastructure- 
+Signal attenuation at high 
+frequencies (mmWave)- 
+High power usage at base 
+stations
+- Smartphones, smart 
+vehicles- Smart cities, 
+industrial IoT
+LoRa (Long Range)
+- Very long range (several 
+kilometers)- Ultra-low power 
+consumption- Ideal for small, 
+infrequent data 
+transmissions
+- Low data rate (~50 kbps 
+max)- Not suitable for large 
+data volumes- Limited 
+security without additional 
+encryption
+- IoT sensors for agriculture- 
+Smart metering, 
+environmental monitoring, 
+asset tracking
+Thank you.
+• Songyut Phoemphon
+•
+Email: songyut@sut.ac.th

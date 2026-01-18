@@ -1,0 +1,382 @@
+Blockchain and 
+Cryptocurrencies
+Sirapat Boonkrong @ DIGITECH, SUT
+Agenda
+What is Cryptocurrency?
+01
+How Cryptocurrency Works?
+02
+What is Blockchain?
+03
+What is Cryptocurrency Mining?
+04
+DeFi, NFT and GameFi
+05
+Let’s do a simple poll.
+Are you 
+familiar 
+with this?
+Have You 
+Seen Them 
+Before? 
+https://money.kapook.com/view218956.html
+What are 
+They?
+Have You 
+Heard of Them 
+Before? 
+What is Cryptocurrency?
+Evolution of Monetary System
+Cryptocurrency
+Digital Money
+Gold
+Fiat Money
+Barter System
+1
+2
+3
+4
+Now
+01
+Divisible
+A currency must be divisible so that units of its value can be 
+paid to match the value of your purchase
+02
+Scarce
+If the medium of the currency is easily obtainable or 
+reproducible, it will have little worth.
+03
+Durable
+Money must not have a property that allows it to decay over 
+time.
+04
+Acceptable
+Trusted and accepted by all.
+Physical Properties of Currencies
+Public Ledger
+I hope and I believe that this 
+Template will your Time, Money 
+and Reputation. 
+Your Text Here
+I hope and I believe that this 
+Template will your Time, Money 
+and Reputation. 
+Your Text Here
+I hope and I believe that this 
+Template will your Time, Money 
+and Reputation. 
+Your Text Here
+• Every transaction is recorded
+• Everybody can verify
+• Transactions are not reversible
+• Hard to commit fraud
+https://medium.com/@COTInetwork/ledgers-over-the-years-from-ancient-egypt-to-blockchain-dag-
+and-beyond-47924175cb97
+Today’s cryptocurrencies have these features! 
+Distributed 
+vs 
+Centralised
+Peer-to-Peer
+Cryptocurrency allows two users (sender and recipient) to move 
+money in a peer-to-peer way. They can do so without any 
+intermediaries like banks or payment systems. If you send money 
+through a bank, the record about the transaction will appear in a 
+centralized database. Theoretically, somebody can change, delete, 
+damage, steal or pass it to authorities.
+What is Cryptocurrency?
+Cryptocurrency
+Cryptocurrency is a medium of exchange, created and 
+stored electronically in a blockchain, using encryption 
+techniques to create monetary unit and to verify 
+transactions.
+Principles of Cryptocurrency
+Decentralisation
+No central banks take control of the 
+currency.
+Immutability
+Nobody can modify or delete a 
+transaction after its verification and 
+addition to the ledger.
+Transparency
+All the transactions are available for 
+viewing by all the network 
+participants.
+Decentralisation
+Immutability
+Transparency
+What is Cryptocurrency?
+พระราชก าหนด 
+การประกอบธุรกิจสินทรัพย์ดิจิทัล 
+พ.ศ. ๒๕๖๑
+How Cryptocurrency Works
+Goals:
+• Direct transaction from one person to another
+• Avoid having a central authority
+• Zero or low processing fee
+• Irreversible transactions
+“Bitcoin: A Peer-to-Peer Electronic Cash System” 
+by Satoshi Nakamoto, 2009. 
+Everything 
+Began 
+Here
+Cryptocurrency Wallet
+A cryptocurrency wallet is 
+required before being able to 
+send and receive 
+cryptocurrencies.
+If you want to receive, store 
+or send money, usually you 
+need a bank.
+But in the digital world, you 
+need a cryptocurrency wallet.
+Cryptocurrency Wallet
+D
+H
+C
+M
+They store a private key on a device 
+like a USB stick. Hardware wallets 
+make it possible to easily transact 
+while also keeping your money offline 
+and away from danger.
+Hardware Wallets
+They run on an app and can be used 
+anywhere including retail stores. They 
+are similar to desktop wallets but are 
+smaller.
+Mobile Wallets
+They are only accessible from the 
+single computer. They offer one of the 
+highest levels of security, but it is 
+possible to lose all your funds.
+Desktop Wallets
+They  are accessible from any 
+computing device in any location. 
+While they are more convenient to 
+access, online wallets store your 
+private keys online and are controlled 
+by a third party.
+Cloud Wallets
+Buying Cryptocurrency
+Crypto Currency Exchange Rate
+Source: www.bitkub.com
+Sending and Receiving Cryptocurrency
+Enter the wallet address of the recipient and 
+choose the amount to send.
+Transactions
+For sending
+You don’t have to do anything except share your 
+wallet address with the sender.
+For receiving
+Blockchain
+The Centralised 
+System Problem
+Single Point of Failure: If the central authority 
+goes down, everything stops.
+Security Risk: A single target for hackers (data 
+breaches).
+Lack of Transparency: You often can't see how 
+decisions are made or data is handled.
+Control: The central party has ultimate control 
+over your data/transactions.
+Cost: Middlemen often add fees.
+21
+What is Blockchain?
+Block
+Each block contains a group of 
+confirmed transactions.
+Chain
+Every block is cryptographically 
+connected to the previous one.
+A Blockchain is a distributed 
+ledger, where a ledger is 
+kept at all participants in the 
+network. 
+Blockchain – User Perspective
+A transaction is made in a 
+blockchain network, e.g., 
+transfer 1 BTC to Alice.
+Make Transaction
+Make 
+Transaction
+The transaction is put into 
+a memory pool, waiting to 
+be verified.
+Memory Pool
+The transaction is added 
+to the existing blockchain 
+as a new block.
+Finished
+The transaction is 
+broadcasted to everyone 
+in the network.
+Broadcast
+The transaction is verified 
+and approved by the 
+blockchain network.
+Approval Process
+Waiting …
+Complete
+Broadcast
+Approval
+Why is Verification Necessary?
+Validation is done to ensure that the 
+sender really possesses at least the 
+amount of money he or she is 
+spending.. 
+Do you really have the money?
+Who does the verification?
+How is it done?
+Questions:
+Get a modern PowerPoint  Presentation that 
+is beautifully designed. I hope and I believe 
+that this Template will your Time.
+You can simply impress your audience and 
+add a unique zing and appeal to your Reports. 
+Weakness
+Validation is done to ensure that the 
+sender does not spend the same coin 
+twice.
+Prevent Double-Spending
+WHY?
+Cryptocurrency Mining
+Cryptocurrency Mining
+01
+Mining
+The work made by cryptocurrency miners.
+Confirming
+Miners take transactions and confirm them.
+Adding to the Chain
+Once the transaction is confirmed, it is added to the chain, 
+as a new block.
+02
+03
+Rewarding
+Miners are rewarded for their work.
+04
+What Miners Do
+01
+Solving a Complex Mathematical Problem
+•
+Miners will attempt to solve an equation in order to find x 
+(known as a nonce)
+•
+Using a hash function (SHA-256) 
+•
+Solving an equation: y = f(x) where x has to be found
+https://cointelegraph.com/explained/proof-of-work-explained
+Proof of Work
+Mining Pools
+vs
+Solo Miners
+ASIC
+GPU
+Mining
+Farm
+https://waytomine.com/giants-cryptocurrency-mining-powerful-farms/
+https://bitcoinist.com/newly-launched-siberian-bitcoin-mining-farm-russia-largest/
+How Much is the Reward?
+50 BTC
+3.125 BTC
+In 2009, the reward was 50 BTC per block.
+Currently, the reward is around 3.125 BTC per block.
+Every few years, after a certain number of blocks 
+is solved, the fixed reward is halved, making 
+mining less profitable
+This mechanism is called halving and invented to 
+hold back crypto inflation. The increased difficulty 
+of obtaining new coins makes them more scarce 
+and valuable.
+*Limit of 21 million bitcoins, which will be reached in 2140.
+DeFi
+What is DeFi?
+A new way to carry out financial transactions
+Decentralised 
+Finance
+Blockchain-based form of finance that does 
+not rely on any central authority.
+DeFi
+Smart Contracts
+Ethereum
+Bitcoin and Blockchain
+Cryptocurrency Exchange
+https://uniswap.org
+Crypto Lending
+https://compound.finance/
+https://www.yield.app/post/defi-lending-and-borrowing-guide
+Not without 
+Problems
+NFT
+Non-Fungible Token
+• Assets that are incapable of mutual substitution.
+• They are non-interchangeable.
+• Examples: Arts, Degree Certificates
+Non-Fungible Assets
+• Assets that are capable of mutual substitution.
+• They are interchangeable.
+• Examples: Money, Bitcoin
+Fungible Assets
+By Beeple
+First 5000 
+Days
+69 Million US Dollars
+'The First 5000 Days', the 1st purely digital NFT based artwork 
+offered by a major auction house has sold for $69,346,250, 
+positioning him among the top three most valuable living artists. 
+They have been sold for 
+millions of US dollars combined.
+CryptoPunks 
+Art
+Jack Dorsey’s First Tweet
+The CEO and founder Jack Dorsey tweeted the very first tweet after 
+setting up Twitter back in 2006. The tweet read, “just setting up my 
+twttr.” And later on, he sold this tweet as an NFT for a hefty amount 
+of money – $2.9 million!
+GameFi
+GameFi
+• Games that run on blockchain technology, 
+which is decentralised.
+• Earning through winning or trading items.
+Game + DeFi
+Play-to-Earn
+Decentralised Finance (DeFi)
+Blockchain
+Game
+GameFi
+Source: CoinQuora, Siam Bitcoin
+Implications
+On e-Commerce
+Why?
+Cryptocurrencies can connect people with the world of 
+e-commerce. 
+Replace centralised systems and credit card systems.
+Simplify shopping process and reduce fees.
+https://ecommerceguide.com/ecommerce-statistics/
+What is the Holdback?
+It is possible that the price 
+changes greatly within a short 
+period of time, and for no obvious 
+reason.
+Volatility
+Main stream adoption depends on 
+how cryptocurrencies are regulated.
+Lack of Regulations
+Why 
+Not?
+https://bitcoinexchangeguide.com/cryptocurrency-regulation/
+Summary
+Cryptocurrency was 
+created to get rid of the 
+middle authority.
+Cryptocurrency works on a 
+blockchain.
+Cryptocurrency has 
+implications on many 
+areas: banked, unbanked 
+and e-commerce.
+Cryptocurrency stills 
+needs to be clearly 
+regulated before it 
+becomes widely accepted.
+Thank you
+Sirapat@g.sut.ac.th

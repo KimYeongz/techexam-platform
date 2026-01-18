@@ -1,0 +1,528 @@
+{
+    "topicId": "ai",
+    "topicName": "AI (Artificial Intelligence)",
+    "topicNameTH": "ปัญญาประดิษฐ์",
+    "summary": {
+        "definition": "ความฉลาดของเครื่องจักรที่เลียนแบบพฤติกรรมมนุษย์ (คิด, วิเคราะห์, เรียนรู้)",
+        "components": [
+            "AI: ภาพกว้างที่สุด",
+            "Machine Learning (ML): AI ที่เรียนรู้จากข้อมูลโดยไม่ต้องเขียนโปรแกรมสั่งทุกบรรทัด",
+            "Deep Learning: ML ที่ซับซ้อน เลียนแบบโครงข่ายประสาทสมอง (Neural Networks)"
+        ],
+        "examples": [
+            "Generative AI: AI ที่สร้างเนื้อหาใหม่ได้ เช่น ChatGPT (Text), Midjourney (Image)"
+        ],
+        "examHotspots": [
+            "ความสัมพันธ์ AI > ML > Deep Learning (เป็นซับเซตกัน)",
+            "จริยธรรม AI (Bias, Deepfake)"
+        ]
+    },
+    "totalQuestions": 20,
+    "distribution": {
+        "easy": 6,
+        "medium": 10,
+        "hard": 4
+    },
+    "questions": [
+        {
+            "id": 121,
+            "questionText": "AI ย่อมาจากอะไร?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Automatic Internet"
+                },
+                {
+                    "label": "B",
+                    "text": "Artificial Intelligence"
+                },
+                {
+                    "label": "C",
+                    "text": "Advance Information"
+                },
+                {
+                    "label": "D",
+                    "text": "Auto Interface"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ปัญญาประดิษฐ์"
+        },
+        {
+            "id": 122,
+            "questionText": "ข้อใดเรียงลำดับความสัมพันธ์จากใหญ่ไปเล็กได้ถูกต้อง?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Deep Learning > Machine Learning > AI"
+                },
+                {
+                    "label": "B",
+                    "text": "AI > Deep Learning > Machine Learning"
+                },
+                {
+                    "label": "C",
+                    "text": "AI > Machine Learning > Deep Learning"
+                },
+                {
+                    "label": "D",
+                    "text": "Machine Learning > AI > Deep Learning"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "AI เป็นร่มใหญ่ ML เป็นส่วนหนึ่ง และ Deep Learning เป็นส่วนลึกของ ML"
+        },
+        {
+            "id": 123,
+            "questionText": "ChatGPT จัดเป็น AI ประเภทใด?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "Reactive Machine"
+                },
+                {
+                    "label": "B",
+                    "text": "Generative AI (GenAI)"
+                },
+                {
+                    "label": "C",
+                    "text": "Robotics"
+                },
+                {
+                    "label": "D",
+                    "text": "Database"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "สามารถสร้างเนื้อหา/ข้อความใหม่ได้"
+        },
+        {
+            "id": 124,
+            "questionText": "Deep Learning เลียนแบบการทำงานของสิ่งใด?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เครื่องจักรไอน้ำ"
+                },
+                {
+                    "label": "B",
+                    "text": "โครงข่ายประสาทของสมองมนุษย์ (Artificial Neural Networks)"
+                },
+                {
+                    "label": "C",
+                    "text": "ระบบไฟล์คอมพิวเตอร์"
+                },
+                {
+                    "label": "D",
+                    "text": "ตาราง Excel"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ใช้ Layer ของ Neuron หลายชั้นในการประมวลผล"
+        },
+        {
+            "id": 125,
+            "questionText": "ประโยชน์ของ AI ในชีวิตประจำวันคือ?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ระบบสแกนใบหน้าปลดล็อกมือถือ"
+                },
+                {
+                    "label": "B",
+                    "text": "ระบบแนะนำหนังใน Netflix"
+                },
+                {
+                    "label": "C",
+                    "text": "ผู้ช่วยเสียง (Siri/Google Assistant)"
+                },
+                {
+                    "label": "D",
+                    "text": "ถูกทุกข้อ"
+                }
+            ],
+            "correctAnswer": "D",
+            "explanation": "AI อยู่รอบตัวเราในชีวิตประจำวัน"
+        },
+        {
+            "id": 126,
+            "questionText": "Machine Learning เรียนรู้ได้อย่างไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "จากการเขียนโปรแกรม If-Else ทุกกรณี"
+                },
+                {
+                    "label": "B",
+                    "text": "จากการอ่านหนังสือเอง"
+                },
+                {
+                    "label": "C",
+                    "text": "จากการป้อนข้อมูล (Data) เพื่อหาแพทเทิร์นและสร้างโมเดล"
+                },
+                {
+                    "label": "D",
+                    "text": "จากการเชื่อมต่อ WiFi"
+                }
+            ],
+            "correctAnswer": "C",
+            "explanation": "Learn from Data"
+        },
+        {
+            "id": 127,
+            "questionText": "Turing Test คือการทดสอบอะไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ทดสอบความเร็วเน็ต"
+                },
+                {
+                    "label": "B",
+                    "text": "ทดสอบว่าเครื่องจักรมีความสามารถในการแสดงพฤติกรรมฉลาดจนแยกไม่ออกว่าเป็นมนุษย์หรือไม่"
+                },
+                {
+                    "label": "C",
+                    "text": "ทดสอบความทนทานของหุ่นยนต์"
+                },
+                {
+                    "label": "D",
+                    "text": "ทดสอบไวรัส"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เสนอโดย Alan Turing บิดาแห่งวิทยาการคอมพิวเตอร์"
+        },
+        {
+            "id": 128,
+            "questionText": "\"Bias\" ใน AI หมายถึงอะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "AI ทำงานเร็วเกินไป"
+                },
+                {
+                    "label": "B",
+                    "text": "ความลำเอียงของอัลกอริทึมที่เกิดจากข้อมูลสอน (Training Data) ที่ไม่เป็นกลาง"
+                },
+                {
+                    "label": "C",
+                    "text": "ไฟดับ"
+                },
+                {
+                    "label": "D",
+                    "text": "โปรแกรมบั๊ก"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เช่น AI จำหน้าคนผิวขาวได้ดีกว่าผิวสี เพราะข้อมูลสอนมีแต่คนผิวขาว"
+        },
+        {
+            "id": 129,
+            "questionText": "หุ่นยนต์ดูดฝุ่นอัตโนมัติ ถือเป็น AI หรือไม่?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "เป็น เพราะตัดสินใจเส้นทางเองได้"
+                },
+                {
+                    "label": "B",
+                    "text": "ไม่เป็น เพราะไม่มีชีวิต"
+                },
+                {
+                    "label": "C",
+                    "text": "ไม่เป็น เพราะเป็นเครื่องใช้ไฟฟ้า"
+                },
+                {
+                    "label": "D",
+                    "text": "เป็นเฉพาะตอนชาร์จไฟ"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "เป็น Narrow AI ทำงานเฉพาะทาง"
+        },
+        {
+            "id": 130,
+            "questionText": "Supervised Learning (การเรียนรู้แบบมีผู้สอน) ต้องใช้ข้อมูลแบบใด?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ข้อมูลดิบที่ไม่มีป้ายกำกับ"
+                },
+                {
+                    "label": "B",
+                    "text": "Labeled Data (ข้อมูลที่มีเฉลย/ป้ายกำกับระบุว่าคืออะไร)"
+                },
+                {
+                    "label": "C",
+                    "text": "วิดีโอ"
+                },
+                {
+                    "label": "D",
+                    "text": "เสียง"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เช่น รูปแมว ต้องมีป้ายบอกว่า \"นี่คือแมว\" ให้ AI เรียนรู้"
+        },
+        {
+            "id": 131,
+            "questionText": "Computer Vision คือสาขาของ AI ที่เกี่ยวกับอะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "การฟังเสียง"
+                },
+                {
+                    "label": "B",
+                    "text": "การทำให้คอมพิวเตอร์มองเห็นและเข้าใจภาพ/วิดีโอ"
+                },
+                {
+                    "label": "C",
+                    "text": "การพิมพ์สัมผัส"
+                },
+                {
+                    "label": "D",
+                    "text": "การสร้างหน้าจอคอม"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เช่น Face ID, ตรวจจับวัตถุ"
+        },
+        {
+            "id": 132,
+            "questionText": "NLP (Natural Language Processing) คืออะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "การประมวลผลภาษาธรรมชาติ (ให้คอมเข้าใจภาษามนุษย์)"
+                },
+                {
+                    "label": "B",
+                    "text": "การปลูกป่า"
+                },
+                {
+                    "label": "C",
+                    "text": "การเขียนโปรแกรมภาษา C"
+                },
+                {
+                    "label": "D",
+                    "text": "การเล่นเกม"
+                }
+            ],
+            "correctAnswer": "A",
+            "explanation": "เช่น Google Translate, Chatbot"
+        },
+        {
+            "id": 133,
+            "questionText": "\"Prompt Engineer\" คืออาชีพทำอะไร?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ซ่อมคอมพิวเตอร์ด่วน"
+                },
+                {
+                    "label": "B",
+                    "text": "ผู้เชี่ยวชาญในการเขียนคำสั่ง (Prompt) เพื่อให้ AI (เช่น ChatGPT) ตอบผลลัพธ์ที่ดีที่สุด"
+                },
+                {
+                    "label": "C",
+                    "text": "วิศวกรโยธา"
+                },
+                {
+                    "label": "D",
+                    "text": "คนขับรถ AI"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "อาชีพใหม่ที่เกิดจาก GenAI"
+        },
+        {
+            "id": 134,
+            "questionText": "AI จะมาแย่งงานมนุษย์จริงหรือ?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "แย่งทุกงาน 100% พรุ่งนี้"
+                },
+                {
+                    "label": "B",
+                    "text": "AI จะมาแทนที่งานซ้ำซากจำเจ แต่จะเกิดงานใหม่ที่ต้องใช้ทักษะควบคุม AI แทน"
+                },
+                {
+                    "label": "C",
+                    "text": "ไม่จริง AI ทำงานไม่ได้"
+                },
+                {
+                    "label": "D",
+                    "text": "AI จะหนีเข้าป่า"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "Transformation of jobs"
+        },
+        {
+            "id": 135,
+            "questionText": "ข้อใดคือตัวอย่างของ \"Unsupervised Learning\"?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "การสอนให้รู้จักรูปแมวโดยบอกว่านี่คือแมว"
+                },
+                {
+                    "label": "B",
+                    "text": "การให้ AI จัดกลุ่มลูกค้า (Clustering) เองจากพฤติกรรมการซื้อ โดยไม่มีใครบอกล่วงหน้า"
+                },
+                {
+                    "label": "C",
+                    "text": "การเล่นหมากรุก"
+                },
+                {
+                    "label": "D",
+                    "text": "การแปลภาษา"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "หา Pattern ด้วยตัวเองโดยไม่มี Label"
+        },
+        {
+            "id": 136,
+            "questionText": "Reinforcement Learning (การเรียนรู้แบบเสริมกำลัง) ใช้หลักการใด?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ท่องจำ"
+                },
+                {
+                    "label": "B",
+                    "text": "การลองผิดลองถูก (Trial and Error) โดยมีระบบรางวัลและการลงโทษ"
+                },
+                {
+                    "label": "C",
+                    "text": "อ่านหนังสือ"
+                },
+                {
+                    "label": "D",
+                    "text": "ดูรูปภาพ"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "เช่น การฝึก AlphaGo ให้เล่นโกะชนะแชมป์โลก"
+        },
+        {
+            "id": 137,
+            "questionText": "Deepfake คืออะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "การดำน้ำลึก"
+                },
+                {
+                    "label": "B",
+                    "text": "สื่อสังเคราะห์ (ภาพ/เสียง) ที่สร้างโดย AI เพื่อปลอมแปลงบุคคลอื่นอย่างแนบเนียน"
+                },
+                {
+                    "label": "C",
+                    "text": "ของปลอมเกรด A"
+                },
+                {
+                    "label": "D",
+                    "text": "ชื่อไวรัส"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ประเด็นจริยธรรมสำคัญของ AI"
+        },
+        {
+            "id": 138,
+            "questionText": "AlphaGo เป็น AI ที่เล่นเกมอะไร?",
+            "difficulty": "easy",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "หมากรุก"
+                },
+                {
+                    "label": "B",
+                    "text": "โกะ (Go)"
+                },
+                {
+                    "label": "C",
+                    "text": "ROV"
+                },
+                {
+                    "label": "D",
+                    "text": "Poker"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "AlphaGo เล่นเกมโกะ"
+        },
+        {
+            "id": 139,
+            "questionText": "Predictive Analytics คืออะไร?",
+            "difficulty": "medium",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "การสรุปผลอดีต"
+                },
+                {
+                    "label": "B",
+                    "text": "การวิเคราะห์ข้อมูลเพื่อทำนายสิ่งที่ \"น่าจะเกิดขึ้น\" ในอนาคต"
+                },
+                {
+                    "label": "C",
+                    "text": "การเขียนรายงาน"
+                },
+                {
+                    "label": "D",
+                    "text": "การเดาสุ่ม"
+                }
+            ],
+            "correctAnswer": "B",
+            "explanation": "ใช้ข้อมูลในอดีตทำนายอนาคต"
+        },
+        {
+            "id": 140,
+            "questionText": "ข้อใดคือ AI Ethics (จริยธรรม AI) ที่ควรคำนึงถึง?",
+            "difficulty": "hard",
+            "choices": [
+                {
+                    "label": "A",
+                    "text": "ความเป็นส่วนตัวข้อมูล (Privacy)"
+                },
+                {
+                    "label": "B",
+                    "text": "ความโปร่งใส (Transparency)"
+                },
+                {
+                    "label": "C",
+                    "text": "ความรับผิดชอบ (Accountability)"
+                },
+                {
+                    "label": "D",
+                    "text": "ถูกทุกข้อ"
+                }
+            ],
+            "correctAnswer": "D",
+            "explanation": "ทุกข้อเป็นจริยธรรม AI ที่สำคัญ"
+        }
+    ]
+}

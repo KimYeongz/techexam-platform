@@ -1,0 +1,105 @@
+{
+    "topicId": "ai",
+    "title": "AI (Artificial Intelligence)",
+    "sections": [
+        {
+            "title": "AI คืออะไร?",
+            "content": "ความฉลาดของเครื่องจักรที่เลียนแบบพฤติกรรมมนุษย์ (คิด, วิเคราะห์, เรียนรู้)",
+            "keyPoints": [
+                "AI: ภาพกว้างที่สุด - ระบบที่แสดงความฉลาด",
+                "Machine Learning (ML): AI ที่เรียนรู้จากข้อมูล",
+                "Deep Learning: ML ที่ซับซ้อน เลียนแบบสมอง",
+                "ความสัมพันธ์: AI > ML > Deep Learning"
+            ]
+        },
+        {
+            "title": "Machine Learning",
+            "content": "ระบบที่เรียนรู้จากข้อมูลโดยไม่ต้องเขียนโปรแกรมทุกกรณี",
+            "keyPoints": [
+                "Supervised Learning: เรียนจากข้อมูลที่มี Label (เฉลย)",
+                "Unsupervised Learning: หา Pattern เอง ไม่มี Label",
+                "Reinforcement Learning: ลองผิดลองถูก มีรางวัล/ลงโทษ"
+            ]
+        },
+        {
+            "title": "Deep Learning",
+            "content": "ML ที่ใช้ Neural Networks หลายชั้น",
+            "keyPoints": [
+                "Artificial Neural Networks: เลียนแบบโครงข่ายประสาทสมอง",
+                "หลาย Layers ของ Neurons",
+                "ใช้กับ Image Recognition, NLP, Voice"
+            ]
+        },
+        {
+            "title": "Generative AI",
+            "content": "AI ที่สามารถสร้างเนื้อหาใหม่ได้",
+            "keyPoints": [
+                "ChatGPT: สร้างข้อความ, โค้ด, คำตอบ",
+                "Midjourney/DALL-E: สร้างรูปภาพ",
+                "GitHub Copilot: ช่วยเขียนโค้ด",
+                "Prompt Engineering: ศาสตร์การเขียนคำสั่งให้ AI"
+            ]
+        },
+        {
+            "title": "Computer Vision",
+            "content": "AI ที่ทำให้คอมพิวเตอร์เห็นและเข้าใจภาพ",
+            "keyPoints": [
+                "Face Recognition: สแกนใบหน้า",
+                "Object Detection: ตรวจจับวัตถุ",
+                "Image Classification: แยกประเภทภาพ",
+                "ใช้ใน: Face ID, รถไร้คนขับ, กล้องวงจรปิด"
+            ]
+        },
+        {
+            "title": "NLP (Natural Language Processing)",
+            "content": "AI ที่เข้าใจและประมวลผลภาษามนุษย์",
+            "keyPoints": [
+                "Text Understanding: เข้าใจความหมาย",
+                "Translation: แปลภาษา (Google Translate)",
+                "Chatbots: ตอบคำถามอัตโนมัติ",
+                "Sentiment Analysis: วิเคราะห์ความรู้สึก"
+            ]
+        },
+        {
+            "title": "ประโยชน์ของ AI",
+            "content": "การนำ AI มาใช้ในชีวิตประจำวัน",
+            "keyPoints": [
+                "Face ID: สแกนใบหน้าปลดล็อก",
+                "Netflix/Spotify: แนะนำหนัง/เพลง",
+                "Siri/Google Assistant: ผู้ช่วยเสียง",
+                "Navigation: หาเส้นทาง (Google Maps)",
+                "Healthcare: วินิจฉัยโรค"
+            ]
+        },
+        {
+            "title": "AI Ethics (จริยธรรม AI)",
+            "content": "ประเด็นด้านจริยธรรมที่ต้องพิจารณา",
+            "keyPoints": [
+                "Bias: ความลำเอียงจาก Training Data",
+                "Privacy: ความเป็นส่วนตัวของข้อมูล",
+                "Transparency: ความโปร่งใสของ Algorithm",
+                "Accountability: ความรับผิดชอบเมื่อ AI ผิดพลาด",
+                "Deepfake: สื่อปลอมที่สร้างโดย AI"
+            ]
+        },
+        {
+            "title": "Turing Test",
+            "content": "การทดสอบความฉลาดของ AI",
+            "keyPoints": [
+                "เสนอโดย Alan Turing (บิดาแห่ง CS)",
+                "ทดสอบว่า AI แยกไม่ออกจากมนุษย์หรือไม่",
+                "ถ้าคนแยกไม่ได้ = AI ผ่านการทดสอบ"
+            ]
+        },
+        {
+            "title": "อนาคตของ AI",
+            "content": "แนวโน้มและผลกระทบ",
+            "keyPoints": [
+                "AI จะมาแทนงานซ้ำซากจำเจ",
+                "เกิดอาชีพใหม่: AI Trainer, Prompt Engineer",
+                "AGI (Artificial General Intelligence): AI ที่ฉลาดเท่ามนุษย์",
+                "ยังห่างไกลจาก AGI อีกหลายปี"
+            ]
+        }
+    ]
+}

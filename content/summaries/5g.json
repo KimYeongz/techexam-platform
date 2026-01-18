@@ -1,0 +1,74 @@
+{
+    "topicId": "5g",
+    "title": "Wireless Technology & 5G/6G",
+    "sections": [
+        {
+            "title": "วิวัฒนาการการสื่อสาร (Evolution)",
+            "content": "พัฒนาการจากระบบมีสายสู่ไร้สาย",
+            "keyPoints": [
+                "1837 (Telegraph): โทรเลข ส่งรหัสผ่านสาย",
+                "1876 (Telephone): โทรศัพท์ ส่งเสียงผ่านสาย",
+                "1983 (Mobile Networks): เริ่มต้นยุคโทรศัพท์เคลื่อนที่ไร้สาย",
+                "Late 20th Century: เปลี่ยนจาก Analog เป็น Digital"
+            ]
+        },
+        {
+            "title": "ประเภทเครือข่ายไร้สาย (Network Types)",
+            "content": "แบ่งตามระยะทางครอบคลุม",
+            "keyPoints": [
+                "WPAN (Personal): <10m (Bluetooth, ZigBee) สำหรับอุปกรณ์ส่วนตัว",
+                "WLAN (Local): <100m (Wi-Fi) สำหรับบ้านและสำนักงาน",
+                "WMAN (Metropolitan): ระดับเมือง (WiMAX) ครอบคลุมหลายกิโลเมตร",
+                "WWAN (Wide): ระดับประเทศ/โลก (Cellular 4G/5G, Satellite)"
+            ]
+        },
+        {
+            "title": "เทคโนโลยีไร้สายที่สำคัญ",
+            "content": "มาตรฐานต่างๆ ที่ใช้ในปัจจุบัน",
+            "keyPoints": [
+                "Wi-Fi (IEEE 802.11): มาตรฐานหลักสำหรับ WLAN (Wi-Fi 6/7 เร็วระดับ Multi-Gbps)",
+                "Bluetooth & BLE: สื่อสารระยะใกล้ประหยัดพลังงาน (BLE เหมาะกับ IoT)",
+                "NFC: สื่อสารระยะประชิด (<4cm) แตะจ่ายเงิน (Contactless Payment)",
+                "ZigBee: เครือข่าย Mesh พลังงานต่ำสำหรับ Smart Home (IEEE 802.15.4)",
+                "LoRa/LoRaWAN: ส่งข้อมูลระยะไกลมาก (15km) พลังงานต่ำ เหมาะกับ IoT Sensor เกษตรกรรม"
+            ]
+        },
+        {
+            "title": "Wi-Fi 7 vs Li-Fi",
+            "content": "เทคโนโลยีอนาคต",
+            "keyPoints": [
+                "Wi-Fi 7: ใช้คลื่นวิทยุ (RF), ทะลุกำแพงได้, ความเร็วสูงสุด 46 Gbps",
+                "Li-Fi: ใช้แสง (Visible Light) จากหลอด LED, เร็วกว่า Wi-Fi มาก, ไม่ทะลุกำแพง (ปลอดภัยสูง), ใช้ในพื้นที่ห้ามใช้คลื่นวิทยุ"
+            ]
+        },
+        {
+            "title": "5G & 6G Vision",
+            "content": "ยุคป present และอนาคตของการสื่อสาร",
+            "keyPoints": [
+                "5G Benefits: ความเร็วสูง (eMBB), ความหน่วงต่ำ (URLLC), รองรับอุปกรณ์มหาศาล (mMTC)",
+                "6G (Approx. 2030): ความเร็วระดับ Tbps, ความหน่วง 0.1 ms",
+                "6G Use Cases: Holographic Communication (สื่อสารโฮโลแกรม 3 มิติ), Metaverse สมจริง, Internet of Everything, AI-Native Networks"
+            ]
+        },
+        {
+            "title": "Wireless Security",
+            "content": "ความปลอดภัยในระบบไร้สายเป็นสิ่งสำคัญเพราะสัญญาณลอยในอากาศ",
+            "keyPoints": [
+                "Encryption: การเข้ารหัสข้อมูล",
+                "Authentication: การยืนยันตัวตนผู้ใช้",
+                "Threats: Spoofing (ปลอมตัว), Jamming (รบกวนสัญญาณ), Eavesdropping (ดักฟัง)"
+            ]
+        },
+        {
+            "title": "การประยุกต์ใช้ (Applications)",
+            "content": "เทคโนโลยีไร้สายขับเคลื่อนภาคส่วนต่างๆ",
+            "keyPoints": [
+                "Smart Home: ควบคุมเครื่องใช้ไฟฟ้า",
+                "Smart City: จัดการจราจร, พลังงาน",
+                "Smart Farming: เกษตรแม่นยำ, Drone พ่นยา",
+                "Education: ห้องเรียนอัจฉริยะ, AR/VR Learning",
+                "Military: สื่อสารในเชตภัยพิบัติ/สงคราม (Ad Hoc Networks)"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,325 @@
+Big Data
+“explain big data and  
+Hadoop foundation 
+”
+Learning Objective
+2 2
+3
+Evolution of Big Data
+Data Generation
+• Past: Few companies are generating data [e.g., 36 Thai DTV channels] 
+• Present: All of us are generating data [e.g., 113.9M youtube channels] 
+4
+Big Data Sources
+• Human generated data: video, photos, tweets, …  
+• Machine generated data: logs, sensor e.g., IOT,… 
+• Web data: social media, click stream, …
+5
+Big Data in 2025
+6
+Big Data Characteristics (5V)
+7
+Question
+How many CPU hours did it take to render Shrek 3?
+8
+Question
+How many CPU hours did it take to render Shrek 3?
+20,000,000 CPU hours = 2,283 years
+9
+What is Big Data?
+“the term for a collection of data sets so large and 
+complex that it becomes difficult to process using 
+traditional data processing applications. 
+”
+10
+Traditional Data (DB) vs Big Data
+Tradtional Data
+Big Data
+Data 
+- < PB 
+- Structure
+Data 
+- >= PB 
+- Structure & Unstrudcture
+Hardware 
+- Large single server 
+- Reliable 
+- Unscalable
+Hardware 
+- Computer clusters 
+- unreliable 
+- Scalable
+Software 
+- Centralized 
+- Schema based 
+- Oracle / mySQL
+Software 
+- Distributed 
+- No Schema based 
+- Hadoop
+11
+Big Data Goals
+• NYPD: analyze data to prevent crime 
+• Walmart: boost it sale by forecasting demand for hurricane emergency supplies 
+• Donald Trump: win US election by personalized messages to voters  
+Making organizations more smarter and efficient
+• Amazon: use clickstream data + historical purchase to customize results  
+• Starbucks: analyze prefer drink / time of day 
+• Procter & Gamble (P&G): finding associations between items
+Optimize business operations by analyzing customer behavior
+12
+Big Data Goals
+• Parkland hospital: predict high-risk patients (reduce cost $500,000 annually) 
+• IBM: smart meters (time of use pricing - reduce energy) 
+• Southwest airlines: uses sensor for predictive maintenance 
+Cost reduction
+• Google: self driving cars 
+• Netflix: launched TV show based on user reviews 
+• Yogifi: smart yoga mat
+Next generation products
+13
+Types of Big Data Analytics
+• Descriptive Analysis: What is happening now e.g., google analytics 
+• Predictive Analysis: What might happen in the future e.g., preventive maintenance  
+• Prescriptive Analysis: What action should be taken e.g., self driving cars  
+• Diagnostic Analysis: Why did it happen e.g., social media analytics
+14
+High Performance Computing
+Science & Engineering
+Weather forecast
+Deep learning
+Commercial & Business
+Film Maker
+Search Engine
+15
+The fastest computer in the world (Nov 2025)
+El Capitan @ LLNL (CA, USA)
+Speed: 1.809 Exaflop/s 
+CPU: 11,340,000 cores
+16
+The fastest computer in the world
+17
+The fastest computer in Thailand (Nov 2025)
+199
+Speed: 8.15 Petaflop/s 
+CPU: 87,296 cores
+18
+Cluster Computing
+Type of Nodes
+Front-end: Master, Login, Root
+Back-end: Worker, Slave, Peon, Compute
+19
+Cluster Computing
+20
+Cluster Computing Benefits
+Performance: supports intensive workload
+Scalability: new nodes can be added to increase capacity
+Fault tolerance: resilience in case of hardware failure
+21
+Hadoop
+Cluster Computing Abstraction
+Operating System for Big Data
+• Distributed data storage 
+• Parallel computation
+Prerequisite
+• Hadoop cluster is run on open source software 
+• Linux and command line are required. 
+• Even with Microsoft Azure!
+22
+When (not) to use Hadoop
+When to use Hadoop
+• For processing really big data 
+• For storing a diverse set of data 
+• For parallel data processing
+When NOT to use Hadoop
+• For real-time data analysis 
+• For a relational database system 
+• For a general network file system 
+• For non-parallel data processing
+23
+The Age of “Data Product”
+Derives value from data
+• then produce more data, more value, … 
+Data + Statistical Algorithms 
+• for inferences or prediction 
+Example
+• Amazon recommendation 
+• Facebook’s People You May Know 
+• Nest thermostat
+24
+Data Science vs. Big Data Pipeline
+Data Science
+Big Data (= Data Science + Scalability + Automation)
+25
+Hadoop as an OS for Big Data
+Hadoop’s features addressing the challenges of Big Data
+• scalability 
+• fault tolerance 
+• high availability 
+• distributed cache/data locality 
+• Cost-effectiveness as it does not need high-end hardware 
+• provides a good abstraction of the underlying hardware 
+• easy to learn 
+• data can be queried trough SQL-like endpoints (Hive, Cassandra)
+26
+Hadoop Case Studies
+Understand customer behavior
+• Mark & Spencer, Royal Mail, 
+• Expedia (&Trivago, hotels), Yahoo,  
+• Western Union, Royal Bank of Scotland
+Understand gamer behavior
+• King.com (e.g., Candy Crush) 
+• Analyze every “event/action”
+27
+Hadoop Case Studies
+Tesla: to analyze connected cars
+• Driverless cars
+BT (UK’s telecommunication company): 
+• identify network problems
+28
+Hadoop Case Studies
+Facebook
+• Process and analyze large amounts of data 
+• Developed Apache Hive, a data warehouse built on top of Hadoop 
+Netflix
+• Log analysis, recommendation systems, and content delivery optimization
+Twitter
+• Perform real-time analytics, identify trending topics 
+• Detect anomalies, and provide insights into user behavior.
+NASA
+• Processing satellite imagery, climate modeling, and astrophysics research
+29
+Hadoop Case Studies
+CERN: Petabytes per second!!
+• ALICE detector
+30
+Hadoop Case Studies
+31
+Hadoop History
+32
+Hadoop History
+33
+Hadoop Architecture
+34
+Hadoop Architecture
+35
+HDFS
+36
+HDFS - Hadoop Distributed File System 
+NameNode (@master)
+• Metadata 
+• Single point of failure! 
+• Require HA
+Secondary NameNode (Optional) 
+• Standby node 
+• Housekeeping (log) 
+• Checkpointing (state)
+DataNode (@worker)
+• Store & manage HDFS block
+37
+HDFS - Hadoop Distributed File System 
+Software on top of a native file system e.g., ext4, xfs
+• Files are split into blocks (64MB, 128MB, or 256MB) 
+• By default, each block exists on 3 different nodes
+38
+HDFS: Replication & Erasure Coding 
+Replication
+• n-fold replication guarantees the availability of data  
+• for at most n-1 failures and it has a storage overhead of 200%
+Erasure Coding (Algorithm: XOR, Reed-Solomon)
+• Better storage efficiency 
+• More costly performance
+39
+HDFS - Hadoop Distributed File System 
+Performs best with large files.
+• “Data Lake!!”, Not good for real-time/interactive
+WORM: Write Once, Read Many (no random, append)
+40
+Basic File System Operations
+Help
+• $ hadoop fs -help
+Copy from local to hdfs
+• $ hadoop fs -copyFromLocal <src> <dst> 
+• $ hadoop fs -put <src> <dst>
+Copy from hdfs to local
+• $ hadoop fs -copyToLocal <src> <dst> 
+• $ hadoop fs -get <src> <dst>
+41
+Basic File System Operations
+Operation
+LINUX Command
+Hadoop Command
+Making a Directory
+mkdir
+hadoop fs -mkdir
+Listing files
+ls
+hadoop fs -ls
+Moving Files
+mv
+hadoop fs -mv
+Copying Files
+cp
+hadoop fs -cp
+Removing Files
+rm
+hadoop fs -rm
+Display content of Files
+cat
+hadoop fs -cat
+42
+Accessing HDFS
+Java API, Python, FTP, Amazon S3
+HTTP (read only)
+• Namenode: http://127.0.0.1:50070 
+• Secondary Namenode: http://127.0.0.1:50090 
+• Datanode: http://127.0.0.1:50075
+43
+YARN
+44
+YARN - Yet Another Resource Negotiator 
+ResourceManager (@master)
+• monitor resources 
+• schedule jobs
+ApplicationMaster
+• coordinate applications
+NodeManager (@worker)
+• run and manage tasks
+45
+YARN Operations 
+Resource Management (http://127.0.0.1:8088)
+• Display Node status: $ yarn node -list 
+• Display Queue: $yarn queue
+Job/Application Management
+• Run a Jar file : $ yarn jar <jar> 
+• List job: $ yarn application -list 
+• Display job status: $ yarn application -status <app-id>  
+• Kill job: $ yarn application -kill <job-id>
+46
+MapReduce
+47
+MapReduce
+Fault-tolerant Computation
+Functional Programming (no share state)
+• Jeffrey Dean and Sanjay Ghemawat (Google) 
+• “MapReduce: Simplified Data Processing on Large Clusters”.
+Move computation to data!!
+48
+MapReduce
+def map(key, value):
+• return (intermed_key, intermed_value)
+def reduce(intermed_key, values):
+• return (key, output)
+49
+MapReduce on a Cluster
+50
+MapReduce: Pi Estimation
+Create random (x, y) pair values
+• Evaluate if it is in the circle or not (x2 + y2 < r) [MAP] 
+• Collect results, evaluate the ratio, calculate PI [REDUCE]
+51
+MapReduce: WordCount
+52
+MapReduce: Friend-of-friend
+53
+MapReduce: Complex Applications
