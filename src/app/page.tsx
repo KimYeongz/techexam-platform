@@ -94,32 +94,34 @@ const features = [
 
 export default function HomePage() {
     return (
-        <div className="min-h-screen bg-slate-50 overflow-hidden selection:bg-primary-100 selection:text-primary-900 relative">
-            {/* Background Image with Blur */}
-            <div className="fixed inset-0 z-0">
-                <div
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{
-                        backgroundImage: "url('/hero-bg.png')",
-                        filter: "blur(10px)",
-                        transform: "scale(1.1)" // Scale up slightly to prevent blur edges from showing
-                    }}
-                />
-                <div className="absolute inset-0 bg-white/60 backdrop-blur-sm" /> {/* Overlay to ensure readability */}
-            </div>
+        <div className="min-h-screen bg-slate-50 selection:bg-primary-100 selection:text-primary-900">
 
             {/* Hero Section */}
-            <section className="relative pt-20 pb-24 border-b border-slate-200/50 z-10">
-                <div className="container mx-auto px-4 max-w-6xl">
+            <section className="relative overflow-hidden pt-20 pb-32 border-b border-slate-200/50">
+                {/* Background Image Area */}
+                <div className="absolute inset-0 z-0">
+                    <div
+                        className="absolute inset-0 bg-cover bg-center"
+                        style={{
+                            backgroundImage: "url('/hero-bg.png')",
+                            filter: "blur(8px)",
+                            transform: "scale(1.1)"
+                        }}
+                    />
+                    <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-50/90 to-transparent" />
+                </div>
+
+                <div className="container mx-auto px-4 max-w-6xl relative z-10">
                     <div className="text-center max-w-3xl mx-auto space-y-8">
                         {/* Wrapper for content */}
 
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-slate-200/50 shadow-sm text-sm font-medium text-slate-700">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 backdrop-blur-md border border-slate-200/50 shadow-sm text-sm font-medium text-slate-700 hover:scale-105 transition-transform cursor-default">
                             <span className="flex h-2 w-2 rounded-full bg-primary-500"></span>
                             แพลตฟอร์มการเรียนรู้รูปแบบใหม่
                         </div>
 
-                        <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 drop-shadow-sm">
+                        <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 drop-shadow-sm leading-tight">
                             Tiudo
                         </h1>
                         <p className="text-2xl md:text-3xl font-medium text-slate-800 drop-shadow-sm">
@@ -132,7 +134,7 @@ export default function HomePage() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                            <Link href="/topics" className="btn-primary h-12 px-8 text-lg shadow-lg shadow-primary-500/30">
+                            <Link href="/topics" className="btn-primary h-12 px-8 text-lg shadow-xl shadow-primary-600/20 hover:shadow-primary-600/30 hover:-translate-y-1 transition-all">
                                 ดูรายวิชาทั้งหมด
                                 <ChevronRight className="w-5 h-5 ml-1" />
                             </Link>
