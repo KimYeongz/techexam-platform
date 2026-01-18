@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-    title: 'TechExam - ติวข้อสอบเทคโนโลยี',
-    description: 'เว็บไซต์ติวข้อสอบเทคโนโลยีครบ 7 หัวข้อ พร้อมสรุปเนื้อหา ข้อสอบ 140 ข้อ และระบบติดตามผล',
-    keywords: ['ติวสอบ', 'เทคโนโลยี', 'Big Data', 'IoT', 'AI', 'Blockchain', '5G', 'ข้อสอบ'],
-    authors: [{ name: 'TechExam' }],
+    title: 'Tiudo - เว็บไซต์ติวข้อสอบ',
+    description: 'Tiudo แพลตฟอร์มการเรียนรู้ครบวงจร รวมเนื้อหาติวสอบหลากหลายวิชา',
+    keywords: ['ติวสอบ', 'Tiudo', 'เรียนออนไลน์', 'ข้อสอบ'],
+    authors: [{ name: 'Tiudo' }],
     openGraph: {
-        title: 'TechExam - ติวข้อสอบเทคโนโลยี',
-        description: 'เว็บไซต์ติวข้อสอบเทคโนโลยีครบ 7 หัวข้อ พร้อมสรุปเนื้อหา ข้อสอบ 140 ข้อ และระบบติดตามผล',
+        title: 'Tiudo - เว็บไซต์ติวข้อสอบ',
+        description: 'Tiudo แพลตฟอร์มการเรียนรู้ครบวงจร รวมเนื้อหาติวสอบหลากหลายวิชา',
         type: 'website',
         locale: 'th_TH',
     },
