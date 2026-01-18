@@ -79,9 +79,7 @@ export default function HomePage() {
                                 เริ่มเรียนทันที
                                 <ChevronRight className="w-5 h-5 ml-1" />
                             </Link>
-                            <Link href="/about" className="btn-secondary h-14 px-8 text-base">
-                                ดูตัวอย่างบทเรียน
-                            </Link>
+
                         </div>
 
                         <div className="pt-8 flex items-center justify-center gap-8 text-sm text-slate-500 animate-fade-in animate-delay-300">
