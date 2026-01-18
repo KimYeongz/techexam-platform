@@ -94,32 +94,45 @@ const features = [
 
 export default function HomePage() {
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-slate-50 overflow-hidden selection:bg-primary-100 selection:text-primary-900 relative">
+            {/* Background Image with Blur */}
+            <div className="fixed inset-0 z-0">
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{
+                        backgroundImage: "url('/hero-bg.png')",
+                        filter: "blur(10px)",
+                        transform: "scale(1.1)" // Scale up slightly to prevent blur edges from showing
+                    }}
+                />
+                <div className="absolute inset-0 bg-white/60 backdrop-blur-sm" /> {/* Overlay to ensure readability */}
+            </div>
+
             {/* Hero Section */}
-            <section className="relative overflow-hidden bg-slate-50 pt-20 pb-24 border-b border-slate-200">
+            <section className="relative pt-20 pb-24 border-b border-slate-200/50 z-10">
                 <div className="container mx-auto px-4 max-w-6xl">
                     <div className="text-center max-w-3xl mx-auto space-y-8">
                         {/* Wrapper for content */}
 
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm text-sm font-medium text-slate-600">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-slate-200/50 shadow-sm text-sm font-medium text-slate-700">
                             <span className="flex h-2 w-2 rounded-full bg-primary-500"></span>
                             แพลตฟอร์มการเรียนรู้รูปแบบใหม่
                         </div>
 
-                        <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-900">
+                        <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 drop-shadow-sm">
                             Tiudo
                         </h1>
-                        <p className="text-2xl md:text-3xl font-medium text-slate-700">
+                        <p className="text-2xl md:text-3xl font-medium text-slate-800 drop-shadow-sm">
                             แหล่งรวมวิชาเรียนเพื่ออนาคต
                         </p>
 
-                        <p className="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                        <p className="text-lg text-slate-700 leading-relaxed max-w-2xl mx-auto font-medium">
                             เรามุ่งมั่นสร้างสรรค์พื้นที่แห่งการเรียนรู้ที่เข้าถึงง่าย เนื้อหาคุณภาพ
                             และครอบคลุมหลากหลายสาขาวิชา เพื่อพัฒนาศักยภาพของคุณให้ไร้ขีดจำกัด
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                            <Link href="/topics" className="btn-primary h-12 px-8 text-lg">
+                            <Link href="/topics" className="btn-primary h-12 px-8 text-lg shadow-lg shadow-primary-500/30">
                                 ดูรายวิชาทั้งหมด
                                 <ChevronRight className="w-5 h-5 ml-1" />
                             </Link>
@@ -129,7 +142,7 @@ export default function HomePage() {
             </section>
 
             {/* Subjects Grid */}
-            <section className="py-20">
+            <section className="py-20 relative z-10">
                 <div className="container mx-auto px-4 max-w-6xl">
                     <div className="mb-12 text-center md:text-left">
                         <h2 className="text-3xl font-bold text-slate-900 mb-2">รายวิชาที่เปิดสอน</h2>
@@ -142,8 +155,8 @@ export default function HomePage() {
                                 key={subject.id}
                                 href={subject.href}
                                 className={`group bg-white rounded-2xl border border-slate-200 p-6 transition-all duration-300 ${subject.status === 'available'
-                                        ? 'hover:border-primary-200 hover:shadow-lg cursor-pointer'
-                                        : 'opacity-70 cursor-not-allowed hover:bg-slate-50'
+                                    ? 'hover:border-primary-200 hover:shadow-lg cursor-pointer'
+                                    : 'opacity-70 cursor-not-allowed hover:bg-slate-50'
                                     }`}
                                 aria-disabled={subject.status !== 'available'}
                             >
