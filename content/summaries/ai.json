@@ -3,102 +3,67 @@
     "title": "AI (Artificial Intelligence)",
     "sections": [
         {
-            "title": "AI คืออะไร?",
-            "content": "ความฉลาดของเครื่องจักรที่เลียนแบบพฤติกรรมมนุษย์ (คิด, วิเคราะห์, เรียนรู้)",
+            "title": "Introduction to AI",
+            "content": "ปัญญาประดิษฐ์ (AI) คือศาสตร์ที่ทำให้คอมพิวเตอร์มีความสามารถคล้ายมนุษย์ เช่น การคิด วิเคราะห์ เรียนรู้ และตัดสินใจ",
             "keyPoints": [
-                "AI: ภาพกว้างที่สุด - ระบบที่แสดงความฉลาด",
-                "Machine Learning (ML): AI ที่เรียนรู้จากข้อมูล",
-                "Deep Learning: ML ที่ซับซ้อน เลียนแบบสมอง",
-                "ความสัมพันธ์: AI > ML > Deep Learning"
+                "**Definition**: ระบบคอมพิวเตอร์ที่สามารถทำงานที่ต้องใช้สติปัญญาของมนุษย์ได้",
+                "**Core Types**: AI (ภาพกว้าง) > ML (เรียนรู้จากข้อมูล) > Deep Learning (เลียนแบบสมอง)",
+                "**Goal**: สร้างระบบที่สามารถทำงานแทนมนุษย์หรือทำงานร่วมกับมนุษย์ได้อย่างมีประสิทธิภาพ"
             ]
         },
         {
-            "title": "Machine Learning",
-            "content": "ระบบที่เรียนรู้จากข้อมูลโดยไม่ต้องเขียนโปรแกรมทุกกรณี",
+            "title": "Types of AI (ประเภทของ AI)",
+            "content": "แบ่งตามระดับความฉลาดและความสามารถ",
             "keyPoints": [
-                "Supervised Learning: เรียนจากข้อมูลที่มี Label (เฉลย)",
-                "Unsupervised Learning: หา Pattern เอง ไม่มี Label",
-                "Reinforcement Learning: ลองผิดลองถูก มีรางวัล/ลงโทษ"
+                "**ANI (Artificial Narrow Intelligence)**: AI ที่เก่งเฉพาะเรื่อง (Weak AI) เช่น Siri, AlphaGo, ระบบแนะนำหนัง Netflix (ปัจจุบันเราอยู่ในยุคนี้)",
+                "**AGI (Artificial General Intelligence)**: AI ที่มีความฉลาดเทียบเท่ามนุษย์ เรียนรู้และทำได้ทุกอย่าง (Strong AI) - ยังไม่เกิดขึ้นจริง",
+                "**ASI (Artificial Super Intelligence)**: AI ที่ฉลาดเหนือมนุษย์ในทุกด้าน - เป็นทฤษฎีในอนาคต"
             ]
         },
         {
-            "title": "Deep Learning",
-            "content": "ML ที่ใช้ Neural Networks หลายชั้น",
+            "title": "Machine Learning (ML)",
+            "content": "การสอนให้คอมพิวเตอร์เรียนรู้จากข้อมูลโดยไม่ต้องเขียนโปรแกรมสั่งงานทุกขั้นตอน",
             "keyPoints": [
-                "Artificial Neural Networks: เลียนแบบโครงข่ายประสาทสมอง",
-                "หลาย Layers ของ Neurons",
-                "ใช้กับ Image Recognition, NLP, Voice"
+                "**Supervised Learning**: สอนด้วยข้อมูลที่มีเฉลย (Labelled Data) เช่น สอนแยกรูปแมวโดยบอกว่ารูปไหนคือแมว",
+                "**Unsupervised Learning**: ให้ AI หาแพทเทิร์นเองจากข้อมูลดิบ (No Labels) เช่น การจัดกลุ่มลูกค้า (Clustering)",
+                "**Reinforcement Learning**: เรียนรู้แบบลองผิดลองถูก (Trial & error) โดยมีระบบรางวัลและการลงโทษ เช่น การฝึก AI เล่นเกม หรือหุ่นยนต์เดิน"
             ]
         },
         {
-            "title": "Generative AI",
-            "content": "AI ที่สามารถสร้างเนื้อหาใหม่ได้",
+            "title": "Deep Learning & Neural Networks",
+            "content": "หัวใจสำคัญของ AI ยุคใหม่ ที่เลียนแบบการทำงานของสมองมนุษย์",
             "keyPoints": [
-                "ChatGPT: สร้างข้อความ, โค้ด, คำตอบ",
-                "Midjourney/DALL-E: สร้างรูปภาพ",
-                "GitHub Copilot: ช่วยเขียนโค้ด",
-                "Prompt Engineering: ศาสตร์การเขียนคำสั่งให้ AI"
+                "**Neural Networks**: โครงข่ายประสาทเทียมที่ประกอบด้วย Node จำนวนมากเชื่อมต่อกัน",
+                "**Deep Learning**: คือ Neural Networks ที่มีหลายชั้น (Hidden Layers) ทำให้เรียนรู้ข้อมูลที่ซับซ้อนมากได้",
+                "**Applications**: ใช้ใน Image Recognition (จำแนกภาพ), NLP (แปลภาษา), Self-driving cars"
             ]
         },
         {
-            "title": "Computer Vision",
-            "content": "AI ที่ทำให้คอมพิวเตอร์เห็นและเข้าใจภาพ",
+            "title": "Generative AI (GenAI)",
+            "content": "ยุคใหม่ของ AI ที่ไม่ได้แค่ 'วิเคราะห์' แต่สามารถ 'สร้าง' สิ่งใหม่ได้",
             "keyPoints": [
-                "Face Recognition: สแกนใบหน้า",
-                "Object Detection: ตรวจจับวัตถุ",
-                "Image Classification: แยกประเภทภาพ",
-                "ใช้ใน: Face ID, รถไร้คนขับ, กล้องวงจรปิด"
+                "**Concept**: AI ที่สร้าง Text, Image, Audio, Video ใหม่ได้จากการเรียนรู้ข้อมูลมหาศาล",
+                "**LLM (Large Language Models)**: โมเดลภาษาขนาดใหญ่ เช่น GPT-4 (ChatGPT), Claude, Gemini ที่เข้าใจและผลิตประโยคภาษามนุษย์ได้",
+                "**Image Gen**: สร้างภาพจากข้อความ เช่น Midjourney, DALL-E, Stable Diffusion"
             ]
         },
         {
-            "title": "NLP (Natural Language Processing)",
-            "content": "AI ที่เข้าใจและประมวลผลภาษามนุษย์",
+            "title": "AI Ethics & Challenges",
+            "content": "ประเด็นจริยธรรมที่ต้องคำนึงถึง",
             "keyPoints": [
-                "Text Understanding: เข้าใจความหมาย",
-                "Translation: แปลภาษา (Google Translate)",
-                "Chatbots: ตอบคำถามอัตโนมัติ",
-                "Sentiment Analysis: วิเคราะห์ความรู้สึก"
-            ]
-        },
-        {
-            "title": "ประโยชน์ของ AI",
-            "content": "การนำ AI มาใช้ในชีวิตประจำวัน",
-            "keyPoints": [
-                "Face ID: สแกนใบหน้าปลดล็อก",
-                "Netflix/Spotify: แนะนำหนัง/เพลง",
-                "Siri/Google Assistant: ผู้ช่วยเสียง",
-                "Navigation: หาเส้นทาง (Google Maps)",
-                "Healthcare: วินิจฉัยโรค"
-            ]
-        },
-        {
-            "title": "AI Ethics (จริยธรรม AI)",
-            "content": "ประเด็นด้านจริยธรรมที่ต้องพิจารณา",
-            "keyPoints": [
-                "Bias: ความลำเอียงจาก Training Data",
-                "Privacy: ความเป็นส่วนตัวของข้อมูล",
-                "Transparency: ความโปร่งใสของ Algorithm",
-                "Accountability: ความรับผิดชอบเมื่อ AI ผิดพลาด",
-                "Deepfake: สื่อปลอมที่สร้างโดย AI"
+                "**Bias**: ความลำเอียงของ AI จากข้อมูลที่ใช้สอน (เช่น เหยียดเชื้อชาติ/เพศ)",
+                "**Deepfakes**: การสร้างสื่อปลอมที่สมจริงจนแยกไม่ออก ใช้ในการหลอกลวง",
+                "**Job Displacement**: ความกังวลเรื่อง AI แย่งงานมนุษย์",
+                "**Black Box Problem**: การที่เราไม่รู้ว่า AI คิดหาคำตอบมาได้อย่างไร (อธิบายเหตุผลไม่ได้)"
             ]
         },
         {
             "title": "Turing Test",
-            "content": "การทดสอบความฉลาดของ AI",
+            "content": "การทดสอบความฉลาดของ AI เสนอโดย Alan Turing (1950)",
             "keyPoints": [
-                "เสนอโดย Alan Turing (บิดาแห่ง CS)",
-                "ทดสอบว่า AI แยกไม่ออกจากมนุษย์หรือไม่",
-                "ถ้าคนแยกไม่ได้ = AI ผ่านการทดสอบ"
-            ]
-        },
-        {
-            "title": "อนาคตของ AI",
-            "content": "แนวโน้มและผลกระทบ",
-            "keyPoints": [
-                "AI จะมาแทนงานซ้ำซากจำเจ",
-                "เกิดอาชีพใหม่: AI Trainer, Prompt Engineer",
-                "AGI (Artificial General Intelligence): AI ที่ฉลาดเท่ามนุษย์",
-                "ยังห่างไกลจาก AGI อีกหลายปี"
+                "**The Test**: ให้ผู้ทดสอบคุยกับ 'มนุษย์' และ 'AI' ผ่านตัวหนังสือ",
+                "**Goal**: ถ้าผู้ทดสอบแยกไม่ออกว่าฝั่งไหนคือ AI ถือว่า AI นั้นผ่านการทดสอบ (มีความฉลาดทัดเทียมมนุษย์)",
+                "**Current Status**: LLM ปัจจุบันเริ่มใกล้เคียงที่จะผ่านการทดสอบนี้ในบางบริบทแล้ว"
             ]
         }
     ]

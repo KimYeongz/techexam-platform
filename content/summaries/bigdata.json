@@ -1,99 +1,62 @@
 {
     "topicId": "bigdata",
-    "title": "Big Data และ Hadoop Foundation",
+    "title": "Big Data Technology",
     "sections": [
         {
-            "title": "Big Data คืออะไร?",
-            "content": "ชุดข้อมูลที่มีปริมาณมหาศาล (Volume), ซับซ้อน (Complexity), และรวดเร็ว (Velocity) จนยากที่จะจัดการด้วยเครื่องมือประมวลผลข้อมูลแบบดั้งเดิม",
+            "title": "Big Data คืออะไร? (The 5 Vs)",
+            "content": "ข้อมูลที่มีขนาดใหญ่และซับซ้อนจนเครื่องมือดั้งเดิมจัดการไม่ได้ ต้องมีคุณสมบัติ 5V",
             "keyPoints": [
-                "ยุคปัจจุบัน: ทุกคนเป็นผู้สร้างข้อมูล (Video, Photos, Tweets, Logs, Sensors)",
-                "คุณสมบัติ 5V: Volume (ปริมาณ), Velocity (ความเร็ว), Variety (ความหลากหลาย), Veracity (ความถูกต้อง), Value (ค่าของข้อมูล)",
-                "Computer Clusters: ต้องใช้คอมพิวเตอร์หลายเครื่องทำงานร่วมกันเพื่อประมวลผล (Reliable & Scalable)"
-            ]
-        },
-        {
-            "title": "Traditional Data (DB) vs Big Data",
-            "content": "ข้อแตกต่างสำคัญระหว่างระบบฐานข้อมูลดั้งเดิมกับ Big Data",
-            "keyPoints": [
-                "ปริมาณ: Traditional (< PB) vs Big Data (>= PB)",
-                "โครงสร้าง: Traditional (Structured) vs Big Data (Structured & Unstructured)",
-                "Hardware: Traditional (Large Single Server, Unscalable) vs Big Data (Computer Clusters, Scalable)",
-                "Software: Traditional (Centralized, Schema-based e.g., MySQL) vs Big Data (Distributed, No Schema e.g., Hadoop)"
-            ]
-        },
-        {
-            "title": "การวิเคราะห์ Big Data (Analytics Types)",
-            "content": "ประเภทของการวิเคราะห์ข้อมูลแบ่งตามความซับซ้อนและวัตถุประสงค์",
-            "keyPoints": [
-                "Descriptive Analysis: เกิดอะไรขึ้น? (What is happening now) - เช่น Google Analytics",
-                "Diagnostic Analysis: ทำไมถึงเกิดขึ้น? (Why did it happen) - เช่น Social Media Analytics",
-                "Predictive Analysis: จะเกิดอะไรขึ้น? (What might happen) - เช่น Preventive Maintenance",
-                "Prescriptive Analysis: ควรทำอย่างไร? (What action should be taken) - เช่น Self-driving Cars"
+                "**1. Volume**: ปริมาณข้อมูลมหาศาล (Terabytes -> Petabytes -> Exabytes)",
+                "**2. Velocity**: ความรวดเร็วในการเกิดและไหลของข้อมูล (Real-time data streaming)",
+                "**3. Variety**: ความหลากหลาย (Structured: ตาราง, Unstructured: รูป/วิดีโอ/เสียง, Semi-structured: JSON/XML)",
+                "**4. Veracity**: ความถูกต้องและน่าเชื่อถือของข้อมูล (ต้องกรอง data ขยะออก)",
+                "**5. Value**: ข้อมูลต้องนำไปใช้สร้างมูลค่าทางธุรกิจได้จริง"
             ]
         },
         {
             "title": "Hadoop Ecosystem",
-            "content": "ระบบปฏิบัติการสำหรับ Big Data (OS for Big Data) ที่เป็น Open Source ทำงานบน Linux",
+            "content": "โครงสร้างพื้นฐาน Open Source ยอดนิยมสำหรับจัดเก็บและประมวลผล Big Data",
             "keyPoints": [
-                "Distributed Data Storage: จัดเก็บข้อมูลแบบกระจาย (HDFS)",
-                "Parallel Computation: ประมวลผลแบบขนาน (MapReduce)",
-                "Scalability: เพิ่มขยายได้ง่ายโดยเพิ่มเครื่อง (Nodes)",
-                "Fault Tolerance: ทนทานต่อความเสียหาย (ข้อมูลถูกสำเนาไว้หลายชุด)"
+                "**HDFS (Hadoop Distributed File System)**: ระบบไฟล์แบบกระจาย เก็บข้อมูลโดยหั่นไฟล์ใหญ่เป็นชิ้นๆ (Blocks) แล้วกระจายเก็บหลายเครื่อง",
+                "**MapReduce**: โมเดลการประมวลผลแบบขนาน (Parallel Processing) แบ่งงานใหญ่เป็นงานย่อยแจกให้ช่วยกันทำ",
+                "**YARN**: ผู้จัดการทรัพยากร (OS ของ Hadoop) คอยจัดสรร CPU/RAM ให้งานต่างๆ"
             ]
         },
         {
-            "title": "HDFS (Hadoop Distributed File System)",
-            "content": "ระบบไฟล์แบบกระจาย ออกแบบมาเพื่อรันบน Hardware ทั่วไป (Commodity Hardware)",
+            "title": "การวิเคราะห์ข้อมูล (Types of Analytics)",
+            "content": "ระดับของการวิเคราะห์ข้อมูลจากอดีตสู่อนาคต",
             "keyPoints": [
-                "NameNode (@Master): เก็บ Metadata (ชื่อไฟล์, ตำแหน่ง Block), เป็น Single Point of Failure",
-                "DataNode (@Worker): เก็บข้อมูลจริงในรูปแบบ Block",
-                "Block Size: แบ่งไฟล์ใหญ่เป็นชิ้นย่อย (64MB, 128MB, 256MB)",
-                "Replication: สำเนาแต่ละ Block ไว้ 3 ชุด (โดย Default) เพื่อความปลอดภัย (n-fold replication)",
-                "WORM (Write Once, Read Many): เขียนครั้งเดียว อ่านหลายครั้ง เหมาะกับ Data Lake"
+                "**Descriptive**: เกิดอะไรขึ้น? (What happened?) - ดูรายงาน/กราฟสรุปผลอดีต",
+                "**Diagnostic**: ทำไมถึงเกิดขึ้น? (Why did it happen?) - เจาะลึกหาสาเหตุ",
+                "**Predictive**: จะเกิดอะไรขึ้น? (What will happen?) - ใช้ AI/Stat ทำนายอนาคต",
+                "**Prescriptive**: ควรทำอย่างไร? (How can we make it happen?) - แนะนำทางเลือกที่ดีที่สุด"
             ]
         },
         {
-            "title": "คำสั่ง HDFS (Basic Operations)",
-            "content": "คำสั่งจัดการไฟล์ใน HDFS (คล้ายคำสั่ง Linux)",
+            "title": "Modern Big Data Tools",
+            "content": "เครื่องมือยุคใหม่ที่มาเสริมหรือแทนที่ Hadoop",
             "keyPoints": [
-                "สร้างโฟลเดอร์: `hadoop fs -mkdir /path`",
-                "แสดงรายการไฟล์: `hadoop fs -ls /path`",
-                "อัพโหลดไฟล์: `hadoop fs -put localfile hdfs_path` หรือ `-copyFromLocal`",
-                "ดาวน์โหลดไฟล์: `hadoop fs -get hdfs_path localfile` หรือ `-copyToLocal`",
-                "ดูเนื้อหาไฟล์: `hadoop fs -cat filename`",
-                "ลบไฟล์: `hadoop fs -rm filename`"
+                "**Apache Spark**: ประมวลผลใน Memory (RAM) เร็วกว่า Hadoop MapReduce ถึง 100 เท่า เหมาะกับงาน Real-time/AI",
+                "**Kafka**: ระบบจัดการ Data Streaming รองรับข้อมูลไหลเข้าปริมาณมหาศาลแบบ Real-time",
+                "**NoSQL Databases**: ฐานข้อมูลยุคใหม่ เช่น MongoDB (เก็บ JSON), Cassandra (เก็บ Column family) ที่สเกลได้ง่ายกว่า SQL"
             ]
         },
         {
-            "title": "YARN (Yet Another Resource Negotiator)",
-            "content": "ผู้จัดการทรัพยากรลำดับที่ 2 ของ Hadoop (Resource Manager)",
+            "title": "Data Storage Concepts",
+            "content": "รูปแบบการจัดเก็บข้อมูล",
             "keyPoints": [
-                "ResourceManager (@Master): ดูแลภาพรวมทรัพยากรและจัดการคิวงาน (Schedule jobs)",
-                "NodeManager (@Worker): ดูแลทรัพยากรในแต่ละเครื่อง (CPU, RAM) และจัดการ Container",
-                "ApplicationMaster: ตัวประสานงานสำหรับแต่ละ Application"
+                "**Data Warehouse**: คลังข้อมูลที่ผ่านการทำความสะอาดและจัดโครงสร้างแล้ว (Structured) พร้อมใช้ทำ report",
+                "**Data Lake**: ทะเลสาบข้อมูล เก็บข้อมูลดิบทุกรูปแบบ (Raw Data) ทั้งภาพ เสียง ข้อความ เอาไว้ก่อนค่อยมาจัดการทีหลัง",
+                "**Data Lakehouse**: ลูกผสมที่เอาข้อดีของ Warehouse (ระเบียบ) + Lake (ยืดหยุ่น/ถูก) มารวมกัน"
             ]
         },
         {
-            "title": "MapReduce",
-            "content": "โมเดลการเขียนโปรแกรมเพื่อประมวลผลข้อมูลขนาดใหญ่แบบขนาน (Parallel Processing)",
+            "title": "Use Cases (กรณีศึกษา)",
+            "content": "การใช้จริงในธุรกิจ",
             "keyPoints": [
-                "Concept: Move computation to data! (ส่งโค้ดไปรันที่เครื่องที่มีข้อมูล เพื่อลดการส่งข้อมูลผ่านเครือข่าย)",
-                "Map Function: กรองและจัดเรียงข้อมูล แปลงเป็น (key, value)",
-                "Reduce Function: สรุปผลข้อมูลจาก Map (เช่น การนับจำนวนคำ)",
-                "Functional Programming: ไม่มีการแชร์สถานะ (No shared state)",
-                "Example: Word Count, Pi Estimation, Friend-of-friend recommendation"
-            ]
-        },
-        {
-            "title": "กรณีศึกษา (Case Studies)",
-            "content": "ตัวอย่างการใช้งาน Big Data ในองค์กรระดับโลก",
-            "keyPoints": [
-                "Walmart: พยากรณ์ความต้องการสินค้าช่วงพายุ (Hurricane supplies)",
-                "Google: รถยนต์ไร้คนขับ (Self-driving cars)",
-                "Netflix: สร้างซีรีส์จากความชอบผู้ชม (Recommendation)",
-                "Facebook: พัฒนา Apache Hive, วิเคราะห์ข้อมูลผู้ใช้มหาศาล",
-                "Twitter: วิเคราะห์ Real-time analytics และ Trending topics",
-                "Apple/Siri: ใช้ Voice Recognition และ AI"
+                "**Netflix**: แนะนำหนังซีรีส์ที่ตรงใจ (Personalization) จากประวัติการดู",
+                "**Banking**: ตรวจจับการโกง (Fraud Detection) จากพฤติกรรมการรูดบัตรที่ผิดปกติ",
+                "**Retail (Walmart/Amazon)**: บริหารสต็อกสินค้า พยากรณ์ยอดขายช่วงเทศกาล"
             ]
         }
     ]

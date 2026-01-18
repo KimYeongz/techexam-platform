@@ -1,120 +1,54 @@
 {
     "topicId": "wireless",
-    "title": "Cellular Networks (1G-5G)",
+    "title": "Wireless & Cellular Evolution",
     "sections": [
         {
-            "title": "Cellular Network คืออะไร?",
-            "content": "ระบบสื่อสารไร้สายที่แบ่งพื้นที่ออกเป็น 'Cells' โดยแต่ละ Cell มี Base Station (สถานีฐาน) ให้บริการ เพื่อให้ครอบคลุมพื้นที่กว้างใหญ่และใช้ทรัพยากรคลื่นความถี่อย่างมีประสิทธิภาพ",
+            "title": "Cellular Network Basics",
+            "content": "พื้นฐานระบบเครือข่ายมือถือ",
             "keyPoints": [
-                "Cells: พื้นที่ให้บริการรูปทรงหกเหลี่ยม (Hexagonal)",
-                "Base Stations: สถานีฐานที่ตั้งอยู่ตรงกลาง Cell ทำหน้าที่รับส่งสัญญาณวิทยุ",
-                "Frequency Reuse: การนำคลื่นความถี่เดิมกลับมาใช้ใหม่ใน Cell ที่อยู่ห่างออกไปเพื่อเพิ่มความจุ",
-                "Handover/Handoff: การส่งต่อการเชื่อมต่ออย่างราบรื่นเมื่อผู้ใช้เคลื่อนที่ข้าม Cell"
+                "**Cell**: พื้นที่ให้บริการรูปหกเหลี่ยม (Honeycomb) มีเสาสัญญาณ (Base Station) ตรงกลาง",
+                "**Frequency Reuse**: การนำคลื่นความถี่เดิมกลับมาใช้ใหม่ใน Cell ที่ห่างกัน เพื่อรองรับคนได้มากขึ้น",
+                "**Handoff/Handover**: การส่งต่อสัญญาณเมื่อผู้ใช้เคลื่อนที่ข้าม Cell โดยสายไม่หลุด"
             ]
         },
         {
-            "title": "องค์ประกอบหลัก (Key Components)",
-            "content": "โครงสร้างพื้นฐานของเครือข่ายมือถือแบ่งเป็น 3 ส่วนหลัก",
+            "title": "1G to 5G: The Journey",
+            "content": "วิวัฒนาการในแต่ละยุค (Generation)",
             "keyPoints": [
-                "User Equipment (UE): อุปกรณ์ผู้ใช้ เช่น โทรศัพท์มือถือ (Mobile Station - MS)",
-                "Radio Access Network (RAN): ส่วนเชื่อมต่อไร้สายระหว่าง UE และ Core Network (ประกอบด้วย Base Stations)",
-                "Core Network (CN): สมองหลักของเครือข่าย ทำหน้าที่ Switching, Routing, Billing และเชื่อมต่อกับ Internet",
-                "Backhaul: ลิงก์เชื่อมต่อระหว่าง Base Station กับ Core Network (ผ่าน Fiber Optics หรือ Microwave)"
+                "**1G (Analog Voice)**: ยุคกระติกน้ำ สนทนาได้แต่เสียง สัญญาณไม่ชัด โดนดักฟังง่าย (AMPS, NMT)",
+                "**2G (Digital Voice)**: ยุค SMS เริ่มส่งข้อความได้ เสียงชัดขึ้น มี Roaming ข้ามประเทศ (GSM)",
+                "**3G (Mobile Data)**: ยุค Smart Phone เริ่มเล่นเน็ต ดูเว็บไซต์ ส่งอีเมลได้ (WCDMA)",
+                "**4G (Mobile Broadband)**: ยุค Streaming ดูหนัง HD, Live สด, Video Call ลื่นไหล (LTE)",
+                "**5G (IoT & AI)**: ยุคเชื่อมต่อทุกสิ่ง ความเร็วสูง ความหน่วงต่ำ รองรับ Smart City, รถไร้คนขับ"
             ]
         },
         {
-            "title": "1G (1980s) - Analog Voice",
-            "content": "ยุคแรกของโทรศัพท์มือถือ ใช้สัญญาณ Analog เน้นการโทรคุยเสียงเพียงอย่างเดียว ใช้วิธีแบ่งความถี่แบบ FDMA",
+            "title": "Key Components",
+            "content": "องค์ประกอบหลักของระบบ",
             "keyPoints": [
-                "Voice Only: สื่อสารได้เฉพาะเสียง (คุณภาพต่ำ)",
-                "No Data Services: ไม่มีบริการอินเทอร์เน็ตหรือส่งข้อความ",
-                "Poor Security: ไม่มีการเข้ารหัส (No Encryption) ดักฟังง่าย",
-                "ความเร็ว: สูงสุด 2.4 Kbps",
-                "มาตรฐาน: AMPS (USA), NMT (Europe), TACS (UK)",
-                "ข้อจำกัด: เครื่องใหญ่, แบตเตอรี่หมดเร็ว, ความจุน้อย"
+                "**UE (User Equipment)**: อุปกรณ์ผู้ใช้ เช่น มือถือ, แท็บเล็ต, IoT Sensors",
+                "**RAN (Radio Access Network)**: ภาควิทยุ (เสาสัญญาณ) เชื่อมต่อ UE เข้าสู่ระบบ",
+                "**Core Network**: สมองของระบบ ทำหน้าที่ตรวจสอบสิทธิ์ (Auth), คิดเงิน (Billing), เชื่อมต่ออินเทอร์เน็ต",
+                "**Backhaul**: สายสัญญาณ (Fiber Optic/Microwave) ที่เชื่อมเสาสัญญาณเข้ากับ Core Network"
             ]
         },
         {
-            "title": "2G (1991) - Digital Voice & SMS",
-            "content": "การเปลี่ยนผ่านสู่ระบบ Digital มาตรฐาน GSM เป็นยุคที่เริ่มมีการใช้ SIM Card และส่งข้อความได้",
+            "title": "Wireless Network Types",
+            "content": "ประเภทเครือข่ายไร้สายแบ่งตามระยะทาง",
             "keyPoints": [
-                "Digital Signals: สัญญาณเสียงชัดเจนขึ้น ใช้ TDMA/CDMA",
-                "Services: SMS (Short Message Service) และ MMS",
-                "Security: เริ่มมีการเข้ารหัสสัญญาณ (Encryption)",
-                "Data Services: GPRS (40-80 kbps) และ EDGE (384 kbps)",
-                "Global Roaming: สามารถนำมือถือไปใช้ต่างประเทศได้ (GSM)"
+                "**WPAN (Personal)**: ส่วนตัว ระยะ <10m (Bluetooth, Zigbee)",
+                "**WLAN (Local)**: ในอาคาร ระยะ <100m (Wi-Fi 6/7)",
+                "**WMAN (Metropolitan)**: ระดับเมือง (WiMAX)",
+                "**WWAN (Wide)**: ระดับประเทศ (4G LTE, 5G, Satellite)"
             ]
         },
         {
-            "title": "3G (2001) - Mobile Internet",
-            "content": "ยุคแห่ง Mobile Internet ที่แท้จริง เปลี่ยนเน้น Data แทน Voice มาตรฐานหลักคือ UMTS เชื่อมต่ออินเทอร์เน็ตได้ทุกที่",
+            "title": "Spectrum (คลื่นความถี่)",
+            "content": "ทรัพยากรที่แพงที่สุดในระบบไร้สาย",
             "keyPoints": [
-                "Mobile Internet: Web Browsing, Email, App Downloads",
-                "Multimedia: Video Calling, Music Streaming",
-                "Technologies: UMTS/WCDMA (384 kbps), HSPA/HSPA+ (14-42 Mbps)",
-                "CDMA2000: EV-DO Rev A/B (2-14+ Mbps)",
-                "Packet Switching: เริ่มใช้การส่งข้อมูลแบบ Packet ในส่วน Data"
-            ]
-        },
-        {
-            "title": "4G LTE (2010s) - High-Speed Broadband",
-            "content": "ยุค Mobile Broadband ความเร็วสูง ใช้เทคโนโลยี LTE และ WiMAX ระบบเป็น All-IP Network ทั้งหมด",
-            "keyPoints": [
-                "All-IP Network: ทุกอย่างส่งเป็น Data Packet รวมถึงเสียง (VoLTE - Voice over LTE)",
-                "Speed: 10-100 Mbps (LTE) และสูงสุด 1 Gbps (LTE-Advanced)",
-                "Technologies: OFDMA (จัดการคลื่นความถี่ดีขึ้น), MIMO (เสาอากาศหลายต้น)",
-                "Carrier Aggregation (CA): รวมหลายคลื่นความถี่เพื่อเพิ่ม Bandwidth",
-                "Application: HD Video Streaming, Real-time Gaming, Cloud Services"
-            ]
-        },
-        {
-            "title": "5G (2020s) - Ultra High Speed & IoT",
-            "content": "ยุคปฏิวัติการสื่อสาร รองรับความเร็วสูงมาก (eMBB) ความหน่วงต่ำ (URLLC) และ IoT จำนวนมหาศาล (mMTC)",
-            "keyPoints": [
-                "Speed: เร็วสูงสุด 1-10+ Gbps (เร็วกว่า 4G 10-100 เท่า)",
-                "Latency: ต่ำมาก < 1 ms (สำหรับการผ่าตัดทางไกล, รถไร้คนขับ)",
-                "Massive IoT: รองรับ 1 ล้านอุปกรณ์ต่อ ตร.กม.",
-                "Technologies: mmWave (คลื่นความถี่สูง 24-100 GHz), Massive MIMO, Beamforming, Network Slicing",
-                "Spectrum: Low-band (<1GHz), Mid-band (1-6GHz), High-band (mmWave)"
-            ]
-        },
-        {
-            "title": "ประเภทของ Cells (Cell Types)",
-            "content": "ขนาดของ Cell แบ่งตามพื้นที่ให้บริการและกำลังส่ง",
-            "keyPoints": [
-                "Macro Cells: 1-10 km (พื้นที่กว้าง, เสาสูง, กำลังส่งมาก)",
-                "Micro Cells: 200m - 2 km (เขตเมืองที่มีตึกสูง)",
-                "Pico Cells: 50-200 m (ภายในอาคาร, ห้างสรรพสินค้า, สนามบิน)",
-                "Femto Cells: 10-50 m (ในบ้าน, ออฟฟิศขนาดเล็ก)"
-            ]
-        },
-        {
-            "title": "Spectrum Management (การจัดการคลื่นความถี่)",
-            "content": "คลื่นความถี่เป็นทรัพยากรจำกัดที่ต้องมีการจัดสรร",
-            "keyPoints": [
-                "Licensed Spectrum: ประมูลจากรัฐบาล (แพงมาก), ไร้สัญญาณรบกวน, การันตีคุณภาพ (เช่น 4G/5G)",
-                "Unlicensed Spectrum: ใช้ฟรี (เช่น Wi-Fi, Bluetooth), อาจมีสัญญาณรบกวน, ไม่การันตีคุณภาพ",
-                "Frequency Bands: Low-band (ทะลุทะลวงดี), Mid-band (สมดุล), High-band (เร็วมากแต่ระยะสั้น)"
-            ]
-        },
-        {
-            "title": "Cellular Security & Challenges",
-            "content": "กลไกความปลอดภัยและความท้าทายในเครือข่ายมือถือ",
-            "keyPoints": [
-                "Authentication: ใช้ SIM Card และโปรโตคอล AKA ยืนยันตัวตน",
-                "Encryption: เข้ารหัสข้อมูลเพื่อป้องกันการดักฟัง",
-                "Threats: Jamming (รบกวนสัญญาณ), Spoofing (ปลอมตัว), IMSI Catcher",
-                "Reliability Issues: สภาพอากาศ (ฝน, ความชื้น) มีผลต่อคลื่นความถี่สูง"
-            ]
-        },
-        {
-            "title": "6G Vision (อนาคต ~2030)",
-            "content": "วิสัยทัศน์สู่อนาคตที่เหนือกว่า 5G",
-            "keyPoints": [
-                "Terahertz Frequencies: ความเร็วระดับ 1 Tbps",
-                "Holographic Communication: สื่อสารแบบโฮโลแกรม 3 มิติ",
-                "AI-Native Networks: ใช้ AI บริหารจัดการเครือข่ายอัตโนมัติ",
-                "Integrates Space: เชื่อมต่อดาวเทียมและภาคพื้นดินเป็นหนึ่งเดียว"
+                "**Low-Band (<1GHz)**: ส่งได้ไกล ทะลุตึกดี แต่ความเร็วน้อย (เหมาะกับชนบท)",
+                "**Mid-Band (1-6GHz)**: สมดุลระหว่างความเร็วและความครอบคลุม (C-Band 5G)",
+                "**High-Band (mmWave >24GHz)**: เร็วแรงระดับ Fiber แต่ส่งได้ใกล้และแพ้สิ่งกีดขวาง (เหมากับสนามกีฬา, ห้าง)"
             ]
         }
     ]

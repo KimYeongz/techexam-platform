@@ -1,81 +1,59 @@
 {
     "topicId": "blockchain",
-    "title": "Blockchain และ Cryptocurrencies",
+    "title": "Blockchain & Crypto",
     "sections": [
         {
-            "title": "Cryptocurrency คืออะไร?",
-            "content": "สื่อกลางในการแลกเปลี่ยน (Medium of Exchange) ที่ถูกสร้างและจัดเก็บในรูปแบบอิเล็กทรอนิกส์บน Blockchain โดยใช้การเข้ารหัส (Encryption) เพื่อความปลอดภัย",
+            "title": "Blockchain คืออะไร?",
+            "content": "เทคโนโลยีการจัดเก็บข้อมูลแบบกระจายศูนย์ (Distributed Ledger) ที่ทุกคนถือสำเนาข้อมูลชุดเดียวกัน โปร่งใส และแก้ไขยาก",
             "keyPoints": [
-                "Digital Money: จับต้องไม่ได้ แต่มีมูลค่า",
-                "Peer-to-Peer: โอนโดยตรงไม่ต้องผ่านตัวกลาง (ธนาคาร)",
-                "Physical Properties: เงินที่ดีต้องแบ่งหน่วยย่อยได้ (Divisible), หายาก (Scarce), ทนทาน (Durable), และเป็นที่ยอมรับ (Acceptable)"
+                "**Chain of Blocks**: ข้อมูลถูกเก็บเป็นกล่อง (Block) ต่อกันเป็นสายโซ่ (Chain) ด้วยรหัส Hash",
+                "**Decentralized**: ไม่มีตัวกลาง (เช่น ธนาคาร) ข้อมูลอยู่กับทุกคนในเครือข่าย",
+                "**Immutable**: เมื่อบันทึกแล้ว แก้ไขหรือลบไม่ได้ (ขีดฆ่าไม่ได้) ทำให้เชื่อถือได้สูง"
             ]
         },
         {
-            "title": "หลักการสำคัญ 3 ประการ",
-            "content": "สิ่งที่ทำให้ Cryptocurrency แตกต่างจากเงินตราปกติ",
+            "title": "Consensus Mechanisms (ฉันทามติ)",
+            "content": "วิธีการที่คนในเครือข่ายตกลงยอมรับความถูกต้องของข้อมูลร่วมกัน",
             "keyPoints": [
-                "1. Decentralisation (การกระจายศูนย์): ไม่มีธนาคารกลางควบคุม ข้อมูลกระจายไปทุกเครื่อง",
-                "2. Immutability (แก้ไขไม่ได้): เมื่อธุรกรรมถูกบันทึกลง Blockchain แล้ว จะไม่สามารถลบหรือแก้ไขได้",
-                "3. Transparency (ความโปร่งใส): ทุกคนในเครือข่ายสามารถตรวจสอบประวัติธุรกรรมได้ทั้งหมด"
+                "**Proof of Work (PoW)**: การ 'ขุด' (Mining) ใช้พลังคอมพิวเตอร์แข่งกันแก้โจทย์คณิตศาสตร์เพื่อยืนยันธุรกรรม (เช่น Bitcoin) - กินไฟมาก",
+                "**Proof of Stake (PoS)**: การ 'วางสินทรัพย์ค้ำประกัน' (Staking) สุ่มผู้ตรวจสอบตามจำนวนเหรียญที่มี (เช่น Ethereum 2.0) - ประหยัดไฟกว่า",
+                "**Proof of Authority (PoA)**: ให้สิทธิ์คนกลุ่มหนึ่งที่เชื่อถือได้เป็นผู้ยืนยัน (มักใช้ใน Private Chain)"
             ]
         },
         {
-            "title": "ประเภทของ Wallet (กระเป๋าเงิน)",
-            "content": "เครื่องมือสำหรับเก็บ Private Key เพื่อเข้าถึงเหรียญ",
+            "title": "Smart Contracts",
+            "content": "สัญญาอัจฉริยะ: โค้ดคอมพิวเตอร์ที่ทำงานอัตโนมัติตามเงื่อนไขที่ตกลงกันไว้",
             "keyPoints": [
-                "Hardware Wallets: เก็บ Key ในอุปกรณ์คล้าย USB ปลอดภัยที่สุด (Cold Storage) เพราะไม่ต่อเน็ตตลอดเวลา",
-                "Mobile Wallets: แอปบนมือถือ ใช้งานสะดวก แต่อาจเสี่ยงถ้ามือถือหาย",
-                "Desktop Wallets: โปรแกรมบนคอมพิวเตอร์ ปลอดภัยระดับหนึ่งแต่เสี่ยงต่อไวรัส",
-                "Cloud/Web Wallets: ฝากไว้กับเว็บ (เช่น Binance, Bitkub) สะดวกสุด แต่ Private Key อยู่ที่ผู้ให้บริการ (Third Party Risk)"
-            ]
-        },
-        {
-            "title": "Blockchain ทำงานอย่างไร?",
-            "content": "Distributed Ledger Technology (บัญชีแยกประเภทแบบกระจาย)",
-            "keyPoints": [
-                "Map Transaction: ผู้ใช้สร้างธุรกรรมส่งเหรียญ",
-                "Memory Pool (Mempool): ธุรกรรมรอการยืนยันอยู่ในคิว",
-                "Broadcast: ประกาศธุรกรรมไปให้เครื่องขุด (Miners) ทราบ",
-                "Verification: Miners แข่งกันแก้โจทย์คณิตศาสตร์ (Proof of Work)",
-                "New Block: ผู้ชนะได้สิทธิ์สร้าง Block ใหม่และได้รับรางวัล (Block Reward)",
-                "Chain: Block ใหม่ถูกต่อท้าย Block เดิมด้วยรหัส Hash ที่เชื่อมโยงกัน"
-            ]
-        },
-        {
-            "title": "Cryptocurrency Mining (การขุด)",
-            "content": "กระบวนการยืนยันธุรกรรมและรักษาความปลอดภัยเครือข่าย",
-            "keyPoints": [
-                "Proof of Work (PoW): การลงแรงแก้โจทย์ (เช่น SHA-256 ใน Bitcoin) เพื่อยืนยันความถูกต้อง",
-                "Halving: รางวัลจะลดลงครึ่งหนึ่งทุกๆ 210,000 Blocks (ประมาณ 4 ปี) - ปัจจุบัน 3.125 BTC",
-                "Bitcoin Supply: มีจำกัดที่ 21 ล้านเหรียญ (คาดว่าจะขุดหมดในปี 2140)",
-                "Mining Pools: การรวมพลังกันขุดเพื่อเพิ่มโอกาสได้รางวัลแล้วแบ่งกัน"
+                "**Concept**: 'If This Then That' ถ้าเงื่อนไขครบ สัญญาทำงานทันทีไม่ต้องรอคนเซ็น",
+                "**Benefits**: รวดเร็ว, ลดต้นทุนคนกลาง, โปร่งใสตรวจสอบได้",
+                "**Example**: ประกันภัยจ่ายเงินชดเชยทันทีที่ Flight Delay ตามข้อมูลสายการบิน โดยไม่ต้องยื่นเคลม"
             ]
         },
         {
             "title": "DeFi (Decentralized Finance)",
-            "content": "ระบบการเงินไร้ตัวกลาง ตัดธนาคารออกจากระบบ ใช้ Smart Contract ทำงานแทน",
+            "content": "ระบบการเงินไร้ศูนย์กลาง ที่ตัดธนาคารออกไป",
             "keyPoints": [
-                "DEX (Exchange): แลกเปลี่ยนเหรียญโดยตรง เช่น Uniswap",
-                "Lending/Borrowing: กู้ยืมสินทรัพย์ดิจิทัล เช่น Compound",
-                "Smart Contract: สัญญาอัตโนมัติที่ทำงานตามเงื่อนไขที่เขียนไว้ (Code is Law)"
+                "**DEX (Decentralized Exchange)**: ตลาดแลกเปลี่ยนที่ไม่มีเจ้าของกลาง (เช่น Uniswap)",
+                "**Lending/Borrowing**: กู้ยืมเงินผ่าน Smart Contract โดยใช้เหรียญค้ำประกัน (ไม่ต้อง check เครดิตบูโร)",
+                "**Yield Farming**: การเอาเหรียญไปฝาก (Provide Liquidity) เพื่อรับดอกเบี้ยหรือผลตอบแทน"
             ]
         },
         {
             "title": "NFT (Non-Fungible Token)",
-            "content": "สินทรัพย์ดิจิทัลที่มีเอกลักษณ์เฉพาะตัว ไม่สามารถทำซ้ำหรือทดแทนกันได้",
+            "content": "สินทรัพย์ดิจิทัลที่มีชิ้นเดียวในโลก เปลี่ยนมือได้แต่ก๊อปปี้ไม่ได้",
             "keyPoints": [
-                "Fungible vs Non-Fungible: เงิน 100 บาทแทนกันได้ (Fungible) แต่ภาพวาด, ที่ดิน แทนกันไม่ได้",
-                "Use Cases: งานศิลปะ (Digital Art), ใบปริญญา, โฉนดที่ดิน, ไอเทมเกม",
-                "Famous NFT: 'The First 5000 Days' by Beeple (ขาย $69 ล้าน), Jack Dorsey's First Tweet ($2.9 ล้าน)"
+                "**Fungible**: เงิน 100 บาท แลกกับแบงค์ 100 อื่นได้ (มูลค่าเท่ากัน)",
+                "**Non-Fungible**: โฉนดที่ดิน, รูปวาดโมนาลิซ่า มีชิ้นเดียว แลกกันไม่ได้ (มูลค่าต่างกัน)",
+                "**Use Cases**: งานศิลปะดิจิทัล, ไอเทมในเกม, ตั๋วคอนเสิร์ต, ใบปริญญาบัตร"
             ]
         },
         {
-            "title": "GameFi",
-            "content": "การผนวกเกมเข้ากับการเงิน (Game + DeFi)",
+            "title": "Web 3.0 & Metaverse",
+            "content": "อินเทอร์เน็ตยุคถัดไป",
             "keyPoints": [
-                "Play-to-Earn: เล่นเกมแล้วสร้างรายได้จริง",
-                "Ownership: ผู้เล่นเป็นเจ้าของไอเทมในเกมจริงๆ ในรูปแบบ NFT ซื้อขายได้"
+                "**Web 1.0 (Read Only)**: เว็บยุคแรก อ่านได้อย่างเดียว (Statc HTML)",
+                "**Web 2.0 (Read-Write)**: ยุค Social Media ผู้ใช้สร้าง content ได้ แต่ Platform (FB, YT) เป็นเจ้าของข้อมูล",
+                "**Web 3.0 (Read-Write-Own)**: ผู้ใช้เป็นเจ้าของข้อมูลและสินทรัพย์ตัวเองผ่าน Wallet และ Blockchain"
             ]
         }
     ]
