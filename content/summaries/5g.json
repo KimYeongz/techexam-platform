@@ -3,71 +3,70 @@
     "title": "Wireless Technology & 5G/6G",
     "sections": [
         {
-            "title": "วิวัฒนาการการสื่อสาร (Evolution)",
-            "content": "พัฒนาการจากระบบมีสายสู่ไร้สาย",
+            "title": "วิวัฒนาการการสื่อสาร (The G Evolution)",
+            "content": "การพัฒนาของเครือข่ายโทรศัพท์เคลื่อนที่จากรุ่นสู่รุ่น",
             "keyPoints": [
-                "1837 (Telegraph): โทรเลข ส่งรหัสผ่านสาย",
-                "1876 (Telephone): โทรศัพท์ ส่งเสียงผ่านสาย",
-                "1983 (Mobile Networks): เริ่มต้นยุคโทรศัพท์เคลื่อนที่ไร้สาย",
-                "Late 20th Century: เปลี่ยนจาก Analog เป็น Digital"
+                "**1G (Analog Voice)**: ยุคโทรศัพท์กระติกน้ำ คุยได้อย่างเดียว สัญญาณรบกวนง่าย",
+                "**2G (Digital Voice)**: ยุค SMS/MMS ส่งข้อความได้ สัญญาณชัดขึ้น (GSM, CDMA)",
+                "**3G (Mobile Data)**: ยุคอินเทอร์เน็ตบนมือถือ Video Call, Web Browsing (HSPA+)",
+                "**4G (Broadband)**: ยุค Streaming ดูหนัง HD, Social Media, App ต่างๆ ไหลลื่น (LTE)",
+                "**5G (IoT & AI)**: ยุคเชื่อมต่อทุกสรรพสิ่ง เร็วสูง ความหน่วงต่ำ รองรับอุปกรณ์มหาศาล"
             ]
         },
         {
-            "title": "ประเภทเครือข่ายไร้สาย (Network Types)",
-            "content": "แบ่งตามระยะทางครอบคลุม",
+            "title": "3 เสาหลักของ 5G (Benefits & Use Cases)",
+            "content": "คุณสมบัติเด่น 3 ด้านของ 5G ที่เปลี่ยนโลก",
             "keyPoints": [
-                "WPAN (Personal): <10m (Bluetooth, ZigBee) สำหรับอุปกรณ์ส่วนตัว",
-                "WLAN (Local): <100m (Wi-Fi) สำหรับบ้านและสำนักงาน",
-                "WMAN (Metropolitan): ระดับเมือง (WiMAX) ครอบคลุมหลายกิโลเมตร",
-                "WWAN (Wide): ระดับประเทศ/โลก (Cellular 4G/5G, Satellite)"
+                "**1. eMBB (Enhanced Mobile Broadband)**: เน้นความเร็วสูงระดับ Gbps (โหลดหนัง 4K ในวิเดียว) รองรับ AR/VR",
+                "**2. URLLC (Ultra-Reliable Low Latency Communications)**: ความหน่วงต่ำมาก (<1ms) และเสถียรสูง ใช้ผ่าตัดทางไกล, รถยนต์ไร้คนขับ",
+                "**3. mMTC (Massive Machine Type Communications)**: รองรับอุปกรณ์ IoT จำนวนมหาศาล (1 ล้านชิ้น/ตร.กม.) เช่น Smart City"
             ]
         },
         {
-            "title": "เทคโนโลยีไร้สายที่สำคัญ",
-            "content": "มาตรฐานต่างๆ ที่ใช้ในปัจจุบัน",
+            "title": "เทคโนโลยีเบื้องหลัง 5G (Key Enabling Technologies)",
+            "content": "5G ทำงานได้ดีกว่า 4G ด้วยเทคโนโลยีเหล่านี้",
             "keyPoints": [
-                "Wi-Fi (IEEE 802.11): มาตรฐานหลักสำหรับ WLAN (Wi-Fi 6/7 เร็วระดับ Multi-Gbps)",
-                "Bluetooth & BLE: สื่อสารระยะใกล้ประหยัดพลังงาน (BLE เหมาะกับ IoT)",
-                "NFC: สื่อสารระยะประชิด (<4cm) แตะจ่ายเงิน (Contactless Payment)",
-                "ZigBee: เครือข่าย Mesh พลังงานต่ำสำหรับ Smart Home (IEEE 802.15.4)",
-                "LoRa/LoRaWAN: ส่งข้อมูลระยะไกลมาก (15km) พลังงานต่ำ เหมาะกับ IoT Sensor เกษตรกรรม"
+                "**Millimeter Waves (mmWave)**: คลื่นความถี่สูงมาก (24GHz+) ส่งข้อมูลได้มหาศาลแต่ส่งได้ไม่ไกล",
+                "**Massive MIMO**: การใช้เสาอากาศจำนวนมาก (ร้อยต้น) รับส่งข้อมูลพร้อมกันหลายช่องทาง",
+                "**Beamforming**: เทคนิคบีบสัญญาณให้พุ่งตรงไปหาเครื่องผู้ใช้ แทนการกระจายรอบทิศทาง (เพิ่มความแรง)",
+                "**Network Slicing**: การแบ่งเครือข่ายจริง 1 วง ให้เป็นเครือข่ายเสมือนหลายวง เพื่อให้บริการงานแต่ละประเภทแยกกัน (เช่น วงนึงให้รถยนต์ วงนึงให้มือถือ)"
             ]
         },
         {
-            "title": "Wi-Fi 7 vs Li-Fi",
-            "content": "เทคโนโลยีอนาคต",
+            "title": "ประเภทเครือข่ายไร้สาย (Wireless Network Types)",
+            "content": "การแบ่งประเภทตามระยะทางครอบคลุม",
             "keyPoints": [
-                "Wi-Fi 7: ใช้คลื่นวิทยุ (RF), ทะลุกำแพงได้, ความเร็วสูงสุด 46 Gbps",
-                "Li-Fi: ใช้แสง (Visible Light) จากหลอด LED, เร็วกว่า Wi-Fi มาก, ไม่ทะลุกำแพง (ปลอดภัยสูง), ใช้ในพื้นที่ห้ามใช้คลื่นวิทยุ"
+                "**WPAN (Personal)**: ระยะใกล้ <10m เช่น Bluetooth, Zigbee (ใช้เชื่อมต่อหูฟัง, Smart Watch)",
+                "**WLAN (Local)**: ระยะ <100m เช่น Wi-Fi 6/7 (ใช้ในบ้าน, ออฟฟิศ)",
+                "**WMAN (Metropolitan)**: ระดับเมือง เช่น WiMAX (ปัจจุบันถูกแทนที่ด้วย 4G/5G)",
+                "**WWAN (Wide)**: ระดับประเทศ เช่น 4G LTE, 5G, Satellite Internet (Starlink)"
             ]
         },
         {
-            "title": "5G & 6G Vision",
-            "content": "ยุคป present และอนาคตของการสื่อสาร",
+            "title": "เทคโนโลยี IoT Network (Low Power WA)",
+            "content": "เครือข่ายสำหรับอุปกรณ์ IoT โดยเฉพาะ (เน้นประหยัดไฟ ส่งไกล)",
             "keyPoints": [
-                "5G Benefits: ความเร็วสูง (eMBB), ความหน่วงต่ำ (URLLC), รองรับอุปกรณ์มหาศาล (mMTC)",
-                "6G (Approx. 2030): ความเร็วระดับ Tbps, ความหน่วง 0.1 ms",
-                "6G Use Cases: Holographic Communication (สื่อสารโฮโลแกรม 3 มิติ), Metaverse สมจริง, Internet of Everything, AI-Native Networks"
+                "**NB-IoT (Narrowband IoT)**: วิ่งบนเครือข่ายมือถือ กินไฟน้อยมาก ส่งข้อมูลน้อยๆ เหมาะกับมิเตอร์น้ำ/ไฟ",
+                "**LoRaWAN**: ไม่ใช้เครือข่ายมือถือ ส่งได้ไกลเป็นสิบกิโลเมตร เหมาะกับการเกษตรในพื้นที่ห่างไกล",
+                "**Sigfox**: เครือข่าย Ultra-narrowband เน้นส่งข้อความสั้นๆ ประหยัดไฟสุดๆ"
             ]
         },
         {
-            "title": "Wireless Security",
-            "content": "ความปลอดภัยในระบบไร้สายเป็นสิ่งสำคัญเพราะสัญญาณลอยในอากาศ",
+            "title": "Wi-Fi 7 vs Li-Fi (Future Wireless)",
+            "content": "อนาคตของการเชื่อมต่อระยะใกล้",
             "keyPoints": [
-                "Encryption: การเข้ารหัสข้อมูล",
-                "Authentication: การยืนยันตัวตนผู้ใช้",
-                "Threats: Spoofing (ปลอมตัว), Jamming (รบกวนสัญญาณ), Eavesdropping (ดักฟัง)"
+                "**Wi-Fi 7 (802.11be)**: ความเร็วสูงสุด 46 Gbps รองรับช่องสัญญาณ 320MHz ลดความหน่วงมหาศาล",
+                "**Li-Fi (Light Fidelity)**: ส่งข้อมูลด้วย \"แสง\" (จากหลอด LED) เร็วกว่า Wi-Fi 100 เท่า ปลอดภัยเพราะแสงทะลุกำแพงไม่ได้ (โดนดักฟังยาก) แต่อุปกรณ์รับ-ส่งต้องมองเห็นกัน"
             ]
         },
         {
-            "title": "การประยุกต์ใช้ (Applications)",
-            "content": "เทคโนโลยีไร้สายขับเคลื่อนภาคส่วนต่างๆ",
+            "title": "มุ่งสู่ 6G (Vision of 6G)",
+            "content": "คาดว่าจะมาประมาณปี 2030",
             "keyPoints": [
-                "Smart Home: ควบคุมเครื่องใช้ไฟฟ้า",
-                "Smart City: จัดการจราจร, พลังงาน",
-                "Smart Farming: เกษตรแม่นยำ, Drone พ่นยา",
-                "Education: ห้องเรียนอัจฉริยะ, AR/VR Learning",
-                "Military: สื่อสารในเชตภัยพิบัติ/สงคราม (Ad Hoc Networks)"
+                "**Super Speed**: ความเร็วระดับ Terabits per second (Tbps)",
+                "**Holographic Communication**: การสื่อสารแบบโฮโลแกรม 3 มิติเต็มรูปแบบ",
+                "**Internet of Senses**: ส่งสัมผัส กลิ่น รสชาติ ผ่านเครือข่าย",
+                "**Space-Air-Ground-Sea Integration**: เชื่อมต่อทุกพื้นที่รวมถึงอวกาศและใต้ทะเลลึก"
             ]
         }
     ]
