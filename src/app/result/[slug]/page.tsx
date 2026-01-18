@@ -45,7 +45,6 @@ export default function ResultPage({ params }: PageProps) {
     const [quizData, setQuizData] = useState<QuizData | null>(null)
     const [userAnswers, setUserAnswers] = useState<Record<number, string>>({})
     const [expandedQuestions, setExpandedQuestions] = useState<Set<number>>(new Set())
-    const [expandedQuestions, setExpandedQuestions] = useState<Set<number>>(new Set())
     const [filter, setFilter] = useState<'all' | 'correct' | 'wrong'>('all')
     const [loading, setLoading] = useState(true)
 
@@ -55,7 +54,6 @@ export default function ResultPage({ params }: PageProps) {
                 const response = await fetch(`/api/quiz/${params.slug}`)
                 if (response.ok) {
                     const data = await response.json()
-                    setQuizData(data)
                     setQuizData(data)
 
                     // Load answers from localStorage
