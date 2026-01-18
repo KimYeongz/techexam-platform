@@ -9,7 +9,8 @@ import {
     Calculator,
     Beaker,
     Globe2,
-    Palette
+    Palette,
+    ArrowRight
 } from 'lucide-react'
 
 // Mock Subjects Data for the new homepage structure
@@ -20,8 +21,8 @@ const subjects = [
         nameTh: 'เทคโนโลยีอนาคต',
         description: 'รวมบทเรียน AI, Big Data, Blockchain, IoT และ 5G',
         icon: Sparkles,
-        color: 'bg-indigo-100 text-indigo-600',
-        href: '/topics', // Links to the existing topics page
+        gradient: 'from-indigo-500 to-blue-500',
+        href: '/topics',
         lessons: 7,
         status: 'available'
     },
@@ -31,7 +32,7 @@ const subjects = [
         nameTh: 'คณิตศาสตร์',
         description: 'แคลคูลัส, สถิติ, และตรรกศาสตร์',
         icon: Calculator,
-        color: 'bg-emerald-100 text-emerald-600',
+        gradient: 'from-emerald-500 to-teal-500',
         href: '#',
         lessons: 0,
         status: 'coming_soon'
@@ -42,7 +43,7 @@ const subjects = [
         nameTh: 'วิทยาศาสตร์ทั่วไป',
         description: 'ฟิสิกส์, เคมี, ชีววิทยาเบื้องต้น',
         icon: Beaker,
-        color: 'bg-rose-100 text-rose-600',
+        gradient: 'from-rose-500 to-pink-500',
         href: '#',
         lessons: 0,
         status: 'coming_soon'
@@ -53,7 +54,7 @@ const subjects = [
         nameTh: 'ภาษาอังกฤษ',
         description: 'Grammar, Vocabulary และการสื่อสาร',
         icon: Globe2,
-        color: 'bg-amber-100 text-amber-600',
+        gradient: 'from-amber-500 to-orange-500',
         href: '#',
         lessons: 0,
         status: 'coming_soon'
@@ -64,178 +65,139 @@ const subjects = [
         nameTh: 'ศิลปะและการออกแบบ',
         description: 'ทัศนศิลป์, ประวัติศาสตร์ศิลป์',
         icon: Palette,
-        color: 'bg-purple-100 text-purple-600',
+        gradient: 'from-purple-500 to-violet-500',
         href: '#',
         lessons: 0,
         status: 'coming_soon'
     }
 ]
 
-const features = [
-    {
-        icon: BookOpen,
-        title: 'สรุปเนื้อหาเข้มข้น',
-        description: 'เนื้อหากระชับ เข้าใจง่าย อ่านจบได้ในไม่กี่นาที',
-        color: 'bg-blue-50 text-blue-600'
-    },
-    {
-        icon: CheckCircle2,
-        title: 'แบบฝึกหัดท้าทาย',
-        description: 'คลังข้อสอบพร้อมเฉลยละเอียดทุกข้อ',
-        color: 'bg-emerald-50 text-emerald-600'
-    },
-    {
-        icon: GraduationCap,
-        title: 'ระบบติดตามผล',
-        description: 'วิเคราะห์พัฒนาการและจุดที่ต้องปรับปรุง',
-        color: 'bg-amber-50 text-amber-600'
-    },
-]
-
 export default function HomePage() {
     return (
-        <div className="min-h-screen bg-slate-50 selection:bg-primary-100 selection:text-primary-900">
-
-            {/* Hero Section */}
-            <section className="relative overflow-hidden pt-20 pb-32 border-b border-slate-200/50">
-                {/* Background Image Area */}
-                <div className="absolute inset-0 z-0">
-                    <div
-                        className="absolute inset-0 bg-cover bg-center"
-                        style={{
-                            backgroundImage: "url('/hero-bg.png')",
-                            filter: "blur(8px)",
-                            transform: "scale(1.1)"
-                        }}
-                    />
-                    <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-50/90 to-transparent" />
+        <div className="min-h-screen bg-black text-slate-200">
+            {/* Hero Section - Framer Awards Style */}
+            <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden pt-16">
+                {/* Spotlight Effect */}
+                <div className="absolute inset-0 z-0 pointer-events-none">
+                    <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-gradient-to-b from-primary-500/20 via-primary-900/5 to-transparent rounded-full blur-3xl" />
+                    <div className="absolute top-[10%] left-[20%] w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px] animate-pulse-slow" />
                 </div>
 
-                <div className="container mx-auto px-4 max-w-6xl relative z-10">
-                    <div className="text-center max-w-3xl mx-auto space-y-8">
-                        {/* Wrapper for content */}
+                {/* Particles/Dust Effect */}
+                <div className="absolute inset-0 z-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle at center, white 1px, transparent 1px)', backgroundSize: '50px 50px' }}></div>
 
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 backdrop-blur-md border border-slate-200/50 shadow-sm text-sm font-medium text-slate-700 hover:scale-105 transition-transform cursor-default">
-                            <span className="flex h-2 w-2 rounded-full bg-primary-500"></span>
-                            แพลตฟอร์มการเรียนรู้รูปแบบใหม่
-                        </div>
-
-                        <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 drop-shadow-sm leading-tight">
-                            Tiudo
+                <div className="container relative z-10 px-4 text-center">
+                    <div className="mb-6 animate-fade-in relative inline-block group">
+                        <span className="font-script text-5xl md:text-7xl text-white block opacity-90 transform -rotate-6 translate-y-8 -translate-x-8 z-10 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+                            The
+                        </span>
+                        <h1 className="text-7xl md:text-9xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-200 to-slate-500 uppercase leading-[0.85] group-hover:scale-105 transition-transform duration-500">
+                            TIUDO
                         </h1>
-                        <p className="text-2xl md:text-3xl font-medium text-slate-800 drop-shadow-sm">
-                            แหล่งรวมวิชาเรียนเพื่ออนาคต
-                        </p>
+                        <div className="h-2 w-full bg-gradient-to-r from-transparent via-primary-500 to-transparent mt-4 opacity-50 blur-sm"></div>
+                    </div>
 
-                        <p className="text-lg text-slate-700 leading-relaxed max-w-2xl mx-auto font-medium">
-                            เรามุ่งมั่นสร้างสรรค์พื้นที่แห่งการเรียนรู้ที่เข้าถึงง่าย เนื้อหาคุณภาพ
-                            และครอบคลุมหลากหลายสาขาวิชา เพื่อพัฒนาศักยภาพของคุณให้ไร้ขีดจำกัด
-                        </p>
+                    <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-400 mb-10 font-light tracking-wide leading-relaxed">
+                        <span className="text-primary-400 font-medium">Empowering Your Future.</span> แพลตฟอร์มการเรียนรู้ที่ออกแบบมาเพื่อเทคโนโลยีแห่งอนาคต
+                    </p>
 
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                            <Link href="/topics" className="btn-primary h-12 px-8 text-lg shadow-xl shadow-primary-600/20 hover:shadow-primary-600/30 hover:-translate-y-1 transition-all">
-                                ดูรายวิชาทั้งหมด
-                                <ChevronRight className="w-5 h-5 ml-1" />
-                            </Link>
-                        </div>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up">
+                        <Link
+                            href="/topics"
+                            className="btn-primary min-w-[160px] group"
+                        >
+                            <span>เริ่มเรียนรู้เลย</span>
+                            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                        <Link
+                            href="#subjects"
+                            className="btn-secondary min-w-[160px]"
+                        >
+                            ดูรายวิชา
+                        </Link>
+                    </div>
+                </div>
+
+                {/* Scroll Indicator */}
+                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+                    <div className="w-6 h-10 rounded-full border-2 border-slate-600 flex items-start justify-center p-1">
+                        <div className="w-1 h-2 bg-slate-400 rounded-full" />
                     </div>
                 </div>
             </section>
 
-            {/* Subjects Grid */}
-            <section className="py-20 relative z-10">
-                <div className="container mx-auto px-4 max-w-6xl">
-                    <div className="mb-12 text-center md:text-left">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-2">รายวิชาที่เปิดสอน</h2>
-                        <p className="text-slate-500 text-lg">เลือกวิชาที่คุณต้องการเรียนรู้</p>
+            {/* Subjects Grid Section */}
+            <section id="subjects" className="relative py-24 z-10">
+                <div className="container mx-auto px-4">
+                    <div className="flex items-end justify-between mb-12">
+                        <div>
+                            <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-500">
+                                หมวดหมู่วิชา
+                            </h2>
+                            <p className="text-slate-400 mt-2">เลือกวิชาที่คุณต้องการเรียนรู้</p>
+                        </div>
                     </div>
 
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {subjects.map((subject) => (
+                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                        {subjects.map((subject, index) => (
                             <Link
-                                key={subject.id}
-                                href={subject.href}
-                                className={`group bg-white rounded-2xl border border-slate-200 p-6 transition-all duration-300 ${subject.status === 'available'
-                                    ? 'hover:border-primary-200 hover:shadow-lg cursor-pointer'
-                                    : 'opacity-70 cursor-not-allowed hover:bg-slate-50'
-                                    }`}
-                                aria-disabled={subject.status !== 'available'}
+                                key={index}
+                                href={subject.status === 'available' ? subject.href : '#'}
+                                className={`glass-card group p-8 rounded-3xl ${subject.status !== 'available' ? 'opacity-60 cursor-not-allowed hover:translate-y-0' : ''}`}
                             >
-                                <div className="flex items-start justify-between mb-6">
-                                    <div className={`w-14 h-14 rounded-xl ${subject.color} flex items-center justify-center`}>
-                                        <subject.icon className="w-7 h-7" />
-                                    </div>
-                                    {subject.status === 'coming_soon' && (
-                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-500">
-                                            Coming Soon
-                                        </span>
-                                    )}
-                                    {subject.status === 'available' && (
-                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-50 text-primary-700">
-                                            เปิดให้เรียนแล้ว
-                                        </span>
-                                    )}
+                                <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${subject.gradient} flex items-center justify-center text-white mb-6 shadow-lg shadow-primary-900/20 group-hover:scale-110 transition-transform duration-500`}>
+                                    <subject.icon className="w-7 h-7" />
                                 </div>
 
-                                <h3 className="text-xl font-bold text-slate-900 mb-1 group-hover:text-primary-600 transition-colors">
+                                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary-400 transition-colors">
                                     {subject.name}
                                 </h3>
-                                <div className="text-sm font-medium text-slate-500 mb-3">{subject.nameTh}</div>
-
-                                <p className="text-slate-500 mb-6 min-h-[3rem] text-sm">
-                                    {subject.description}
+                                <p className="text-sm font-light text-slate-400 font-thai mb-6">
+                                    {subject.nameTh}
                                 </p>
 
-                                <div className="flex items-center gap-4 text-sm text-slate-400 border-t border-slate-100 pt-4">
-                                    <div className="flex items-center gap-1.5">
-                                        <BookOpen className="w-4 h-4" />
-                                        <span>{subject.lessons} บทเรียน</span>
-                                    </div>
+                                <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                                    <span className="text-xs font-medium text-slate-500 uppercase tracking-widest">
+                                        {subject.lessons} บทเรียน
+                                    </span>
+                                    {subject.status === 'available' ? (
+                                        <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-slate-300 group-hover:bg-primary-500 group-hover:text-white transition-all">
+                                            <ArrowRight className="w-4 h-4" />
+                                        </div>
+                                    ) : (
+                                        <span className="text-xs bg-white/5 px-2 py-1 rounded text-slate-500">
+                                            เร็วๆ นี้
+                                        </span>
+                                    )}
                                 </div>
+
+                                {/* Ambient Glow */}
+                                <div className={`absolute -right-10 -bottom-10 w-32 h-32 bg-gradient-to-br ${subject.gradient} blur-[50px] opacity-0 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none`} />
                             </Link>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Features Section */}
-            <section className="py-20 bg-slate-50">
-                <div className="container mx-auto px-4 max-w-6xl">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-4">เรียนรู้กับ Tiudo ดียังไง?</h2>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-8">
-                        {features.map((feature, index) => (
-                            <div key={index} className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm text-center">
-                                <div className={`w-16 h-16 rounded-full ${feature.color} flex items-center justify-center mx-auto mb-6`}>
-                                    <feature.icon className="w-8 h-8" />
-                                </div>
-                                <h3 className="text-xl font-bold text-slate-900 mb-3">{feature.title}</h3>
-                                <p className="text-slate-600 leading-relaxed">{feature.description}</p>
-                            </div>
                         ))}
                     </div>
                 </div>
             </section>
 
             {/* Footer */}
-            <footer className="bg-white border-t border-slate-200 py-12">
-                <div className="container mx-auto px-4 max-w-6xl">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                        <div className="flex items-center gap-2">
-                            <div className="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white">
-                                <span className="font-bold text-lg">T</span>
+            <footer className="border-t border-white/10 bg-black pt-16 pb-8">
+                <div className="container mx-auto px-4">
+                    <div className="flex flex-col md:flex-row justify-between items-center mb-12">
+                        <div className="flex items-center gap-2 mb-4 md:mb-0">
+                            <div className="w-8 h-8 rounded bg-gradient-to-br from-primary-500 to-indigo-600 flex items-center justify-center text-white font-bold">
+                                T
                             </div>
-                            <div>
-                                <span className="text-xl font-bold text-slate-900 block">Tiudo</span>
-                                <span className="text-xs text-slate-500">Learning Platform</span>
-                            </div>
+                            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">Tiudo</span>
                         </div>
-                        <p className="text-slate-500 text-sm">
-                            © 2026 Tiudo. All rights reserved.
-                        </p>
+                        <div className="flex gap-6 text-sm text-slate-400">
+                            <Link href="#" className="hover:text-white transition-colors">เกี่ยวกับเรา</Link>
+                            <Link href="#" className="hover:text-white transition-colors">นโยบายความเป็นส่วนตัว</Link>
+                            <Link href="#" className="hover:text-white transition-colors">เงื่อนไขการใช้งาน</Link>
+                            <Link href="#" className="hover:text-white transition-colors">ติดต่อเรา</Link>
+                        </div>
+                    </div>
+                    <div className="text-center text-xs text-slate-600 font-light">
+                        &copy; 2024 Tiudo Platform. สงวนลิขสิทธิ์
                     </div>
                 </div>
             </footer>
