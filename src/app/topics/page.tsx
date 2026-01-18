@@ -104,8 +104,8 @@ export default function TopicsPage() {
                     </Link>
                     <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
                         <div>
-                            <h1 className="text-3xl font-bold text-slate-900 mb-2">หัวข้อการเรียนรู้</h1>
-                            <p className="text-slate-500">เลือกหัวข้อที่คุณสนใจเพื่อเริ่มเรียนและทำแบบทดสอบ</p>
+                            <h1 className="text-3xl font-bold text-slate-900 mb-2">เทคโนโลยีแห่งอนาคต</h1>
+                            <p className="text-slate-500">รวมบทเรียน AI, Big Data, Blockchain, IoT และ 5G</p>
                         </div>
                     </div>
                 </div>

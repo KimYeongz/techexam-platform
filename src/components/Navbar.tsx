@@ -13,12 +13,17 @@ export function Navbar() {
         <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/80 backdrop-blur-xl">
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="flex items-center space-x-2 group">
-                    <div className="w-8 h-8 rounded-lg bg-primary-600 flex items-center justify-center text-white shadow-sm group-hover:bg-primary-700 transition-colors">
-                        <BookOpen className="w-5 h-5" />
+                {/* Logo */}
+                <Link href="/" className="flex items-center space-x-3 group">
+                    <div className="relative w-10 h-10 overflow-hidden rounded-lg">
+                        <img 
+                            src="/logo.jpg" 
+                            alt="Tiudo Logo" 
+                            className="w-full h-full object-cover"
+                        />
                     </div>
-                    <span className="font-bold text-xl tracking-tight text-slate-900 group-hover:text-primary-600 transition-colors">
-                        TechExam
+                    <span className="font-bold text-2xl tracking-tight text-slate-900 group-hover:text-primary-600 transition-colors font-english">
+                        TiuDo
                     </span>
                 </Link>
 
