@@ -293,7 +293,7 @@ export default function ResultPage({ params }: PageProps) {
                                         </div>
 
                                         {/* Wrong Reason (if user got it wrong) */}
-                                        {!question.isCorrect && question.wrongReasons[question.userAnswer] && (
+                                        {!question.isCorrect && question.wrongReasons && question.wrongReasons[question.userAnswer] && (
                                             <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 mt-3">
                                                 <h4 className="font-medium text-orange-900 mb-2">⚠️ ทำไมตัวเลือก {question.userAnswer} ถึงผิด</h4>
                                                 <p className="text-orange-800 text-sm leading-relaxed">
