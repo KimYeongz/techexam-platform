@@ -41,11 +41,10 @@ interface QuizData {
     questions: Question[]
 }
 
-// Mock answers for demo - in real app, this would come from session/state
-const mockAnswers: Record<number, string> = {}
-
 export default function ResultPage({ params }: PageProps) {
     const [quizData, setQuizData] = useState<QuizData | null>(null)
+    const [userAnswers, setUserAnswers] = useState<Record<number, string>>({})
+    const [expandedQuestions, setExpandedQuestions] = useState<Set<number>>(new Set())
     const [expandedQuestions, setExpandedQuestions] = useState<Set<number>>(new Set())
     const [filter, setFilter] = useState<'all' | 'correct' | 'wrong'>('all')
     const [loading, setLoading] = useState(true)
@@ -57,10 +56,13 @@ export default function ResultPage({ params }: PageProps) {
                 if (response.ok) {
                     const data = await response.json()
                     setQuizData(data)
-                    // Generate random answers for demo
-                    data.questions.forEach((q: Question) => {
-                        mockAnswers[q.id] = ['A', 'B', 'C', 'D'][Math.floor(Math.random() * 4)]
-                    })
+                    setQuizData(data)
+
+                    // Load answers from localStorage
+                    const savedAnswers = localStorage.getItem(`quiz_answers_${params.slug}`)
+                    if (savedAnswers) {
+                        setUserAnswers(JSON.parse(savedAnswers))
+                    }
                 }
             } catch (error) {
                 console.error('Failed to load quiz:', error)
@@ -102,8 +104,8 @@ export default function ResultPage({ params }: PageProps) {
     // Calculate stats
     const results = quizData.questions.map(q => ({
         ...q,
-        userAnswer: mockAnswers[q.id] || '',
-        isCorrect: mockAnswers[q.id] === q.correctAnswer
+        userAnswer: userAnswers[q.id] || '',
+        isCorrect: userAnswers[q.id] === q.correctAnswer
     }))
 
     const correctCount = results.filter(r => r.isCorrect).length

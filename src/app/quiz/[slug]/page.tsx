@@ -163,6 +163,9 @@ export default function QuizPage({ params }: PageProps) {
         // Calculate score immediately
         const score = calculateScore()
 
+        // Save answers to localStorage for result page
+        localStorage.setItem(`quiz_answers_${params.slug}`, JSON.stringify(answers))
+
         if (session) {
             try {
                 // Save to API
