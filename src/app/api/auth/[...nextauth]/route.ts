@@ -4,6 +4,8 @@ import CredentialsProvider from "next-auth/providers/credentials"
 import { compare } from "bcryptjs"
 import { prisma as db } from "@/lib/db"
 
+export const dynamic = "force-dynamic"
+
 const handler = NextAuth({
     session: {
         strategy: "jwt",
